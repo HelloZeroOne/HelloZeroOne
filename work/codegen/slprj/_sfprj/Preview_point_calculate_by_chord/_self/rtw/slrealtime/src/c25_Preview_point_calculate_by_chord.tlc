@@ -1,0 +1,53 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   5 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "preview_point_x_previous"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Preview_point_calculate_by_chord:1:1703-1727"\
+    }\
+    ChartData {\
+      Name         "preview_point_x_previous_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Preview_point_calculate_by_chord:1:1703-1727"\
+    }\
+    ChartData {\
+      Name         "preview_point_y_previous"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Preview_point_calculate_by_chord:1:1841-1865"\
+    }\
+    ChartData {\
+      Name         "preview_point_y_previous_not_empty"\
+      Description  "EmlPersistentSentinel"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Preview_point_calculate_by_chord:1:1841-1865"\
+    }\
+    ChartData {\
+      Name         "preview_yaw_angle_previous"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  "Preview_point_calculate_by_chord:1:1979-2005"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

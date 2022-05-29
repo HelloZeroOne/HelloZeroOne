@@ -1,0 +1,1903 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: SCU ADCU
+
+
+BO_ 640 ADCU_3: 8 ADCU
+ SG_ ADCU_3_Checksum : 63|8@0+ (1,0) [0|255] "-"  SCU
+ SG_ ADCU_3_MsgCounter : 51|4@0+ (1,0) [0|15] "-"  SCU
+ SG_ ADCU_BeamReq : 3|2@0+ (1,0) [0|3] "-"  SCU
+ SG_ ADCU_HornRingReq : 5|1@0+ (1,0) [0|1] "-"  SCU
+ SG_ ADCU_TurnLightReq : 1|2@0+ (1,0) [0|3] "-"  SCU
+ SG_ ADCU_BodyCtrlReq : 4|1@0+ (1,0) [0|1] "-"  SCU
+
+BO_ 545 ADCU_2: 8 ADCU
+ SG_ ADCU_2_Checksum : 63|8@0+ (1,0) [0|255] ""  SCU
+ SG_ ADCU_2_MsgCounter : 51|4@0+ (1,0) [0|15] ""  SCU
+ SG_ ADCU_SteerAngSpdLimt : 23|16@0+ (0.125,0) [0|1080] "deg/s"  SCU
+ SG_ ADCU_SteerWhlTorqReq : 39|11@0+ (0.01,-10.24) [-10.24|10.23] "Nm"  SCU
+ SG_ ADCU_SteerAngReq : 7|16@0+ (0.1,-780) [-780|779.9] "deg"  SCU
+ SG_ ADCU_LatCtrlReq : 44|1@0+ (1,0) [0|1] "-"  SCU
+
+BO_ 544 ADCU_1: 8 ADCU
+ SG_ ADCU_1_Checksum : 63|8@0+ (1,0) [0|255] ""  SCU
+ SG_ ADCU_1_MsgCounter : 51|4@0+ (1,0) [0|15] ""  SCU
+ SG_ ADCU_GearLvlReq : 39|3@0+ (1,0) [0|7] ""  SCU
+ SG_ ADCU_GearLvlReqVD : 36|1@0+ (1,0) [0|1] ""  SCU
+ SG_ ADCU_ParkingReqToEPB : 35|1@0+ (1,0) [0|1] ""  SCU
+ SG_ ADCU_ParkingReqToEPBVD : 34|1@0+ (1,0) [0|1] ""  SCU
+ SG_ ADCU_AutoTrqWhlReq : 23|14@0+ (1,-5000) [-5000|5000] "Nm"  SCU
+ SG_ ADCU_LngCtrlReq : 25|2@0+ (1,0) [0|3] ""  SCU
+ SG_ ADCU_BrakeReq : 7|16@0+ (0.0004882,-16) [-16|16] "m/s^2"  SCU
+
+BO_ 559 SCU_18: 8 SCU
+ SG_ SCU_18_Checksum : 63|8@0+ (1,0) [0|255] "-"  ADCU
+ SG_ VCU_GasPedalVirtualPstVD : 55|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ VCU_BrkPedalStVD : 54|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ VCU_BrkPedalSt : 53|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ SCU_18_MsgCounter : 51|4@0+ (1,0) [0|15] "-"  ADCU
+ SG_ VCU_GasPedalVirtualPst : 47|8@0+ (0.392,0) [0|99.96] "%"  ADCU
+
+BO_ 557 SCU_17: 8 SCU
+ SG_ SCU_17_Checksum : 63|8@0+ (1,0) [0|255] "-"  ADCU
+ SG_ SCU_17_MsgCounter : 51|4@0+ (1,0) [0|15] "-"  ADCU
+ SG_ VCU_GasPedalActPst : 47|8@0+ (0.392,0) [0|99.96] "%"  ADCU
+ SG_ VCU_ACCButtInfo : 39|8@0+ (1,0) [0|255] ""  ADCU
+ SG_ VCU_AccElecECFail : 30|1@0+ (1,0) [0|1] "-"  ADCU
+ SG_ VCU_GasPedalActPstVD : 27|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ VCU_VehWheelTorqMax : 7|14@0+ (1,0) [0|10000] "Nm"  ADCU
+
+BO_ 556 SCU_16: 8 SCU
+ SG_ SCU_16_Checksum : 63|8@0+ (1,0) [0|205] "-"  ADCU
+ SG_ SCU_16_MsgCounter : 51|4@0+ (1,0) [0|15] "-"  ADCU
+ SG_ VCU_ActVehWheelTorq : 39|14@0+ (1,0) [0|10000] "Nm"  ADCU
+ SG_ VCU_LateralAssistBtnInfoVD : 28|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ VCU_LateralAssistBtnInfo : 27|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ VCU_ACCMaxRecpDecelVD : 26|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ VCU_ACCMaxRecpDecel : 23|8@0+ (0.05,-5) [-5|7.75] "m/s2"  ADCU
+
+BO_ 555 SCU_15: 8 SCU
+ SG_ VCU_CrntGearLvl : 38|3@0+ (1,0) [0|7] ""  ADCU
+ SG_ VCU_CrntGearLvlVD : 35|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ VCU_ActRecpTorq : 9|10@0+ (2,0) [0|2000] "Nm"  ADCU
+ SG_ VCU_ActRecpTorqSt : 11|2@0+ (1,0) [0|3] ""  ADCU
+
+BO_ 706 SCU_14: 8 SCU
+ SG_ VCU_VehRng : 7|10@0+ (1,0) [0|1000] "km"  ADCU
+ SG_ VCU_VehDrvMod : 13|3@0+ (1,0) [0|7] "-"  ADCU
+ SG_ VCU_VehRdySt : 10|1@0+ (1,0) [0|1] "-"  ADCU
+
+BO_ 554 SCU_13: 8 SCU
+ SG_ SCU_LngAutoChecklReport : 39|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ SCU_LatAutoCheckReport : 55|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ SCU_LngQuitReport : 15|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ SCU_LatQuitReport : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SCU_13_Checksum : 63|8@0+ (1,0) [0|255] ""  ADCU
+ SG_ SCU_13_MsgCounter : 51|4@0+ (1,0) [0|15] ""  ADCU
+ SG_ SCU_StrngWhlIntv : 7|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ VCU_GearLeverIntv : 6|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ SCU_EStopSwStVD : 5|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ SCU_EStopSwSt : 4|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ SCU_LatCtrlMode : 3|2@0+ (1,0) [0|3] ""  ADCU
+ SG_ SCU_LngCtrlMode : 1|2@0+ (1,0) [0|3] ""  ADCU
+
+BO_ 705 SCU_12: 8 SCU
+ SG_ SCU_12_Checksum : 63|8@0+ (1,0) [0|255] ""  ADCU
+ SG_ SCU_12_MsgCounter : 51|4@0+ (1,0) [0|15] ""  ADCU
+ SG_ SRS_DriverSeatBeltSt : 3|2@0+ (1,0) [0|3] ""  ADCU
+ SG_ SRS_PsngrSeatBeltSt : 1|2@0+ (1,0) [0|3] ""  ADCU
+
+BO_ 704 SCU_11: 8 SCU
+ SG_ SCU_11_Checksum : 63|8@0+ (1,0) [0|255] ""  ADCU
+ SG_ SCU_11_MsgCounter : 51|4@0+ (1,0) [0|15] ""  ADCU
+ SG_ BCM_CtrlAvailable : 18|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCM_HornSt : 17|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCM_HazardLampSt : 16|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCM_RightTurnLampFaultSt : 15|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCM_RightTurnLampSt : 14|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCM_LeftTurnLampFaultSt : 13|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCM_LeftTurnLampSt : 12|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCM_RRDoorAjarSt : 11|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCM_RLDoorAjarSt : 10|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCM_PsngrDoorAjarSt : 9|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCM_DriverDoorAjarSt : 8|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCM_RearFogLampSt : 7|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCM_FrontFogLampSt : 6|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCM_HighBeamSt : 5|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCM_LowBeamSt : 4|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCM_KeySt : 3|2@0+ (1,0) [0|3] ""  ADCU
+ SG_ BCM_FrontWiperSt : 1|2@0+ (1,0) [0|3] ""  ADCU
+
+BO_ 553 SCU_10: 8 SCU
+ SG_ SCU_10_Checksum : 63|8@0+ (1,0) [0|255] ""  ADCU
+ SG_ EPS_StrngWhlTorq : 47|8@0+ (0.1,-12.7) [-12.5|12.5] "Nm"  ADCU
+ SG_ EPS_SteeringAngleSpd : 29|8@0+ (4,0) [0|1016] "deg/sec"  ADCU
+ SG_ EPS_SteeringAngleVD : 34|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ EPS_ThermalSt : 31|2@0+ (1,0) [0|3] ""  ADCU
+ SG_ EPS_SteeringAngle : 15|16@0+ (0.1,-780) [-780|779.9] "deg"  ADCU
+ SG_ EPS_SteeringAngleSpdVD : 7|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ SCU_10_MsgCounter : 5|4@0+ (1,0) [0|15] ""  ADCU
+ SG_ EPS_WarnLamp : 1|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ EPS_StrngWhlTorqVD : 0|1@0+ (1,0) [0|1] ""  ADCU
+
+BO_ 552 SCU_9: 8 SCU
+ SG_ SCU_9_Checksum : 63|8@0+ (1,0) [0|255] ""  ADCU
+ SG_ EPB_FailSt : 55|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ SCU_9_MsgCounter : 51|4@0+ (1,0) [0|15] ""  ADCU
+ SG_ EPB_SysSt : 10|3@0+ (1,0) [0|7] ""  ADCU
+ SG_ EPB_SwitchStVD : 2|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ EPB_SwitchSt : 1|2@0+ (1,0) [0|3] ""  ADCU
+
+BO_ 551 SCU_8: 8 SCU
+ SG_ SCU_8_Checksum : 63|8@0+ (1,0) [0|255] ""  ADCU
+ SG_ BCS_ActVehLaltrlAccelVD : 53|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_ActVehLongAccelVD : 52|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ SCU_8_MsgCounter : 51|4@0+ (1,0) [0|15] ""  ADCU
+ SG_ BCS_VehLaltrlAccelOffset : 35|12@0+ (0.027126736,-21.593) [-21.593|21.593] "m/s^2"  ADCU
+ SG_ BCS_ActVehLaltrlAccel : 31|12@0+ (0.027126736,-21.593) [-21.593|21.593] "m/s^2"  ADCU
+ SG_ BCS_VehLongAccelOffset : 11|12@0+ (0.027126736,-21.593) [-21.593|21.593] "m/s^2"  ADCU
+ SG_ BCS_ActVehLongAccel : 7|12@0+ (0.027126736,-21.593) [-21.593|21.593] "m/s^2"  ADCU
+
+BO_ 550 SCU_7: 8 SCU
+ SG_ SCU_7_Checksum : 63|8@0+ (1,0) [0|255] ""  ADCU
+ SG_ SCU_7_MsgCounter : 51|4@0+ (1,0) [0|15] ""  ADCU
+ SG_ BCS_RRWheelSpd : 28|13@0+ (0.05625,0) [0|240] "km/h"  ADCU
+ SG_ BCS_RRWheelSpdVD : 31|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_RRWheelRotatedDirection : 30|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_RRWheelRotatedDirectionVD : 29|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_RLWheelSpd : 12|13@0+ (0.05625,0) [0|240] "km/h"  ADCU
+ SG_ BCS_RLWheelRotatedDirectionVD : 7|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_RLWheelRotatedDirection : 6|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_RLWheelSpdVD : 5|1@0+ (1,0) [0|1] ""  ADCU
+
+BO_ 549 SCU_6: 8 SCU
+ SG_ SCU_6_Checksum : 63|8@0+ (1,0) [0|255] ""  ADCU
+ SG_ SCU_6_MsgCounter : 51|4@0+ (1,0) [0|15] ""  ADCU
+ SG_ BCS_FRWheelSpd : 28|13@0+ (0.05625,0) [0|240] "km/h"  ADCU
+ SG_ BCS_FRWheelSpdVD : 31|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_FRWheelRotatedDirection : 30|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_FRWheelRotatedDirectionVD : 29|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_FLWheelSpd : 12|13@0+ (0.05625,0) [0|240] "km/h"  ADCU
+ SG_ BCS_FLWheelRotatedDirectionVD : 7|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_FLWheelRotatedDirection : 6|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_FLWheelSpdVD : 5|1@0+ (1,0) [0|1] ""  ADCU
+
+BO_ 385 SCU_5: 8 SCU
+ SG_ SCU_5_Checksum : 63|8@0+ (1,0) [0|255] "-"  ADCU
+ SG_ BCS_CDDFail : 47|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_VehicleStandStillSt : 42|2@0+ (1,0) [0|3] ""  ADCU
+ SG_ BCS_CDDAvailable : 39|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_CDDActive : 38|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_AEBAvailable : 35|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_AEBActive : 34|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_MasterCylinderPrOffset : 17|10@0+ (0.1,-15) [-15|15] "bar"  ADCU
+ SG_ SCU_5_MsgCounter : 23|4@0+ (1,0) [0|15] ""  ADCU
+ SG_ BCS_MasterCylinderPr : 3|12@0+ (0.1,0) [0|250] "bar"  ADCU
+ SG_ BCS_MasterCylinderPrOffsetVD : 7|1@0+ (1,0) [0|1] "-"  ADCU
+ SG_ BCS_MasterCylinderPrVD : 6|1@0+ (1,0) [0|1] "-"  ADCU
+ SG_ BCS_NoBrakeForce : 4|1@0+ (1,0) [0|1] ""  ADCU
+
+BO_ 548 SCU_4: 8 SCU
+ SG_ SCU_4_Checksum : 63|8@0+ (1,0) [0|255] "-"  ADCU
+ SG_ SCU_4_MsgCounter : 30|4@0+ (1,0) [0|15] "-"  ADCU
+ SG_ BCS_HDCErrSt : 22|1@0+ (1,0) [0|1] "-"  ADCU
+ SG_ BCS_HDCCtrlSt : 20|2@0+ (1,0) [0|3] "-"  ADCU
+
+BO_ 547 SCU_3: 8 SCU
+ SG_ SCU_3_Checksum : 63|8@0+ (1,0) [0|255] ""  ADCU
+ SG_ BCS_YawRateOffset : 19|12@0+ (0.0009765625,-0.13) [-0.13|0.13] "rad/s"  ADCU
+ SG_ SCU_3_MsgCounter : 23|4@0+ (1,0) [0|15] ""  ADCU
+ SG_ BCS_YawRate : 3|12@0+ (0.0009765625,-2.0943) [-2.0943|1.9047234375] "rad/s"  ADCU
+ SG_ BCS_YawRateSt : 4|1@0+ (1,0) [0|1] ""  ADCU
+
+BO_ 546 SCU_2: 8 SCU
+ SG_ SCU_2_Checksum : 63|8@0+ (1,0) [0|255] ""  ADCU
+ SG_ SCU_2_MsgCounter : 55|4@0+ (1,0) [0|15] ""  ADCU
+ SG_ BCS_RRWheelSpdEdgesSumVD : 51|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_RLWheelSpdEdgesSumVD : 50|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_FRWheelSpdEdgesSumVD : 49|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_FLWheelSpdEdgesSumVD : 48|1@0+ (1,0) [0|1] ""  ADCU
+ SG_ BCS_RRWheelSpdEdgesSum : 35|12@0+ (1,0) [0|4095] ""  ADCU
+ SG_ BCS_RLWheelSpdEdgesSum : 31|12@0+ (1,0) [0|4095] ""  ADCU
+ SG_ BCS_FRWheelSpdEdgesSum : 11|12@0+ (1,0) [0|4095] ""  ADCU
+ SG_ BCS_FLWheelSpdEdgesSum : 7|12@0+ (1,0) [0|4095] ""  ADCU
+
+BO_ 384 SCU_1: 8 SCU
+ SG_ SCU_1_Checksum : 63|8@0+ (1,0) [0|255] "-"  ADCU
+ SG_ BCS_VDCActiveSt : 53|1@0+ (1,0) [0|1] "-"  ADCU
+ SG_ SCU_1_MsgCounter : 51|4@0+ (1,0) [0|15] "-"  ADCU
+ SG_ BCS_VehSpd : 36|13@0+ (0.05625,0) [0|240] "km/h"  ADCU
+ SG_ BCS_VehSpdVD : 37|1@0+ (1,0) [0|1] "-"  ADCU
+ SG_ BCS_VDCFaultSt : 7|1@0+ (1,0) [0|1] "-"  ADCU
+ SG_ BCS_ABSFaultSt : 2|1@0+ (1,0) [0|1] "-"  ADCU
+ SG_ BCS_ABSActiveSt : 1|1@0+ (1,0) [0|1] "-"  ADCU
+
+
+
+CM_ SG_ 640 ADCU_3_Checksum "Message checksum";
+CM_ SG_ 640 ADCU_3_MsgCounter "Message counter of ADCU_3";
+CM_ SG_ 640 ADCU_BeamReq "Low / High beam control request";
+CM_ SG_ 640 ADCU_HornRingReq "Horn control request";
+CM_ SG_ 640 ADCU_TurnLightReq "Turn light control request";
+CM_ SG_ 640 ADCU_BodyCtrlReq "Enable vehicle body control";
+CM_ SG_ 545 ADCU_2_Checksum "Message checksum";
+CM_ SG_ 545 ADCU_2_MsgCounter "Message counter of ADCU_2";
+CM_ SG_ 545 ADCU_SteerAngSpdLimt "Limitation of steering angular speed�� EPS will not let the angular speed of steering wheel be over this limitation: only active in automatic driving mode";
+CM_ SG_ 545 ADCU_SteerWhlTorqReq "Demand torque of steering wheel((turn left+ turn right-))";
+CM_ SG_ 545 ADCU_SteerAngReq "The request steering wheel angle to EPS (turn left+ turn right-): only
+active in automatic driving mode. This is not available now.";
+CM_ SG_ 545 ADCU_LatCtrlReq "EPS on request";
+CM_ SG_ 544 ADCU_1_Checksum "Message checksum";
+CM_ SG_ 544 ADCU_1_MsgCounter "Message counter of ADCU_1";
+CM_ SG_ 544 ADCU_GearLvlReq "Gear lever position request for the vehicle motion control. When the demand Gear is P, the vehicle will apply EPB automatically.";
+CM_ SG_ 544 ADCU_GearLvlReqVD "Enable flag to control the gear box";
+CM_ SG_ 544 ADCU_ParkingReqToEPB "Release brake request to EPB.";
+CM_ SG_ 544 ADCU_ParkingReqToEPBVD "SCU request EPB function
+valid data";
+CM_ SG_ 544 ADCU_AutoTrqWhlReq "Automatic driving driving torque
+request: only active in automatic
+driving mode";
+CM_ SG_ 544 ADCU_LngCtrlReq "Longitudinal control request";
+CM_ SG_ 544 ADCU_BrakeReq "Brake request signal: only active in automatic driving mode.";
+CM_ SG_ 559 SCU_18_Checksum "Checksum signal for frame";
+CM_ SG_ 559 VCU_GasPedalVirtualPstVD "Virtual position of gas pedal position validity.";
+CM_ SG_ 559 VCU_BrkPedalStVD "VCU_BrakePedSt valid data";
+CM_ SG_ 559 VCU_BrkPedalSt "Brake pedal status";
+CM_ SG_ 559 SCU_18_MsgCounter "Message counter signal for frame";
+CM_ SG_ 559 VCU_GasPedalVirtualPst "Virtual position of gas pedal position.";
+CM_ SG_ 557 SCU_17_Checksum "Checksum signal for frame";
+CM_ SG_ 557 SCU_17_MsgCounter "Message counter signal for frame";
+CM_ SG_ 557 VCU_GasPedalActPst "Actual position of gas pedal.";
+CM_ SG_ 557 VCU_ACCButtInfo "ACC Button Information";
+CM_ SG_ 557 VCU_AccElecECFail "Indicate the error state of electronic engine control.";
+CM_ SG_ 557 VCU_GasPedalActPstVD "Actual position of gas pedal validity.";
+CM_ SG_ 557 VCU_VehWheelTorqMax "Actual effective maximum adjustable torque on wheel level";
+CM_ SG_ 556 SCU_16_Checksum "Message checksum";
+CM_ SG_ 556 SCU_16_MsgCounter "The MessageCounter is a 0 ~ 15 counter, increased of one unit on every message transmission";
+CM_ SG_ 556 VCU_ActVehWheelTorq "Actual effective engine torque on wheel level";
+CM_ SG_ 556 VCU_LateralAssistBtnInfoVD "Lateral assist button Information valid data";
+CM_ SG_ 556 VCU_LateralAssistBtnInfo "Lateral assist button Information";
+CM_ SG_ 556 VCU_ACCMaxRecpDecelVD "VCU_ACCMaxRecpDecel valid validity";
+CM_ SG_ 556 VCU_ACCMaxRecpDecel "Current maximum recuperation deceleration of generator";
+CM_ SG_ 555 VCU_CrntGearLvl "VCU current carry out gear level";
+CM_ SG_ 555 VCU_CrntGearLvlVD "VCU current carry out gear level valid data";
+CM_ SG_ 555 VCU_ActRecpTorq "Current recuperation torque of generator";
+CM_ SG_ 555 VCU_ActRecpTorqSt "Status of recuperation torque of generator";
+CM_ SG_ 706 VCU_VehRng "Total range for display";
+CM_ SG_ 706 VCU_VehDrvMod "Drive mode for display";
+CM_ SG_ 706 VCU_VehRdySt "HEV system ready status";
+CM_ SG_ 554 SCU_LngAutoChecklReport "Check report for Longitudinal control request(MANUAL->AUTO).";
+CM_ SG_ 554 SCU_LatAutoCheckReport "Check report for Lateral control request(MANUAL->AUTO)";
+CM_ SG_ 554 SCU_LngQuitReport "Longitudinal control quit report(Auto->Quit).";
+CM_ SG_ 554 SCU_LatQuitReport "Lateral control quit report(Auto->Quit).";
+CM_ SG_ 554 SCU_13_Checksum "Message checksum";
+CM_ SG_ 554 SCU_13_MsgCounter "The message counter is a 0-15 counter, increased of one unit on every message transmission";
+CM_ SG_ 554 SCU_StrngWhlIntv "Steering wheel intervention";
+CM_ SG_ 554 VCU_GearLeverIntv "Gear intervention";
+CM_ SG_ 554 SCU_EStopSwStVD "Emergency switch status validity";
+CM_ SG_ 554 SCU_EStopSwSt "Emergency switch status";
+CM_ SG_ 554 SCU_LatCtrlMode "Lateral control mode";
+CM_ SG_ 554 SCU_LngCtrlMode "Longitudinal control mode";
+CM_ SG_ 705 SCU_12_Checksum "Message checksum";
+CM_ SG_ 705 SCU_12_MsgCounter "The message counter is a 0-15 counter, increased of one unit on every message transmission";
+CM_ SG_ 705 SRS_DriverSeatBeltSt "To identify whether Driver Seat Belt is buckled";
+CM_ SG_ 705 SRS_PsngrSeatBeltSt "To identify whether Passenger Seat Belt is buckled";
+CM_ SG_ 704 SCU_11_MsgCounter "Message counter";
+CM_ SG_ 704 BCM_CtrlAvailable "Body control is available";
+CM_ SG_ 704 BCM_HornSt "Horn status";
+CM_ SG_ 704 BCM_HazardLampSt "Hazard lamp status";
+CM_ SG_ 704 BCM_RightTurnLampFaultSt "Right turn lamp fault status";
+CM_ SG_ 704 BCM_RightTurnLampSt "Right turn lamp status";
+CM_ SG_ 704 BCM_LeftTurnLampFaultSt "Left turn lamp fault status";
+CM_ SG_ 704 BCM_LeftTurnLampSt "Left turn lamp status";
+CM_ SG_ 704 BCM_RRDoorAjarSt "Rear right door ajar status";
+CM_ SG_ 704 BCM_RLDoorAjarSt "Rear left door ajar status";
+CM_ SG_ 704 BCM_PsngrDoorAjarSt "Passenger door ajar status";
+CM_ SG_ 704 BCM_DriverDoorAjarSt "Driver door ajar status";
+CM_ SG_ 704 BCM_RearFogLampSt "Rear fog lamp status";
+CM_ SG_ 704 BCM_FrontFogLampSt "Front fog lamp status";
+CM_ SG_ 704 BCM_HighBeamSt "High beam status";
+CM_ SG_ 704 BCM_LowBeamSt "Low beam status";
+CM_ SG_ 704 BCM_KeySt "Ignition key position status";
+CM_ SG_ 704 BCM_FrontWiperSt "Front wiper status";
+CM_ SG_ 553 SCU_10_Checksum "Message checksum";
+CM_ SG_ 553 EPS_StrngWhlTorq "Steering wheel Torque";
+CM_ SG_ 553 EPS_SteeringAngleSpd "steering wheel angle speed";
+CM_ SG_ 553 EPS_SteeringAngleVD "Steering wheel angle valid value";
+CM_ SG_ 553 EPS_ThermalSt "System Thermal status";
+CM_ SG_ 553 EPS_SteeringAngle "Steering wheel angle";
+CM_ SG_ 553 EPS_SteeringAngleSpdVD "Steering wheel angle speed valid value";
+CM_ SG_ 553 SCU_10_MsgCounter "Check the MessageCounter consistency atleast on every message reception";
+CM_ SG_ 553 EPS_WarnLamp "Steering Warning Lamp";
+CM_ SG_ 553 EPS_StrngWhlTorqVD "Steering Wheel Torque valid value";
+CM_ SG_ 552 SCU_9_Checksum "Message checksum";
+CM_ SG_ 552 EPB_FailSt "EPB fail status,to indicate wether EPB can response to external apply  request or not";
+CM_ SG_ 552 SCU_9_MsgCounter "Message counter";
+CM_ SG_ 552 EPB_SysSt "EPB system status";
+CM_ SG_ 552 EPB_SwitchStVD "EPB switch status validity";
+CM_ SG_ 552 EPB_SwitchSt "EPB switch status";
+CM_ SG_ 551 BCS_ActVehLaltrlAccelVD "Quality/fault information to actual vehicle lateral acceleration";
+CM_ SG_ 551 BCS_ActVehLongAccelVD "Quality/fault information to actual vehicle longitudinal acceleration";
+CM_ SG_ 551 SCU_8_MsgCounter "The message counter is a 0-15 counter, increased of one unit on every message transmission";
+CM_ SG_ 551 BCS_VehLaltrlAccelOffset "Actual vehicle lateral acceleration offset";
+CM_ SG_ 551 BCS_ActVehLaltrlAccel "Actual vehicle lateral acceleration";
+CM_ SG_ 551 BCS_VehLongAccelOffset "Actual vehicle longitudinal acceleration offset";
+CM_ SG_ 551 BCS_ActVehLongAccel "Actual vehicle longitudinal acceleration";
+CM_ SG_ 550 SCU_7_MsgCounter "The message counter is a 0-15 counter, increased of one unit on every message transmission";
+CM_ SG_ 550 BCS_RRWheelSpd "Current wheel speed information of rear right wheel";
+CM_ SG_ 550 BCS_RRWheelSpdVD "Quality/fault information to current wheel speed of RRont left wheel,be used for validity of BCS_RRWheelSpd and BCS_RRWheelSpdEdgesSum signal";
+CM_ SG_ 550 BCS_RRWheelRotatedDirection "RR wheel rotate direction";
+CM_ SG_ 550 BCS_RRWheelRotatedDirectionVD "RR wheel rotate direction validity";
+CM_ SG_ 550 BCS_RLWheelSpd "Current wheel speed information of rear left wheel";
+CM_ SG_ 550 BCS_RLWheelRotatedDirectionVD "RL wheel rotate direction validity";
+CM_ SG_ 550 BCS_RLWheelRotatedDirection "RL wheel rotate direction";
+CM_ SG_ 550 BCS_RLWheelSpdVD "Quality/fault information to current wheel speed of front left wheel,be used for validity of BCS_RLWheelSpd and BCS_RLWheelSpdEdgesSum signal";
+CM_ SG_ 549 SCU_6_MsgCounter "The message counter is a 0-15 counter, increased of one unit on every message transmission";
+CM_ SG_ 549 BCS_FRWheelSpd "Current wheel speed information of front right wheel";
+CM_ SG_ 549 BCS_FRWheelSpdVD "Quality/fault information to current wheel speed of front left wheel,be used for validity of BCS_FRWheelSpd and BCS_FRWheelSpdEdgesSum signal";
+CM_ SG_ 549 BCS_FRWheelRotatedDirection "FR wheel rotate direction";
+CM_ SG_ 549 BCS_FRWheelRotatedDirectionVD "FR wheel rotate direction validity";
+CM_ SG_ 549 BCS_FLWheelSpd "Current wheel speed information of front left wheel";
+CM_ SG_ 549 BCS_FLWheelRotatedDirectionVD "FL wheel rotate direction validity";
+CM_ SG_ 549 BCS_FLWheelRotatedDirection "FL wheel rotate direction";
+CM_ SG_ 549 BCS_FLWheelSpdVD "Quality/fault information to current wheel speed of front left wheel,be used for validity of BCS_FLWheelSpd and BCS_FLWheelSpdEdgesSum signal";
+CM_ SG_ 385 BCS_CDDFail "CDD in failure";
+CM_ SG_ 385 BCS_VehicleStandStillSt "Indicating whether the vehicle is standstill or not;
+must not be set until standstill is surely reached.";
+CM_ SG_ 385 BCS_CDDAvailable "CDD(Controlled Deceleration for Driver) is available";
+CM_ SG_ 385 BCS_CDDActive "CDD(Controlled Deceleration for Driver) is active";
+CM_ SG_ 385 BCS_AEBAvailable "AEB(Automatic Emergency
+Braking) is available";
+CM_ SG_ 385 BCS_AEBActive "AEB(Automatic Emergency
+Braking) is active (in deceleration)";
+CM_ SG_ 385 BCS_MasterCylinderPrOffset "Master cylinder pressure offset";
+CM_ SG_ 385 BCS_MasterCylinderPr "Master cylinder pressure";
+CM_ SG_ 385 BCS_MasterCylinderPrOffsetVD "Master cylinder pressure offset valid value";
+CM_ SG_ 385 BCS_MasterCylinderPrVD "The valid value of BCS_MasterCylinderPr";
+CM_ SG_ 385 BCS_NoBrakeForce "No brake pressure applied,generally it regards wheel cylinder presure";
+CM_ SG_ 548 SCU_4_Checksum "Message checksum";
+CM_ SG_ 548 SCU_4_MsgCounter "Message counter";
+CM_ SG_ 548 BCS_HDCErrSt "HDC error Status";
+CM_ SG_ 548 BCS_HDCCtrlSt "HDC(Hill Descent Control) Control status";
+CM_ SG_ 547 SCU_3_Checksum "Message checksum";
+CM_ SG_ 547 BCS_YawRateOffset "Yaw rate offset";
+CM_ SG_ 547 BCS_YawRate "Yaw rate";
+CM_ SG_ 547 BCS_YawRateSt "Yaw rate status";
+CM_ SG_ 546 SCU_2_MsgCounter "The message counter is a 0-15 counter, increased of one unit on every message transmission";
+CM_ SG_ 546 BCS_RRWheelSpdEdgesSumVD "Quality/fault information to current wheel speed edges sum of rear right wheel";
+CM_ SG_ 546 BCS_RLWheelSpdEdgesSumVD "Quality/fault information to current wheel speed edges sum of rear left wheel";
+CM_ SG_ 546 BCS_FRWheelSpdEdgesSumVD "Quality/fault information to current wheel speed edges sum of front right wheel";
+CM_ SG_ 546 BCS_FLWheelSpdEdgesSumVD "Quality/fault information to current wheel speed edges sum of front left wheel";
+CM_ SG_ 546 BCS_RRWheelSpdEdgesSum "Accumulated sum of rising and falling edges of  rear right wheel speed sensor output，since IGN ON( the wheel plate have 43 teeth/cycle,the edge is 86)";
+CM_ SG_ 546 BCS_RLWheelSpdEdgesSum "Accumulated sum of rising and falling edges of rear left wheel speed sensor output，since IGN ON( the wheel plate have 43teeth/cycle,the edge is 86)";
+CM_ SG_ 546 BCS_FRWheelSpdEdgesSum "Accumulated sum of rising and falling edges of front right wheel speed sensor output，since IGN ON( the wheel plate have 43 teeth/cycle,the edge is 86)";
+CM_ SG_ 546 BCS_FLWheelSpdEdgesSum "Accumulated sum of rising and falling edges of front left wheel speed sensor output，since IGN ON( the wheel plate have 43 teeth/cycle,the edge is 86)";
+CM_ SG_ 384 BCS_VDCActiveSt "Indication that VDC system currently performs a brake/engine intervention";
+CM_ SG_ 384 SCU_1_MsgCounter "The MessageCounter is a 0 ~ 15 counter, increased of one unit on every message transmission";
+CM_ SG_ 384 BCS_VehSpd "Vehicle speed";
+CM_ SG_ 384 BCS_VehSpdVD "Quality/fault information to vehicle speed";
+CM_ SG_ 384 BCS_VDCFaultSt "VDC is switched off due to detected failure";
+CM_ SG_ 384 BCS_ABSFaultSt "ABS system has detected a failure which does no allow a reliable ABS regulation and is therefore switched off";
+CM_ SG_ 384 BCS_ABSActiveSt "Indication that ABS system currently performs a brake intervention";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ SG_  "Remark" STRING ;
+BA_DEF_ SG_  "EventCommandSignal" ENUM  "No","Yes";
+BA_DEF_ SG_  "GatewayedSignals" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigTimeoutValue" INT 0 0;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ SG_  "GenSigInvalidValue" INT 0 0;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "DiagMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "NmMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Trigger","Passive";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Periodic","Event","IfActive","POE","PA";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "Remark" "*";
+BA_DEF_DEF_  "EventCommandSignal" "No";
+BA_DEF_DEF_  "GatewayedSignals" "No";
+BA_DEF_DEF_  "GenSigTimeoutValue" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInvalidValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "DiagMessage" "No";
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenSigSendType" "Trigger";
+BA_DEF_DEF_  "GenMsgSendType" "Periodic";
+BA_ "BusType" "CAN";
+BA_ "GenMsgSendType" BO_ 640 0;
+BA_ "GenMsgCycleTimeFast" BO_ 640 0;
+BA_ "GenMsgCycleTime" BO_ 640 50;
+BA_ "GenMsgSendType" BO_ 545 0;
+BA_ "GenMsgCycleTimeFast" BO_ 545 0;
+BA_ "GenMsgCycleTime" BO_ 545 20;
+BA_ "GenMsgSendType" BO_ 544 0;
+BA_ "GenMsgCycleTimeFast" BO_ 544 0;
+BA_ "GenMsgCycleTime" BO_ 544 20;
+BA_ "GenMsgSendType" BO_ 559 0;
+BA_ "GenMsgCycleTimeFast" BO_ 559 0;
+BA_ "GenMsgCycleTime" BO_ 559 20;
+BA_ "GenMsgSendType" BO_ 557 0;
+BA_ "GenMsgCycleTimeFast" BO_ 557 0;
+BA_ "GenMsgCycleTime" BO_ 557 20;
+BA_ "GenMsgSendType" BO_ 556 0;
+BA_ "GenMsgCycleTimeFast" BO_ 556 0;
+BA_ "GenMsgCycleTime" BO_ 556 20;
+BA_ "GenMsgSendType" BO_ 555 0;
+BA_ "GenMsgCycleTimeFast" BO_ 555 0;
+BA_ "GenMsgCycleTime" BO_ 555 20;
+BA_ "GenMsgSendType" BO_ 706 0;
+BA_ "GenMsgCycleTimeFast" BO_ 706 0;
+BA_ "GenMsgCycleTime" BO_ 706 100;
+BA_ "GenMsgSendType" BO_ 554 0;
+BA_ "GenMsgCycleTimeFast" BO_ 554 0;
+BA_ "GenMsgCycleTime" BO_ 554 20;
+BA_ "GenMsgSendType" BO_ 705 0;
+BA_ "GenMsgCycleTimeFast" BO_ 705 0;
+BA_ "GenMsgCycleTime" BO_ 705 100;
+BA_ "GenMsgSendType" BO_ 704 0;
+BA_ "GenMsgCycleTimeFast" BO_ 704 0;
+BA_ "GenMsgCycleTime" BO_ 704 100;
+BA_ "GenMsgSendType" BO_ 553 0;
+BA_ "GenMsgCycleTimeFast" BO_ 553 0;
+BA_ "GenMsgCycleTime" BO_ 553 20;
+BA_ "GenMsgSendType" BO_ 552 0;
+BA_ "GenMsgCycleTimeFast" BO_ 552 0;
+BA_ "GenMsgCycleTime" BO_ 552 20;
+BA_ "GenMsgSendType" BO_ 551 0;
+BA_ "GenMsgCycleTimeFast" BO_ 551 0;
+BA_ "GenMsgCycleTime" BO_ 551 20;
+BA_ "GenMsgSendType" BO_ 550 0;
+BA_ "GenMsgCycleTimeFast" BO_ 550 0;
+BA_ "GenMsgCycleTime" BO_ 550 20;
+BA_ "GenMsgSendType" BO_ 549 0;
+BA_ "GenMsgCycleTimeFast" BO_ 549 0;
+BA_ "GenMsgCycleTime" BO_ 549 20;
+BA_ "GenMsgSendType" BO_ 385 0;
+BA_ "GenMsgCycleTimeFast" BO_ 385 0;
+BA_ "GenMsgCycleTime" BO_ 385 10;
+BA_ "GenMsgSendType" BO_ 548 0;
+BA_ "GenMsgCycleTimeFast" BO_ 548 0;
+BA_ "GenMsgCycleTime" BO_ 548 20;
+BA_ "GenMsgSendType" BO_ 547 0;
+BA_ "GenMsgCycleTimeFast" BO_ 547 0;
+BA_ "GenMsgCycleTime" BO_ 547 20;
+BA_ "GenMsgSendType" BO_ 546 0;
+BA_ "GenMsgCycleTimeFast" BO_ 546 0;
+BA_ "GenMsgCycleTime" BO_ 546 20;
+BA_ "GenMsgSendType" BO_ 384 0;
+BA_ "GenMsgCycleTimeFast" BO_ 384 0;
+BA_ "GenMsgCycleTime" BO_ 384 10;
+BA_ "GenSigTimeoutValue" SG_ 640 ADCU_3_Checksum 0;
+BA_ "Remark" SG_ 640 ADCU_3_Checksum "";
+BA_ "EventCommandSignal" SG_ 640 ADCU_3_Checksum 0;
+BA_ "GatewayedSignals" SG_ 640 ADCU_3_Checksum 0;
+BA_ "GenSigSendType" SG_ 640 ADCU_3_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 640 ADCU_3_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 640 ADCU_3_Checksum 0;
+BA_ "GenSigStartValue" SG_ 640 ADCU_3_Checksum 0;
+BA_ "GenSigTimeoutValue" SG_ 640 ADCU_3_MsgCounter 0;
+BA_ "Remark" SG_ 640 ADCU_3_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 640 ADCU_3_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 640 ADCU_3_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 640 ADCU_3_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 640 ADCU_3_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 640 ADCU_3_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 640 ADCU_3_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 640 ADCU_BeamReq 0;
+BA_ "Remark" SG_ 640 ADCU_BeamReq "";
+BA_ "EventCommandSignal" SG_ 640 ADCU_BeamReq 0;
+BA_ "GatewayedSignals" SG_ 640 ADCU_BeamReq 0;
+BA_ "GenSigSendType" SG_ 640 ADCU_BeamReq 1;
+BA_ "GenSigInactiveValue" SG_ 640 ADCU_BeamReq 0;
+BA_ "GenSigInvalidValue" SG_ 640 ADCU_BeamReq 0;
+BA_ "GenSigStartValue" SG_ 640 ADCU_BeamReq 0;
+BA_ "GenSigTimeoutValue" SG_ 640 ADCU_HornRingReq 0;
+BA_ "Remark" SG_ 640 ADCU_HornRingReq "";
+BA_ "EventCommandSignal" SG_ 640 ADCU_HornRingReq 0;
+BA_ "GatewayedSignals" SG_ 640 ADCU_HornRingReq 0;
+BA_ "GenSigSendType" SG_ 640 ADCU_HornRingReq 1;
+BA_ "GenSigInactiveValue" SG_ 640 ADCU_HornRingReq 0;
+BA_ "GenSigInvalidValue" SG_ 640 ADCU_HornRingReq 0;
+BA_ "GenSigStartValue" SG_ 640 ADCU_HornRingReq 0;
+BA_ "GenSigTimeoutValue" SG_ 640 ADCU_TurnLightReq 0;
+BA_ "Remark" SG_ 640 ADCU_TurnLightReq "";
+BA_ "EventCommandSignal" SG_ 640 ADCU_TurnLightReq 0;
+BA_ "GatewayedSignals" SG_ 640 ADCU_TurnLightReq 0;
+BA_ "GenSigSendType" SG_ 640 ADCU_TurnLightReq 1;
+BA_ "GenSigInactiveValue" SG_ 640 ADCU_TurnLightReq 0;
+BA_ "GenSigInvalidValue" SG_ 640 ADCU_TurnLightReq 0;
+BA_ "GenSigStartValue" SG_ 640 ADCU_TurnLightReq 0;
+BA_ "GenSigTimeoutValue" SG_ 640 ADCU_BodyCtrlReq 0;
+BA_ "Remark" SG_ 640 ADCU_BodyCtrlReq "";
+BA_ "EventCommandSignal" SG_ 640 ADCU_BodyCtrlReq 0;
+BA_ "GatewayedSignals" SG_ 640 ADCU_BodyCtrlReq 0;
+BA_ "GenSigSendType" SG_ 640 ADCU_BodyCtrlReq 1;
+BA_ "GenSigInactiveValue" SG_ 640 ADCU_BodyCtrlReq 0;
+BA_ "GenSigInvalidValue" SG_ 640 ADCU_BodyCtrlReq 0;
+BA_ "GenSigStartValue" SG_ 640 ADCU_BodyCtrlReq 0;
+BA_ "GenSigTimeoutValue" SG_ 545 ADCU_2_Checksum 0;
+BA_ "Remark" SG_ 545 ADCU_2_Checksum "";
+BA_ "EventCommandSignal" SG_ 545 ADCU_2_Checksum 0;
+BA_ "GatewayedSignals" SG_ 545 ADCU_2_Checksum 0;
+BA_ "GenSigSendType" SG_ 545 ADCU_2_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 545 ADCU_2_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 545 ADCU_2_Checksum 0;
+BA_ "GenSigStartValue" SG_ 545 ADCU_2_Checksum 0;
+BA_ "GenSigTimeoutValue" SG_ 545 ADCU_2_MsgCounter 0;
+BA_ "Remark" SG_ 545 ADCU_2_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 545 ADCU_2_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 545 ADCU_2_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 545 ADCU_2_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 545 ADCU_2_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 545 ADCU_2_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 545 ADCU_2_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 545 ADCU_SteerAngSpdLimt 0;
+BA_ "Remark" SG_ 545 ADCU_SteerAngSpdLimt "";
+BA_ "EventCommandSignal" SG_ 545 ADCU_SteerAngSpdLimt 0;
+BA_ "GatewayedSignals" SG_ 545 ADCU_SteerAngSpdLimt 0;
+BA_ "GenSigSendType" SG_ 545 ADCU_SteerAngSpdLimt 1;
+BA_ "GenSigInactiveValue" SG_ 545 ADCU_SteerAngSpdLimt 0;
+BA_ "GenSigInvalidValue" SG_ 545 ADCU_SteerAngSpdLimt 0;
+BA_ "GenSigStartValue" SG_ 545 ADCU_SteerAngSpdLimt 0;
+BA_ "GenSigTimeoutValue" SG_ 545 ADCU_SteerWhlTorqReq 0;
+BA_ "Remark" SG_ 545 ADCU_SteerWhlTorqReq "";
+BA_ "EventCommandSignal" SG_ 545 ADCU_SteerWhlTorqReq 0;
+BA_ "GatewayedSignals" SG_ 545 ADCU_SteerWhlTorqReq 0;
+BA_ "GenSigSendType" SG_ 545 ADCU_SteerWhlTorqReq 1;
+BA_ "GenSigInactiveValue" SG_ 545 ADCU_SteerWhlTorqReq 0;
+BA_ "GenSigInvalidValue" SG_ 545 ADCU_SteerWhlTorqReq 0;
+BA_ "GenSigStartValue" SG_ 545 ADCU_SteerWhlTorqReq 0;
+BA_ "GenSigTimeoutValue" SG_ 545 ADCU_SteerAngReq 0;
+BA_ "Remark" SG_ 545 ADCU_SteerAngReq "";
+BA_ "EventCommandSignal" SG_ 545 ADCU_SteerAngReq 0;
+BA_ "GatewayedSignals" SG_ 545 ADCU_SteerAngReq 0;
+BA_ "GenSigSendType" SG_ 545 ADCU_SteerAngReq 1;
+BA_ "GenSigInactiveValue" SG_ 545 ADCU_SteerAngReq 0;
+BA_ "GenSigInvalidValue" SG_ 545 ADCU_SteerAngReq 0;
+BA_ "GenSigStartValue" SG_ 545 ADCU_SteerAngReq 0;
+BA_ "GenSigTimeoutValue" SG_ 545 ADCU_LatCtrlReq 0;
+BA_ "Remark" SG_ 545 ADCU_LatCtrlReq "";
+BA_ "EventCommandSignal" SG_ 545 ADCU_LatCtrlReq 0;
+BA_ "GatewayedSignals" SG_ 545 ADCU_LatCtrlReq 0;
+BA_ "GenSigSendType" SG_ 545 ADCU_LatCtrlReq 1;
+BA_ "GenSigInactiveValue" SG_ 545 ADCU_LatCtrlReq 0;
+BA_ "GenSigInvalidValue" SG_ 545 ADCU_LatCtrlReq 0;
+BA_ "GenSigStartValue" SG_ 545 ADCU_LatCtrlReq 0;
+BA_ "GenSigTimeoutValue" SG_ 544 ADCU_1_Checksum 0;
+BA_ "Remark" SG_ 544 ADCU_1_Checksum "";
+BA_ "EventCommandSignal" SG_ 544 ADCU_1_Checksum 0;
+BA_ "GatewayedSignals" SG_ 544 ADCU_1_Checksum 0;
+BA_ "GenSigSendType" SG_ 544 ADCU_1_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 544 ADCU_1_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 544 ADCU_1_Checksum 0;
+BA_ "GenSigStartValue" SG_ 544 ADCU_1_Checksum 0;
+BA_ "GenSigTimeoutValue" SG_ 544 ADCU_1_MsgCounter 0;
+BA_ "Remark" SG_ 544 ADCU_1_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 544 ADCU_1_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 544 ADCU_1_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 544 ADCU_1_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 544 ADCU_1_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 544 ADCU_1_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 544 ADCU_1_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 544 ADCU_GearLvlReq 0;
+BA_ "Remark" SG_ 544 ADCU_GearLvlReq "";
+BA_ "EventCommandSignal" SG_ 544 ADCU_GearLvlReq 0;
+BA_ "GatewayedSignals" SG_ 544 ADCU_GearLvlReq 0;
+BA_ "GenSigSendType" SG_ 544 ADCU_GearLvlReq 1;
+BA_ "GenSigInactiveValue" SG_ 544 ADCU_GearLvlReq 0;
+BA_ "GenSigInvalidValue" SG_ 544 ADCU_GearLvlReq 0;
+BA_ "GenSigStartValue" SG_ 544 ADCU_GearLvlReq 0;
+BA_ "GenSigTimeoutValue" SG_ 544 ADCU_GearLvlReqVD 0;
+BA_ "Remark" SG_ 544 ADCU_GearLvlReqVD "";
+BA_ "EventCommandSignal" SG_ 544 ADCU_GearLvlReqVD 0;
+BA_ "GatewayedSignals" SG_ 544 ADCU_GearLvlReqVD 0;
+BA_ "GenSigSendType" SG_ 544 ADCU_GearLvlReqVD 1;
+BA_ "GenSigInactiveValue" SG_ 544 ADCU_GearLvlReqVD 0;
+BA_ "GenSigInvalidValue" SG_ 544 ADCU_GearLvlReqVD 0;
+BA_ "GenSigStartValue" SG_ 544 ADCU_GearLvlReqVD 0;
+BA_ "GenSigTimeoutValue" SG_ 544 ADCU_ParkingReqToEPB 0;
+BA_ "Remark" SG_ 544 ADCU_ParkingReqToEPB "";
+BA_ "EventCommandSignal" SG_ 544 ADCU_ParkingReqToEPB 0;
+BA_ "GatewayedSignals" SG_ 544 ADCU_ParkingReqToEPB 0;
+BA_ "GenSigSendType" SG_ 544 ADCU_ParkingReqToEPB 1;
+BA_ "GenSigInactiveValue" SG_ 544 ADCU_ParkingReqToEPB 0;
+BA_ "GenSigInvalidValue" SG_ 544 ADCU_ParkingReqToEPB 0;
+BA_ "GenSigStartValue" SG_ 544 ADCU_ParkingReqToEPB 0;
+BA_ "GenSigTimeoutValue" SG_ 544 ADCU_ParkingReqToEPBVD 0;
+BA_ "Remark" SG_ 544 ADCU_ParkingReqToEPBVD "";
+BA_ "EventCommandSignal" SG_ 544 ADCU_ParkingReqToEPBVD 0;
+BA_ "GatewayedSignals" SG_ 544 ADCU_ParkingReqToEPBVD 0;
+BA_ "GenSigSendType" SG_ 544 ADCU_ParkingReqToEPBVD 1;
+BA_ "GenSigInactiveValue" SG_ 544 ADCU_ParkingReqToEPBVD 0;
+BA_ "GenSigInvalidValue" SG_ 544 ADCU_ParkingReqToEPBVD 0;
+BA_ "GenSigStartValue" SG_ 544 ADCU_ParkingReqToEPBVD 0;
+BA_ "GenSigTimeoutValue" SG_ 544 ADCU_AutoTrqWhlReq 0;
+BA_ "Remark" SG_ 544 ADCU_AutoTrqWhlReq "";
+BA_ "EventCommandSignal" SG_ 544 ADCU_AutoTrqWhlReq 0;
+BA_ "GatewayedSignals" SG_ 544 ADCU_AutoTrqWhlReq 0;
+BA_ "GenSigSendType" SG_ 544 ADCU_AutoTrqWhlReq 1;
+BA_ "GenSigInactiveValue" SG_ 544 ADCU_AutoTrqWhlReq 0;
+BA_ "GenSigInvalidValue" SG_ 544 ADCU_AutoTrqWhlReq 0;
+BA_ "GenSigStartValue" SG_ 544 ADCU_AutoTrqWhlReq 0;
+BA_ "GenSigTimeoutValue" SG_ 544 ADCU_LngCtrlReq 0;
+BA_ "Remark" SG_ 544 ADCU_LngCtrlReq "";
+BA_ "EventCommandSignal" SG_ 544 ADCU_LngCtrlReq 0;
+BA_ "GatewayedSignals" SG_ 544 ADCU_LngCtrlReq 0;
+BA_ "GenSigSendType" SG_ 544 ADCU_LngCtrlReq 1;
+BA_ "GenSigInactiveValue" SG_ 544 ADCU_LngCtrlReq 0;
+BA_ "GenSigInvalidValue" SG_ 544 ADCU_LngCtrlReq 0;
+BA_ "GenSigStartValue" SG_ 544 ADCU_LngCtrlReq 0;
+BA_ "GenSigTimeoutValue" SG_ 544 ADCU_BrakeReq 0;
+BA_ "Remark" SG_ 544 ADCU_BrakeReq "";
+BA_ "EventCommandSignal" SG_ 544 ADCU_BrakeReq 0;
+BA_ "GatewayedSignals" SG_ 544 ADCU_BrakeReq 0;
+BA_ "GenSigSendType" SG_ 544 ADCU_BrakeReq 1;
+BA_ "GenSigInactiveValue" SG_ 544 ADCU_BrakeReq 0;
+BA_ "GenSigInvalidValue" SG_ 544 ADCU_BrakeReq 0;
+BA_ "GenSigStartValue" SG_ 544 ADCU_BrakeReq 0;
+BA_ "GenSigTimeoutValue" SG_ 559 SCU_18_Checksum 0;
+BA_ "Remark" SG_ 559 SCU_18_Checksum "";
+BA_ "EventCommandSignal" SG_ 559 SCU_18_Checksum 0;
+BA_ "GatewayedSignals" SG_ 559 SCU_18_Checksum 0;
+BA_ "GenSigSendType" SG_ 559 SCU_18_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 559 SCU_18_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 559 SCU_18_Checksum 0;
+BA_ "GenSigStartValue" SG_ 559 SCU_18_Checksum 0;
+BA_ "GenSigTimeoutValue" SG_ 559 VCU_GasPedalVirtualPstVD 0;
+BA_ "Remark" SG_ 559 VCU_GasPedalVirtualPstVD "";
+BA_ "EventCommandSignal" SG_ 559 VCU_GasPedalVirtualPstVD 0;
+BA_ "GatewayedSignals" SG_ 559 VCU_GasPedalVirtualPstVD 0;
+BA_ "GenSigSendType" SG_ 559 VCU_GasPedalVirtualPstVD 1;
+BA_ "GenSigInactiveValue" SG_ 559 VCU_GasPedalVirtualPstVD 0;
+BA_ "GenSigInvalidValue" SG_ 559 VCU_GasPedalVirtualPstVD 0;
+BA_ "GenSigStartValue" SG_ 559 VCU_GasPedalVirtualPstVD 0;
+BA_ "GenSigTimeoutValue" SG_ 559 VCU_BrkPedalStVD 0;
+BA_ "Remark" SG_ 559 VCU_BrkPedalStVD "";
+BA_ "EventCommandSignal" SG_ 559 VCU_BrkPedalStVD 0;
+BA_ "GatewayedSignals" SG_ 559 VCU_BrkPedalStVD 0;
+BA_ "GenSigSendType" SG_ 559 VCU_BrkPedalStVD 1;
+BA_ "GenSigInactiveValue" SG_ 559 VCU_BrkPedalStVD 0;
+BA_ "GenSigInvalidValue" SG_ 559 VCU_BrkPedalStVD 0;
+BA_ "GenSigStartValue" SG_ 559 VCU_BrkPedalStVD 0;
+BA_ "GenSigTimeoutValue" SG_ 559 VCU_BrkPedalSt 0;
+BA_ "Remark" SG_ 559 VCU_BrkPedalSt "";
+BA_ "EventCommandSignal" SG_ 559 VCU_BrkPedalSt 0;
+BA_ "GatewayedSignals" SG_ 559 VCU_BrkPedalSt 0;
+BA_ "GenSigSendType" SG_ 559 VCU_BrkPedalSt 1;
+BA_ "GenSigInactiveValue" SG_ 559 VCU_BrkPedalSt 0;
+BA_ "GenSigInvalidValue" SG_ 559 VCU_BrkPedalSt 0;
+BA_ "GenSigStartValue" SG_ 559 VCU_BrkPedalSt 0;
+BA_ "GenSigTimeoutValue" SG_ 559 SCU_18_MsgCounter 0;
+BA_ "Remark" SG_ 559 SCU_18_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 559 SCU_18_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 559 SCU_18_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 559 SCU_18_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 559 SCU_18_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 559 SCU_18_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 559 SCU_18_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 559 VCU_GasPedalVirtualPst 0;
+BA_ "Remark" SG_ 559 VCU_GasPedalVirtualPst "";
+BA_ "EventCommandSignal" SG_ 559 VCU_GasPedalVirtualPst 0;
+BA_ "GatewayedSignals" SG_ 559 VCU_GasPedalVirtualPst 0;
+BA_ "GenSigSendType" SG_ 559 VCU_GasPedalVirtualPst 1;
+BA_ "GenSigInactiveValue" SG_ 559 VCU_GasPedalVirtualPst 0;
+BA_ "GenSigInvalidValue" SG_ 559 VCU_GasPedalVirtualPst 0;
+BA_ "GenSigStartValue" SG_ 559 VCU_GasPedalVirtualPst 0;
+BA_ "GenSigTimeoutValue" SG_ 557 SCU_17_Checksum 0;
+BA_ "Remark" SG_ 557 SCU_17_Checksum "";
+BA_ "EventCommandSignal" SG_ 557 SCU_17_Checksum 0;
+BA_ "GatewayedSignals" SG_ 557 SCU_17_Checksum 0;
+BA_ "GenSigSendType" SG_ 557 SCU_17_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 557 SCU_17_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 557 SCU_17_Checksum 0;
+BA_ "GenSigStartValue" SG_ 557 SCU_17_Checksum 0;
+BA_ "GenSigTimeoutValue" SG_ 557 SCU_17_MsgCounter 0;
+BA_ "Remark" SG_ 557 SCU_17_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 557 SCU_17_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 557 SCU_17_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 557 SCU_17_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 557 SCU_17_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 557 SCU_17_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 557 SCU_17_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 557 VCU_GasPedalActPst 0;
+BA_ "Remark" SG_ 557 VCU_GasPedalActPst "";
+BA_ "EventCommandSignal" SG_ 557 VCU_GasPedalActPst 0;
+BA_ "GatewayedSignals" SG_ 557 VCU_GasPedalActPst 0;
+BA_ "GenSigSendType" SG_ 557 VCU_GasPedalActPst 1;
+BA_ "GenSigInactiveValue" SG_ 557 VCU_GasPedalActPst 0;
+BA_ "GenSigInvalidValue" SG_ 557 VCU_GasPedalActPst 0;
+BA_ "GenSigStartValue" SG_ 557 VCU_GasPedalActPst 0;
+BA_ "GenSigTimeoutValue" SG_ 557 VCU_ACCButtInfo 0;
+BA_ "Remark" SG_ 557 VCU_ACCButtInfo "";
+BA_ "EventCommandSignal" SG_ 557 VCU_ACCButtInfo 0;
+BA_ "GatewayedSignals" SG_ 557 VCU_ACCButtInfo 0;
+BA_ "GenSigSendType" SG_ 557 VCU_ACCButtInfo 1;
+BA_ "GenSigInactiveValue" SG_ 557 VCU_ACCButtInfo 0;
+BA_ "GenSigInvalidValue" SG_ 557 VCU_ACCButtInfo 0;
+BA_ "GenSigStartValue" SG_ 557 VCU_ACCButtInfo 0;
+BA_ "GenSigTimeoutValue" SG_ 557 VCU_AccElecECFail 0;
+BA_ "Remark" SG_ 557 VCU_AccElecECFail "";
+BA_ "EventCommandSignal" SG_ 557 VCU_AccElecECFail 0;
+BA_ "GatewayedSignals" SG_ 557 VCU_AccElecECFail 0;
+BA_ "GenSigSendType" SG_ 557 VCU_AccElecECFail 1;
+BA_ "GenSigInactiveValue" SG_ 557 VCU_AccElecECFail 0;
+BA_ "GenSigInvalidValue" SG_ 557 VCU_AccElecECFail 0;
+BA_ "GenSigStartValue" SG_ 557 VCU_AccElecECFail 0;
+BA_ "GenSigTimeoutValue" SG_ 557 VCU_GasPedalActPstVD 0;
+BA_ "Remark" SG_ 557 VCU_GasPedalActPstVD "";
+BA_ "EventCommandSignal" SG_ 557 VCU_GasPedalActPstVD 0;
+BA_ "GatewayedSignals" SG_ 557 VCU_GasPedalActPstVD 0;
+BA_ "GenSigSendType" SG_ 557 VCU_GasPedalActPstVD 1;
+BA_ "GenSigInactiveValue" SG_ 557 VCU_GasPedalActPstVD 0;
+BA_ "GenSigInvalidValue" SG_ 557 VCU_GasPedalActPstVD 0;
+BA_ "GenSigStartValue" SG_ 557 VCU_GasPedalActPstVD 0;
+BA_ "GenSigTimeoutValue" SG_ 557 VCU_VehWheelTorqMax 0;
+BA_ "Remark" SG_ 557 VCU_VehWheelTorqMax "";
+BA_ "EventCommandSignal" SG_ 557 VCU_VehWheelTorqMax 0;
+BA_ "GatewayedSignals" SG_ 557 VCU_VehWheelTorqMax 0;
+BA_ "GenSigSendType" SG_ 557 VCU_VehWheelTorqMax 1;
+BA_ "GenSigInactiveValue" SG_ 557 VCU_VehWheelTorqMax 0;
+BA_ "GenSigInvalidValue" SG_ 557 VCU_VehWheelTorqMax 0;
+BA_ "GenSigStartValue" SG_ 557 VCU_VehWheelTorqMax 0;
+BA_ "GenSigTimeoutValue" SG_ 556 SCU_16_Checksum 0;
+BA_ "Remark" SG_ 556 SCU_16_Checksum "";
+BA_ "EventCommandSignal" SG_ 556 SCU_16_Checksum 0;
+BA_ "GatewayedSignals" SG_ 556 SCU_16_Checksum 0;
+BA_ "GenSigSendType" SG_ 556 SCU_16_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 556 SCU_16_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 556 SCU_16_Checksum 0;
+BA_ "GenSigStartValue" SG_ 556 SCU_16_Checksum 85;
+BA_ "GenSigTimeoutValue" SG_ 556 SCU_16_MsgCounter 0;
+BA_ "Remark" SG_ 556 SCU_16_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 556 SCU_16_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 556 SCU_16_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 556 SCU_16_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 556 SCU_16_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 556 SCU_16_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 556 SCU_16_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 556 VCU_ActVehWheelTorq 0;
+BA_ "Remark" SG_ 556 VCU_ActVehWheelTorq "";
+BA_ "EventCommandSignal" SG_ 556 VCU_ActVehWheelTorq 0;
+BA_ "GatewayedSignals" SG_ 556 VCU_ActVehWheelTorq 0;
+BA_ "GenSigSendType" SG_ 556 VCU_ActVehWheelTorq 1;
+BA_ "GenSigInactiveValue" SG_ 556 VCU_ActVehWheelTorq 0;
+BA_ "GenSigInvalidValue" SG_ 556 VCU_ActVehWheelTorq 0;
+BA_ "GenSigStartValue" SG_ 556 VCU_ActVehWheelTorq 0;
+BA_ "GenSigTimeoutValue" SG_ 556 VCU_LateralAssistBtnInfoVD 0;
+BA_ "Remark" SG_ 556 VCU_LateralAssistBtnInfoVD "";
+BA_ "EventCommandSignal" SG_ 556 VCU_LateralAssistBtnInfoVD 0;
+BA_ "GatewayedSignals" SG_ 556 VCU_LateralAssistBtnInfoVD 0;
+BA_ "GenSigSendType" SG_ 556 VCU_LateralAssistBtnInfoVD 1;
+BA_ "GenSigInactiveValue" SG_ 556 VCU_LateralAssistBtnInfoVD 0;
+BA_ "GenSigInvalidValue" SG_ 556 VCU_LateralAssistBtnInfoVD 0;
+BA_ "GenSigStartValue" SG_ 556 VCU_LateralAssistBtnInfoVD 0;
+BA_ "GenSigTimeoutValue" SG_ 556 VCU_LateralAssistBtnInfo 0;
+BA_ "Remark" SG_ 556 VCU_LateralAssistBtnInfo "";
+BA_ "EventCommandSignal" SG_ 556 VCU_LateralAssistBtnInfo 0;
+BA_ "GatewayedSignals" SG_ 556 VCU_LateralAssistBtnInfo 0;
+BA_ "GenSigSendType" SG_ 556 VCU_LateralAssistBtnInfo 1;
+BA_ "GenSigInactiveValue" SG_ 556 VCU_LateralAssistBtnInfo 0;
+BA_ "GenSigInvalidValue" SG_ 556 VCU_LateralAssistBtnInfo 0;
+BA_ "GenSigStartValue" SG_ 556 VCU_LateralAssistBtnInfo 0;
+BA_ "GenSigTimeoutValue" SG_ 556 VCU_ACCMaxRecpDecelVD 0;
+BA_ "Remark" SG_ 556 VCU_ACCMaxRecpDecelVD "";
+BA_ "EventCommandSignal" SG_ 556 VCU_ACCMaxRecpDecelVD 0;
+BA_ "GatewayedSignals" SG_ 556 VCU_ACCMaxRecpDecelVD 0;
+BA_ "GenSigSendType" SG_ 556 VCU_ACCMaxRecpDecelVD 1;
+BA_ "GenSigInactiveValue" SG_ 556 VCU_ACCMaxRecpDecelVD 0;
+BA_ "GenSigInvalidValue" SG_ 556 VCU_ACCMaxRecpDecelVD 0;
+BA_ "GenSigStartValue" SG_ 556 VCU_ACCMaxRecpDecelVD 0;
+BA_ "GenSigTimeoutValue" SG_ 556 VCU_ACCMaxRecpDecel 0;
+BA_ "Remark" SG_ 556 VCU_ACCMaxRecpDecel "";
+BA_ "EventCommandSignal" SG_ 556 VCU_ACCMaxRecpDecel 0;
+BA_ "GatewayedSignals" SG_ 556 VCU_ACCMaxRecpDecel 0;
+BA_ "GenSigSendType" SG_ 556 VCU_ACCMaxRecpDecel 1;
+BA_ "GenSigInactiveValue" SG_ 556 VCU_ACCMaxRecpDecel 0;
+BA_ "GenSigInvalidValue" SG_ 556 VCU_ACCMaxRecpDecel 0;
+BA_ "GenSigStartValue" SG_ 556 VCU_ACCMaxRecpDecel 0;
+BA_ "GenSigTimeoutValue" SG_ 555 VCU_CrntGearLvl 0;
+BA_ "Remark" SG_ 555 VCU_CrntGearLvl "";
+BA_ "EventCommandSignal" SG_ 555 VCU_CrntGearLvl 0;
+BA_ "GatewayedSignals" SG_ 555 VCU_CrntGearLvl 0;
+BA_ "GenSigSendType" SG_ 555 VCU_CrntGearLvl 1;
+BA_ "GenSigInactiveValue" SG_ 555 VCU_CrntGearLvl 0;
+BA_ "GenSigInvalidValue" SG_ 555 VCU_CrntGearLvl 0;
+BA_ "GenSigStartValue" SG_ 555 VCU_CrntGearLvl 0;
+BA_ "GenSigTimeoutValue" SG_ 555 VCU_CrntGearLvlVD 0;
+BA_ "Remark" SG_ 555 VCU_CrntGearLvlVD "";
+BA_ "EventCommandSignal" SG_ 555 VCU_CrntGearLvlVD 0;
+BA_ "GatewayedSignals" SG_ 555 VCU_CrntGearLvlVD 0;
+BA_ "GenSigSendType" SG_ 555 VCU_CrntGearLvlVD 1;
+BA_ "GenSigInactiveValue" SG_ 555 VCU_CrntGearLvlVD 0;
+BA_ "GenSigInvalidValue" SG_ 555 VCU_CrntGearLvlVD 0;
+BA_ "GenSigStartValue" SG_ 555 VCU_CrntGearLvlVD 0;
+BA_ "GenSigTimeoutValue" SG_ 555 VCU_ActRecpTorq 0;
+BA_ "Remark" SG_ 555 VCU_ActRecpTorq "";
+BA_ "EventCommandSignal" SG_ 555 VCU_ActRecpTorq 0;
+BA_ "GatewayedSignals" SG_ 555 VCU_ActRecpTorq 0;
+BA_ "GenSigSendType" SG_ 555 VCU_ActRecpTorq 1;
+BA_ "GenSigInactiveValue" SG_ 555 VCU_ActRecpTorq 0;
+BA_ "GenSigInvalidValue" SG_ 555 VCU_ActRecpTorq 0;
+BA_ "GenSigStartValue" SG_ 555 VCU_ActRecpTorq 0;
+BA_ "GenSigTimeoutValue" SG_ 555 VCU_ActRecpTorqSt 0;
+BA_ "Remark" SG_ 555 VCU_ActRecpTorqSt "";
+BA_ "EventCommandSignal" SG_ 555 VCU_ActRecpTorqSt 0;
+BA_ "GatewayedSignals" SG_ 555 VCU_ActRecpTorqSt 0;
+BA_ "GenSigSendType" SG_ 555 VCU_ActRecpTorqSt 1;
+BA_ "GenSigInactiveValue" SG_ 555 VCU_ActRecpTorqSt 0;
+BA_ "GenSigInvalidValue" SG_ 555 VCU_ActRecpTorqSt 0;
+BA_ "GenSigStartValue" SG_ 555 VCU_ActRecpTorqSt 0;
+BA_ "GenSigTimeoutValue" SG_ 706 VCU_VehRng 1000;
+BA_ "Remark" SG_ 706 VCU_VehRng "";
+BA_ "EventCommandSignal" SG_ 706 VCU_VehRng 0;
+BA_ "GatewayedSignals" SG_ 706 VCU_VehRng 0;
+BA_ "GenSigSendType" SG_ 706 VCU_VehRng 1;
+BA_ "GenSigInactiveValue" SG_ 706 VCU_VehRng 0;
+BA_ "GenSigInvalidValue" SG_ 706 VCU_VehRng 1000;
+BA_ "GenSigStartValue" SG_ 706 VCU_VehRng 999;
+BA_ "GenSigTimeoutValue" SG_ 706 VCU_VehDrvMod 0;
+BA_ "Remark" SG_ 706 VCU_VehDrvMod "";
+BA_ "EventCommandSignal" SG_ 706 VCU_VehDrvMod 0;
+BA_ "GatewayedSignals" SG_ 706 VCU_VehDrvMod 0;
+BA_ "GenSigSendType" SG_ 706 VCU_VehDrvMod 1;
+BA_ "GenSigInactiveValue" SG_ 706 VCU_VehDrvMod 0;
+BA_ "GenSigInvalidValue" SG_ 706 VCU_VehDrvMod 0;
+BA_ "GenSigStartValue" SG_ 706 VCU_VehDrvMod 0;
+BA_ "GenSigTimeoutValue" SG_ 706 VCU_VehRdySt 0;
+BA_ "Remark" SG_ 706 VCU_VehRdySt "";
+BA_ "EventCommandSignal" SG_ 706 VCU_VehRdySt 0;
+BA_ "GatewayedSignals" SG_ 706 VCU_VehRdySt 0;
+BA_ "GenSigSendType" SG_ 706 VCU_VehRdySt 1;
+BA_ "GenSigInactiveValue" SG_ 706 VCU_VehRdySt 0;
+BA_ "GenSigInvalidValue" SG_ 706 VCU_VehRdySt 0;
+BA_ "GenSigStartValue" SG_ 706 VCU_VehRdySt 0;
+BA_ "GenSigTimeoutValue" SG_ 554 SCU_13_Checksum 0;
+BA_ "Remark" SG_ 554 SCU_13_Checksum "";
+BA_ "EventCommandSignal" SG_ 554 SCU_13_Checksum 0;
+BA_ "GatewayedSignals" SG_ 554 SCU_13_Checksum 0;
+BA_ "GenSigSendType" SG_ 554 SCU_13_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 554 SCU_13_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 554 SCU_13_Checksum 0;
+BA_ "GenSigStartValue" SG_ 554 SCU_13_Checksum 0;
+BA_ "GenSigTimeoutValue" SG_ 554 SCU_13_MsgCounter 0;
+BA_ "Remark" SG_ 554 SCU_13_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 554 SCU_13_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 554 SCU_13_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 554 SCU_13_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 554 SCU_13_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 554 SCU_13_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 554 SCU_13_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 554 SCU_StrngWhlIntv 0;
+BA_ "Remark" SG_ 554 SCU_StrngWhlIntv "";
+BA_ "EventCommandSignal" SG_ 554 SCU_StrngWhlIntv 0;
+BA_ "GatewayedSignals" SG_ 554 SCU_StrngWhlIntv 0;
+BA_ "GenSigSendType" SG_ 554 SCU_StrngWhlIntv 1;
+BA_ "GenSigInactiveValue" SG_ 554 SCU_StrngWhlIntv 0;
+BA_ "GenSigInvalidValue" SG_ 554 SCU_StrngWhlIntv 0;
+BA_ "GenSigStartValue" SG_ 554 SCU_StrngWhlIntv 0;
+BA_ "GenSigTimeoutValue" SG_ 554 VCU_GearLeverIntv 0;
+BA_ "Remark" SG_ 554 VCU_GearLeverIntv "";
+BA_ "EventCommandSignal" SG_ 554 VCU_GearLeverIntv 0;
+BA_ "GatewayedSignals" SG_ 554 VCU_GearLeverIntv 0;
+BA_ "GenSigSendType" SG_ 554 VCU_GearLeverIntv 1;
+BA_ "GenSigInactiveValue" SG_ 554 VCU_GearLeverIntv 0;
+BA_ "GenSigInvalidValue" SG_ 554 VCU_GearLeverIntv 0;
+BA_ "GenSigStartValue" SG_ 554 VCU_GearLeverIntv 0;
+BA_ "GenSigTimeoutValue" SG_ 554 SCU_EStopSwStVD 0;
+BA_ "Remark" SG_ 554 SCU_EStopSwStVD "";
+BA_ "EventCommandSignal" SG_ 554 SCU_EStopSwStVD 0;
+BA_ "GatewayedSignals" SG_ 554 SCU_EStopSwStVD 0;
+BA_ "GenSigSendType" SG_ 554 SCU_EStopSwStVD 1;
+BA_ "GenSigInactiveValue" SG_ 554 SCU_EStopSwStVD 0;
+BA_ "GenSigInvalidValue" SG_ 554 SCU_EStopSwStVD 0;
+BA_ "GenSigStartValue" SG_ 554 SCU_EStopSwStVD 0;
+BA_ "GenSigTimeoutValue" SG_ 554 SCU_EStopSwSt 0;
+BA_ "Remark" SG_ 554 SCU_EStopSwSt "";
+BA_ "EventCommandSignal" SG_ 554 SCU_EStopSwSt 0;
+BA_ "GatewayedSignals" SG_ 554 SCU_EStopSwSt 0;
+BA_ "GenSigSendType" SG_ 554 SCU_EStopSwSt 1;
+BA_ "GenSigInactiveValue" SG_ 554 SCU_EStopSwSt 0;
+BA_ "GenSigInvalidValue" SG_ 554 SCU_EStopSwSt 0;
+BA_ "GenSigStartValue" SG_ 554 SCU_EStopSwSt 0;
+BA_ "GenSigTimeoutValue" SG_ 554 SCU_LatCtrlMode 0;
+BA_ "Remark" SG_ 554 SCU_LatCtrlMode "";
+BA_ "EventCommandSignal" SG_ 554 SCU_LatCtrlMode 0;
+BA_ "GatewayedSignals" SG_ 554 SCU_LatCtrlMode 0;
+BA_ "GenSigSendType" SG_ 554 SCU_LatCtrlMode 1;
+BA_ "GenSigInactiveValue" SG_ 554 SCU_LatCtrlMode 0;
+BA_ "GenSigInvalidValue" SG_ 554 SCU_LatCtrlMode 0;
+BA_ "GenSigStartValue" SG_ 554 SCU_LatCtrlMode 0;
+BA_ "GenSigTimeoutValue" SG_ 554 SCU_LngCtrlMode 0;
+BA_ "Remark" SG_ 554 SCU_LngCtrlMode "";
+BA_ "EventCommandSignal" SG_ 554 SCU_LngCtrlMode 0;
+BA_ "GatewayedSignals" SG_ 554 SCU_LngCtrlMode 0;
+BA_ "GenSigSendType" SG_ 554 SCU_LngCtrlMode 1;
+BA_ "GenSigInactiveValue" SG_ 554 SCU_LngCtrlMode 0;
+BA_ "GenSigInvalidValue" SG_ 554 SCU_LngCtrlMode 0;
+BA_ "GenSigStartValue" SG_ 554 SCU_LngCtrlMode 0;
+BA_ "GenSigTimeoutValue" SG_ 705 SCU_12_Checksum 0;
+BA_ "Remark" SG_ 705 SCU_12_Checksum "";
+BA_ "EventCommandSignal" SG_ 705 SCU_12_Checksum 0;
+BA_ "GatewayedSignals" SG_ 705 SCU_12_Checksum 0;
+BA_ "GenSigSendType" SG_ 705 SCU_12_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 705 SCU_12_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 705 SCU_12_Checksum 0;
+BA_ "GenSigStartValue" SG_ 705 SCU_12_Checksum 0;
+BA_ "GenSigTimeoutValue" SG_ 705 SCU_12_MsgCounter 0;
+BA_ "Remark" SG_ 705 SCU_12_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 705 SCU_12_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 705 SCU_12_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 705 SCU_12_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 705 SCU_12_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 705 SCU_12_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 705 SCU_12_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 705 SRS_DriverSeatBeltSt 3;
+BA_ "Remark" SG_ 705 SRS_DriverSeatBeltSt "";
+BA_ "EventCommandSignal" SG_ 705 SRS_DriverSeatBeltSt 0;
+BA_ "GatewayedSignals" SG_ 705 SRS_DriverSeatBeltSt 0;
+BA_ "GenSigSendType" SG_ 705 SRS_DriverSeatBeltSt 1;
+BA_ "GenSigInactiveValue" SG_ 705 SRS_DriverSeatBeltSt 0;
+BA_ "GenSigInvalidValue" SG_ 705 SRS_DriverSeatBeltSt 3;
+BA_ "GenSigStartValue" SG_ 705 SRS_DriverSeatBeltSt 0;
+BA_ "GenSigTimeoutValue" SG_ 705 SRS_PsngrSeatBeltSt 3;
+BA_ "Remark" SG_ 705 SRS_PsngrSeatBeltSt "";
+BA_ "EventCommandSignal" SG_ 705 SRS_PsngrSeatBeltSt 0;
+BA_ "GatewayedSignals" SG_ 705 SRS_PsngrSeatBeltSt 0;
+BA_ "GenSigSendType" SG_ 705 SRS_PsngrSeatBeltSt 1;
+BA_ "GenSigInactiveValue" SG_ 705 SRS_PsngrSeatBeltSt 0;
+BA_ "GenSigInvalidValue" SG_ 705 SRS_PsngrSeatBeltSt 3;
+BA_ "GenSigStartValue" SG_ 705 SRS_PsngrSeatBeltSt 0;
+BA_ "GenSigTimeoutValue" SG_ 704 SCU_11_Checksum 0;
+BA_ "Remark" SG_ 704 SCU_11_Checksum "";
+BA_ "EventCommandSignal" SG_ 704 SCU_11_Checksum 0;
+BA_ "GatewayedSignals" SG_ 704 SCU_11_Checksum 0;
+BA_ "GenSigSendType" SG_ 704 SCU_11_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 704 SCU_11_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 704 SCU_11_Checksum 0;
+BA_ "GenSigStartValue" SG_ 704 SCU_11_Checksum 85;
+BA_ "GenSigTimeoutValue" SG_ 704 SCU_11_MsgCounter 0;
+BA_ "Remark" SG_ 704 SCU_11_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 704 SCU_11_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 704 SCU_11_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 704 SCU_11_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 704 SCU_11_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 704 SCU_11_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 704 SCU_11_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 704 BCM_CtrlAvailable 0;
+BA_ "Remark" SG_ 704 BCM_CtrlAvailable "";
+BA_ "EventCommandSignal" SG_ 704 BCM_CtrlAvailable 0;
+BA_ "GatewayedSignals" SG_ 704 BCM_CtrlAvailable 0;
+BA_ "GenSigSendType" SG_ 704 BCM_CtrlAvailable 1;
+BA_ "GenSigInactiveValue" SG_ 704 BCM_CtrlAvailable 0;
+BA_ "GenSigInvalidValue" SG_ 704 BCM_CtrlAvailable 0;
+BA_ "GenSigStartValue" SG_ 704 BCM_CtrlAvailable 0;
+BA_ "GenSigTimeoutValue" SG_ 704 BCM_HornSt 0;
+BA_ "Remark" SG_ 704 BCM_HornSt "";
+BA_ "EventCommandSignal" SG_ 704 BCM_HornSt 0;
+BA_ "GatewayedSignals" SG_ 704 BCM_HornSt 0;
+BA_ "GenSigSendType" SG_ 704 BCM_HornSt 1;
+BA_ "GenSigInactiveValue" SG_ 704 BCM_HornSt 0;
+BA_ "GenSigInvalidValue" SG_ 704 BCM_HornSt 0;
+BA_ "GenSigStartValue" SG_ 704 BCM_HornSt 0;
+BA_ "GenSigTimeoutValue" SG_ 704 BCM_HazardLampSt 0;
+BA_ "Remark" SG_ 704 BCM_HazardLampSt "";
+BA_ "EventCommandSignal" SG_ 704 BCM_HazardLampSt 0;
+BA_ "GatewayedSignals" SG_ 704 BCM_HazardLampSt 0;
+BA_ "GenSigSendType" SG_ 704 BCM_HazardLampSt 1;
+BA_ "GenSigInactiveValue" SG_ 704 BCM_HazardLampSt 0;
+BA_ "GenSigInvalidValue" SG_ 704 BCM_HazardLampSt 0;
+BA_ "GenSigStartValue" SG_ 704 BCM_HazardLampSt 0;
+BA_ "GenSigTimeoutValue" SG_ 704 BCM_RightTurnLampFaultSt 1;
+BA_ "Remark" SG_ 704 BCM_RightTurnLampFaultSt "";
+BA_ "EventCommandSignal" SG_ 704 BCM_RightTurnLampFaultSt 0;
+BA_ "GatewayedSignals" SG_ 704 BCM_RightTurnLampFaultSt 0;
+BA_ "GenSigSendType" SG_ 704 BCM_RightTurnLampFaultSt 1;
+BA_ "GenSigInactiveValue" SG_ 704 BCM_RightTurnLampFaultSt 0;
+BA_ "GenSigInvalidValue" SG_ 704 BCM_RightTurnLampFaultSt 0;
+BA_ "GenSigStartValue" SG_ 704 BCM_RightTurnLampFaultSt 0;
+BA_ "GenSigTimeoutValue" SG_ 704 BCM_RightTurnLampSt 0;
+BA_ "Remark" SG_ 704 BCM_RightTurnLampSt "";
+BA_ "EventCommandSignal" SG_ 704 BCM_RightTurnLampSt 0;
+BA_ "GatewayedSignals" SG_ 704 BCM_RightTurnLampSt 0;
+BA_ "GenSigSendType" SG_ 704 BCM_RightTurnLampSt 1;
+BA_ "GenSigInactiveValue" SG_ 704 BCM_RightTurnLampSt 0;
+BA_ "GenSigInvalidValue" SG_ 704 BCM_RightTurnLampSt 0;
+BA_ "GenSigStartValue" SG_ 704 BCM_RightTurnLampSt 0;
+BA_ "GenSigTimeoutValue" SG_ 704 BCM_LeftTurnLampFaultSt 1;
+BA_ "Remark" SG_ 704 BCM_LeftTurnLampFaultSt "";
+BA_ "EventCommandSignal" SG_ 704 BCM_LeftTurnLampFaultSt 0;
+BA_ "GatewayedSignals" SG_ 704 BCM_LeftTurnLampFaultSt 0;
+BA_ "GenSigSendType" SG_ 704 BCM_LeftTurnLampFaultSt 1;
+BA_ "GenSigInactiveValue" SG_ 704 BCM_LeftTurnLampFaultSt 0;
+BA_ "GenSigInvalidValue" SG_ 704 BCM_LeftTurnLampFaultSt 0;
+BA_ "GenSigStartValue" SG_ 704 BCM_LeftTurnLampFaultSt 0;
+BA_ "GenSigTimeoutValue" SG_ 704 BCM_LeftTurnLampSt 0;
+BA_ "Remark" SG_ 704 BCM_LeftTurnLampSt "";
+BA_ "EventCommandSignal" SG_ 704 BCM_LeftTurnLampSt 0;
+BA_ "GatewayedSignals" SG_ 704 BCM_LeftTurnLampSt 0;
+BA_ "GenSigSendType" SG_ 704 BCM_LeftTurnLampSt 1;
+BA_ "GenSigInactiveValue" SG_ 704 BCM_LeftTurnLampSt 0;
+BA_ "GenSigInvalidValue" SG_ 704 BCM_LeftTurnLampSt 0;
+BA_ "GenSigStartValue" SG_ 704 BCM_LeftTurnLampSt 0;
+BA_ "GenSigTimeoutValue" SG_ 704 BCM_RRDoorAjarSt 0;
+BA_ "Remark" SG_ 704 BCM_RRDoorAjarSt "";
+BA_ "EventCommandSignal" SG_ 704 BCM_RRDoorAjarSt 0;
+BA_ "GatewayedSignals" SG_ 704 BCM_RRDoorAjarSt 0;
+BA_ "GenSigSendType" SG_ 704 BCM_RRDoorAjarSt 1;
+BA_ "GenSigInactiveValue" SG_ 704 BCM_RRDoorAjarSt 0;
+BA_ "GenSigInvalidValue" SG_ 704 BCM_RRDoorAjarSt 0;
+BA_ "GenSigStartValue" SG_ 704 BCM_RRDoorAjarSt 0;
+BA_ "GenSigTimeoutValue" SG_ 704 BCM_RLDoorAjarSt 0;
+BA_ "Remark" SG_ 704 BCM_RLDoorAjarSt "";
+BA_ "EventCommandSignal" SG_ 704 BCM_RLDoorAjarSt 0;
+BA_ "GatewayedSignals" SG_ 704 BCM_RLDoorAjarSt 0;
+BA_ "GenSigSendType" SG_ 704 BCM_RLDoorAjarSt 1;
+BA_ "GenSigInactiveValue" SG_ 704 BCM_RLDoorAjarSt 0;
+BA_ "GenSigInvalidValue" SG_ 704 BCM_RLDoorAjarSt 0;
+BA_ "GenSigStartValue" SG_ 704 BCM_RLDoorAjarSt 0;
+BA_ "GenSigTimeoutValue" SG_ 704 BCM_PsngrDoorAjarSt 0;
+BA_ "Remark" SG_ 704 BCM_PsngrDoorAjarSt "";
+BA_ "EventCommandSignal" SG_ 704 BCM_PsngrDoorAjarSt 0;
+BA_ "GatewayedSignals" SG_ 704 BCM_PsngrDoorAjarSt 0;
+BA_ "GenSigSendType" SG_ 704 BCM_PsngrDoorAjarSt 1;
+BA_ "GenSigInactiveValue" SG_ 704 BCM_PsngrDoorAjarSt 0;
+BA_ "GenSigInvalidValue" SG_ 704 BCM_PsngrDoorAjarSt 0;
+BA_ "GenSigStartValue" SG_ 704 BCM_PsngrDoorAjarSt 0;
+BA_ "GenSigTimeoutValue" SG_ 704 BCM_DriverDoorAjarSt 0;
+BA_ "Remark" SG_ 704 BCM_DriverDoorAjarSt "";
+BA_ "EventCommandSignal" SG_ 704 BCM_DriverDoorAjarSt 0;
+BA_ "GatewayedSignals" SG_ 704 BCM_DriverDoorAjarSt 0;
+BA_ "GenSigSendType" SG_ 704 BCM_DriverDoorAjarSt 1;
+BA_ "GenSigInactiveValue" SG_ 704 BCM_DriverDoorAjarSt 0;
+BA_ "GenSigInvalidValue" SG_ 704 BCM_DriverDoorAjarSt 0;
+BA_ "GenSigStartValue" SG_ 704 BCM_DriverDoorAjarSt 0;
+BA_ "GenSigTimeoutValue" SG_ 704 BCM_RearFogLampSt 0;
+BA_ "Remark" SG_ 704 BCM_RearFogLampSt "";
+BA_ "EventCommandSignal" SG_ 704 BCM_RearFogLampSt 0;
+BA_ "GatewayedSignals" SG_ 704 BCM_RearFogLampSt 0;
+BA_ "GenSigSendType" SG_ 704 BCM_RearFogLampSt 1;
+BA_ "GenSigInactiveValue" SG_ 704 BCM_RearFogLampSt 0;
+BA_ "GenSigInvalidValue" SG_ 704 BCM_RearFogLampSt 0;
+BA_ "GenSigStartValue" SG_ 704 BCM_RearFogLampSt 0;
+BA_ "GenSigTimeoutValue" SG_ 704 BCM_FrontFogLampSt 0;
+BA_ "Remark" SG_ 704 BCM_FrontFogLampSt "";
+BA_ "EventCommandSignal" SG_ 704 BCM_FrontFogLampSt 0;
+BA_ "GatewayedSignals" SG_ 704 BCM_FrontFogLampSt 0;
+BA_ "GenSigSendType" SG_ 704 BCM_FrontFogLampSt 1;
+BA_ "GenSigInactiveValue" SG_ 704 BCM_FrontFogLampSt 0;
+BA_ "GenSigInvalidValue" SG_ 704 BCM_FrontFogLampSt 0;
+BA_ "GenSigStartValue" SG_ 704 BCM_FrontFogLampSt 0;
+BA_ "GenSigTimeoutValue" SG_ 704 BCM_HighBeamSt 0;
+BA_ "Remark" SG_ 704 BCM_HighBeamSt "";
+BA_ "EventCommandSignal" SG_ 704 BCM_HighBeamSt 0;
+BA_ "GatewayedSignals" SG_ 704 BCM_HighBeamSt 0;
+BA_ "GenSigSendType" SG_ 704 BCM_HighBeamSt 1;
+BA_ "GenSigInactiveValue" SG_ 704 BCM_HighBeamSt 0;
+BA_ "GenSigInvalidValue" SG_ 704 BCM_HighBeamSt 0;
+BA_ "GenSigStartValue" SG_ 704 BCM_HighBeamSt 0;
+BA_ "GenSigTimeoutValue" SG_ 704 BCM_LowBeamSt 0;
+BA_ "Remark" SG_ 704 BCM_LowBeamSt "";
+BA_ "EventCommandSignal" SG_ 704 BCM_LowBeamSt 0;
+BA_ "GatewayedSignals" SG_ 704 BCM_LowBeamSt 0;
+BA_ "GenSigSendType" SG_ 704 BCM_LowBeamSt 1;
+BA_ "GenSigInactiveValue" SG_ 704 BCM_LowBeamSt 0;
+BA_ "GenSigInvalidValue" SG_ 704 BCM_LowBeamSt 0;
+BA_ "GenSigStartValue" SG_ 704 BCM_LowBeamSt 0;
+BA_ "GenSigTimeoutValue" SG_ 704 BCM_KeySt 0;
+BA_ "Remark" SG_ 704 BCM_KeySt "";
+BA_ "EventCommandSignal" SG_ 704 BCM_KeySt 0;
+BA_ "GatewayedSignals" SG_ 704 BCM_KeySt 0;
+BA_ "GenSigSendType" SG_ 704 BCM_KeySt 1;
+BA_ "GenSigInactiveValue" SG_ 704 BCM_KeySt 0;
+BA_ "GenSigInvalidValue" SG_ 704 BCM_KeySt 0;
+BA_ "GenSigStartValue" SG_ 704 BCM_KeySt 0;
+BA_ "GenSigTimeoutValue" SG_ 704 BCM_FrontWiperSt 0;
+BA_ "Remark" SG_ 704 BCM_FrontWiperSt "";
+BA_ "EventCommandSignal" SG_ 704 BCM_FrontWiperSt 0;
+BA_ "GatewayedSignals" SG_ 704 BCM_FrontWiperSt 0;
+BA_ "GenSigSendType" SG_ 704 BCM_FrontWiperSt 1;
+BA_ "GenSigInactiveValue" SG_ 704 BCM_FrontWiperSt 0;
+BA_ "GenSigInvalidValue" SG_ 704 BCM_FrontWiperSt 0;
+BA_ "GenSigStartValue" SG_ 704 BCM_FrontWiperSt 0;
+BA_ "GenSigTimeoutValue" SG_ 553 SCU_10_Checksum 0;
+BA_ "Remark" SG_ 553 SCU_10_Checksum "";
+BA_ "EventCommandSignal" SG_ 553 SCU_10_Checksum 0;
+BA_ "GatewayedSignals" SG_ 553 SCU_10_Checksum 0;
+BA_ "GenSigSendType" SG_ 553 SCU_10_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 553 SCU_10_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 553 SCU_10_Checksum 0;
+BA_ "GenSigStartValue" SG_ 553 SCU_10_Checksum 255;
+BA_ "GenSigTimeoutValue" SG_ 553 EPS_StrngWhlTorq 255;
+BA_ "Remark" SG_ 553 EPS_StrngWhlTorq "";
+BA_ "EventCommandSignal" SG_ 553 EPS_StrngWhlTorq 0;
+BA_ "GatewayedSignals" SG_ 553 EPS_StrngWhlTorq 0;
+BA_ "GenSigSendType" SG_ 553 EPS_StrngWhlTorq 1;
+BA_ "GenSigInactiveValue" SG_ 553 EPS_StrngWhlTorq 0;
+BA_ "GenSigInvalidValue" SG_ 553 EPS_StrngWhlTorq 255;
+BA_ "GenSigStartValue" SG_ 553 EPS_StrngWhlTorq 0;
+BA_ "GenSigTimeoutValue" SG_ 553 EPS_SteeringAngleSpd 255;
+BA_ "Remark" SG_ 553 EPS_SteeringAngleSpd "";
+BA_ "EventCommandSignal" SG_ 553 EPS_SteeringAngleSpd 0;
+BA_ "GatewayedSignals" SG_ 553 EPS_SteeringAngleSpd 0;
+BA_ "GenSigSendType" SG_ 553 EPS_SteeringAngleSpd 1;
+BA_ "GenSigInactiveValue" SG_ 553 EPS_SteeringAngleSpd 0;
+BA_ "GenSigInvalidValue" SG_ 553 EPS_SteeringAngleSpd 255;
+BA_ "GenSigStartValue" SG_ 553 EPS_SteeringAngleSpd 0;
+BA_ "GenSigTimeoutValue" SG_ 553 EPS_SteeringAngleVD 0;
+BA_ "Remark" SG_ 553 EPS_SteeringAngleVD "";
+BA_ "EventCommandSignal" SG_ 553 EPS_SteeringAngleVD 0;
+BA_ "GatewayedSignals" SG_ 553 EPS_SteeringAngleVD 0;
+BA_ "GenSigSendType" SG_ 553 EPS_SteeringAngleVD 1;
+BA_ "GenSigInactiveValue" SG_ 553 EPS_SteeringAngleVD 0;
+BA_ "GenSigInvalidValue" SG_ 553 EPS_SteeringAngleVD 0;
+BA_ "GenSigStartValue" SG_ 553 EPS_SteeringAngleVD 0;
+BA_ "GenSigTimeoutValue" SG_ 553 EPS_ThermalSt 0;
+BA_ "Remark" SG_ 553 EPS_ThermalSt "";
+BA_ "EventCommandSignal" SG_ 553 EPS_ThermalSt 0;
+BA_ "GatewayedSignals" SG_ 553 EPS_ThermalSt 0;
+BA_ "GenSigSendType" SG_ 553 EPS_ThermalSt 1;
+BA_ "GenSigInactiveValue" SG_ 553 EPS_ThermalSt 0;
+BA_ "GenSigInvalidValue" SG_ 553 EPS_ThermalSt 0;
+BA_ "GenSigStartValue" SG_ 553 EPS_ThermalSt 0;
+BA_ "GenSigTimeoutValue" SG_ 553 EPS_SteeringAngle 0;
+BA_ "Remark" SG_ 553 EPS_SteeringAngle "";
+BA_ "EventCommandSignal" SG_ 553 EPS_SteeringAngle 0;
+BA_ "GatewayedSignals" SG_ 553 EPS_SteeringAngle 0;
+BA_ "GenSigSendType" SG_ 553 EPS_SteeringAngle 1;
+BA_ "GenSigInactiveValue" SG_ 553 EPS_SteeringAngle 0;
+BA_ "GenSigInvalidValue" SG_ 553 EPS_SteeringAngle 0;
+BA_ "GenSigStartValue" SG_ 553 EPS_SteeringAngle 0;
+BA_ "GenSigTimeoutValue" SG_ 553 EPS_SteeringAngleSpdVD 0;
+BA_ "Remark" SG_ 553 EPS_SteeringAngleSpdVD "";
+BA_ "EventCommandSignal" SG_ 553 EPS_SteeringAngleSpdVD 0;
+BA_ "GatewayedSignals" SG_ 553 EPS_SteeringAngleSpdVD 0;
+BA_ "GenSigSendType" SG_ 553 EPS_SteeringAngleSpdVD 1;
+BA_ "GenSigInactiveValue" SG_ 553 EPS_SteeringAngleSpdVD 0;
+BA_ "GenSigInvalidValue" SG_ 553 EPS_SteeringAngleSpdVD 0;
+BA_ "GenSigStartValue" SG_ 553 EPS_SteeringAngleSpdVD 0;
+BA_ "GenSigTimeoutValue" SG_ 553 SCU_10_MsgCounter 0;
+BA_ "Remark" SG_ 553 SCU_10_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 553 SCU_10_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 553 SCU_10_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 553 SCU_10_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 553 SCU_10_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 553 SCU_10_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 553 SCU_10_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 553 EPS_WarnLamp 1;
+BA_ "Remark" SG_ 553 EPS_WarnLamp "";
+BA_ "EventCommandSignal" SG_ 553 EPS_WarnLamp 0;
+BA_ "GatewayedSignals" SG_ 553 EPS_WarnLamp 0;
+BA_ "GenSigSendType" SG_ 553 EPS_WarnLamp 1;
+BA_ "GenSigInactiveValue" SG_ 553 EPS_WarnLamp 0;
+BA_ "GenSigInvalidValue" SG_ 553 EPS_WarnLamp 0;
+BA_ "GenSigStartValue" SG_ 553 EPS_WarnLamp 0;
+BA_ "GenSigTimeoutValue" SG_ 553 EPS_StrngWhlTorqVD 0;
+BA_ "Remark" SG_ 553 EPS_StrngWhlTorqVD "";
+BA_ "EventCommandSignal" SG_ 553 EPS_StrngWhlTorqVD 0;
+BA_ "GatewayedSignals" SG_ 553 EPS_StrngWhlTorqVD 0;
+BA_ "GenSigSendType" SG_ 553 EPS_StrngWhlTorqVD 1;
+BA_ "GenSigInactiveValue" SG_ 553 EPS_StrngWhlTorqVD 0;
+BA_ "GenSigInvalidValue" SG_ 553 EPS_StrngWhlTorqVD 0;
+BA_ "GenSigStartValue" SG_ 553 EPS_StrngWhlTorqVD 0;
+BA_ "GenSigTimeoutValue" SG_ 552 SCU_9_Checksum 0;
+BA_ "Remark" SG_ 552 SCU_9_Checksum "";
+BA_ "EventCommandSignal" SG_ 552 SCU_9_Checksum 0;
+BA_ "GatewayedSignals" SG_ 552 SCU_9_Checksum 0;
+BA_ "GenSigSendType" SG_ 552 SCU_9_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 552 SCU_9_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 552 SCU_9_Checksum 0;
+BA_ "GenSigStartValue" SG_ 552 SCU_9_Checksum 0;
+BA_ "GenSigTimeoutValue" SG_ 552 EPB_FailSt 1;
+BA_ "Remark" SG_ 552 EPB_FailSt "";
+BA_ "EventCommandSignal" SG_ 552 EPB_FailSt 0;
+BA_ "GatewayedSignals" SG_ 552 EPB_FailSt 0;
+BA_ "GenSigSendType" SG_ 552 EPB_FailSt 1;
+BA_ "GenSigInactiveValue" SG_ 552 EPB_FailSt 0;
+BA_ "GenSigInvalidValue" SG_ 552 EPB_FailSt 0;
+BA_ "GenSigStartValue" SG_ 552 EPB_FailSt 0;
+BA_ "GenSigTimeoutValue" SG_ 552 SCU_9_MsgCounter 0;
+BA_ "Remark" SG_ 552 SCU_9_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 552 SCU_9_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 552 SCU_9_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 552 SCU_9_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 552 SCU_9_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 552 SCU_9_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 552 SCU_9_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 552 EPB_SysSt 7;
+BA_ "Remark" SG_ 552 EPB_SysSt "";
+BA_ "EventCommandSignal" SG_ 552 EPB_SysSt 0;
+BA_ "GatewayedSignals" SG_ 552 EPB_SysSt 0;
+BA_ "GenSigSendType" SG_ 552 EPB_SysSt 1;
+BA_ "GenSigInactiveValue" SG_ 552 EPB_SysSt 0;
+BA_ "GenSigInvalidValue" SG_ 552 EPB_SysSt 0;
+BA_ "GenSigStartValue" SG_ 552 EPB_SysSt 0;
+BA_ "GenSigTimeoutValue" SG_ 552 EPB_SwitchStVD 0;
+BA_ "Remark" SG_ 552 EPB_SwitchStVD "";
+BA_ "EventCommandSignal" SG_ 552 EPB_SwitchStVD 0;
+BA_ "GatewayedSignals" SG_ 552 EPB_SwitchStVD 0;
+BA_ "GenSigSendType" SG_ 552 EPB_SwitchStVD 1;
+BA_ "GenSigInactiveValue" SG_ 552 EPB_SwitchStVD 0;
+BA_ "GenSigInvalidValue" SG_ 552 EPB_SwitchStVD 0;
+BA_ "GenSigStartValue" SG_ 552 EPB_SwitchStVD 0;
+BA_ "GenSigTimeoutValue" SG_ 552 EPB_SwitchSt 0;
+BA_ "Remark" SG_ 552 EPB_SwitchSt "";
+BA_ "EventCommandSignal" SG_ 552 EPB_SwitchSt 0;
+BA_ "GatewayedSignals" SG_ 552 EPB_SwitchSt 0;
+BA_ "GenSigSendType" SG_ 552 EPB_SwitchSt 1;
+BA_ "GenSigInactiveValue" SG_ 552 EPB_SwitchSt 0;
+BA_ "GenSigInvalidValue" SG_ 552 EPB_SwitchSt 0;
+BA_ "GenSigStartValue" SG_ 552 EPB_SwitchSt 0;
+BA_ "GenSigTimeoutValue" SG_ 551 SCU_8_Checksum 0;
+BA_ "Remark" SG_ 551 SCU_8_Checksum "";
+BA_ "EventCommandSignal" SG_ 551 SCU_8_Checksum 0;
+BA_ "GatewayedSignals" SG_ 551 SCU_8_Checksum 0;
+BA_ "GenSigSendType" SG_ 551 SCU_8_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 551 SCU_8_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 551 SCU_8_Checksum 0;
+BA_ "GenSigStartValue" SG_ 551 SCU_8_Checksum 85;
+BA_ "GenSigTimeoutValue" SG_ 551 BCS_ActVehLaltrlAccelVD 0;
+BA_ "Remark" SG_ 551 BCS_ActVehLaltrlAccelVD "";
+BA_ "EventCommandSignal" SG_ 551 BCS_ActVehLaltrlAccelVD 0;
+BA_ "GatewayedSignals" SG_ 551 BCS_ActVehLaltrlAccelVD 0;
+BA_ "GenSigSendType" SG_ 551 BCS_ActVehLaltrlAccelVD 1;
+BA_ "GenSigInactiveValue" SG_ 551 BCS_ActVehLaltrlAccelVD 0;
+BA_ "GenSigInvalidValue" SG_ 551 BCS_ActVehLaltrlAccelVD 0;
+BA_ "GenSigStartValue" SG_ 551 BCS_ActVehLaltrlAccelVD 0;
+BA_ "GenSigTimeoutValue" SG_ 551 BCS_ActVehLongAccelVD 0;
+BA_ "Remark" SG_ 551 BCS_ActVehLongAccelVD "";
+BA_ "EventCommandSignal" SG_ 551 BCS_ActVehLongAccelVD 0;
+BA_ "GatewayedSignals" SG_ 551 BCS_ActVehLongAccelVD 0;
+BA_ "GenSigSendType" SG_ 551 BCS_ActVehLongAccelVD 1;
+BA_ "GenSigInactiveValue" SG_ 551 BCS_ActVehLongAccelVD 0;
+BA_ "GenSigInvalidValue" SG_ 551 BCS_ActVehLongAccelVD 0;
+BA_ "GenSigStartValue" SG_ 551 BCS_ActVehLongAccelVD 0;
+BA_ "GenSigTimeoutValue" SG_ 551 SCU_8_MsgCounter 0;
+BA_ "Remark" SG_ 551 SCU_8_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 551 SCU_8_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 551 SCU_8_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 551 SCU_8_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 551 SCU_8_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 551 SCU_8_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 551 SCU_8_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 551 BCS_VehLaltrlAccelOffset 0;
+BA_ "Remark" SG_ 551 BCS_VehLaltrlAccelOffset "";
+BA_ "EventCommandSignal" SG_ 551 BCS_VehLaltrlAccelOffset 0;
+BA_ "GatewayedSignals" SG_ 551 BCS_VehLaltrlAccelOffset 0;
+BA_ "GenSigSendType" SG_ 551 BCS_VehLaltrlAccelOffset 1;
+BA_ "GenSigInactiveValue" SG_ 551 BCS_VehLaltrlAccelOffset 0;
+BA_ "GenSigInvalidValue" SG_ 551 BCS_VehLaltrlAccelOffset 0;
+BA_ "GenSigStartValue" SG_ 551 BCS_VehLaltrlAccelOffset 796;
+BA_ "GenSigTimeoutValue" SG_ 551 BCS_ActVehLaltrlAccel 0;
+BA_ "Remark" SG_ 551 BCS_ActVehLaltrlAccel "";
+BA_ "EventCommandSignal" SG_ 551 BCS_ActVehLaltrlAccel 0;
+BA_ "GatewayedSignals" SG_ 551 BCS_ActVehLaltrlAccel 0;
+BA_ "GenSigSendType" SG_ 551 BCS_ActVehLaltrlAccel 1;
+BA_ "GenSigInactiveValue" SG_ 551 BCS_ActVehLaltrlAccel 0;
+BA_ "GenSigInvalidValue" SG_ 551 BCS_ActVehLaltrlAccel 0;
+BA_ "GenSigStartValue" SG_ 551 BCS_ActVehLaltrlAccel 796;
+BA_ "GenSigTimeoutValue" SG_ 551 BCS_VehLongAccelOffset 0;
+BA_ "Remark" SG_ 551 BCS_VehLongAccelOffset "";
+BA_ "EventCommandSignal" SG_ 551 BCS_VehLongAccelOffset 0;
+BA_ "GatewayedSignals" SG_ 551 BCS_VehLongAccelOffset 0;
+BA_ "GenSigSendType" SG_ 551 BCS_VehLongAccelOffset 1;
+BA_ "GenSigInactiveValue" SG_ 551 BCS_VehLongAccelOffset 0;
+BA_ "GenSigInvalidValue" SG_ 551 BCS_VehLongAccelOffset 0;
+BA_ "GenSigStartValue" SG_ 551 BCS_VehLongAccelOffset 796;
+BA_ "GenSigTimeoutValue" SG_ 551 BCS_ActVehLongAccel 0;
+BA_ "Remark" SG_ 551 BCS_ActVehLongAccel "";
+BA_ "EventCommandSignal" SG_ 551 BCS_ActVehLongAccel 0;
+BA_ "GatewayedSignals" SG_ 551 BCS_ActVehLongAccel 0;
+BA_ "GenSigSendType" SG_ 551 BCS_ActVehLongAccel 1;
+BA_ "GenSigInactiveValue" SG_ 551 BCS_ActVehLongAccel 0;
+BA_ "GenSigInvalidValue" SG_ 551 BCS_ActVehLongAccel 0;
+BA_ "GenSigStartValue" SG_ 551 BCS_ActVehLongAccel 796;
+BA_ "GenSigTimeoutValue" SG_ 550 SCU_7_Checksum 0;
+BA_ "Remark" SG_ 550 SCU_7_Checksum "";
+BA_ "EventCommandSignal" SG_ 550 SCU_7_Checksum 0;
+BA_ "GatewayedSignals" SG_ 550 SCU_7_Checksum 0;
+BA_ "GenSigSendType" SG_ 550 SCU_7_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 550 SCU_7_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 550 SCU_7_Checksum 0;
+BA_ "GenSigStartValue" SG_ 550 SCU_7_Checksum 85;
+BA_ "GenSigTimeoutValue" SG_ 550 SCU_7_MsgCounter 0;
+BA_ "Remark" SG_ 550 SCU_7_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 550 SCU_7_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 550 SCU_7_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 550 SCU_7_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 550 SCU_7_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 550 SCU_7_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 550 SCU_7_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 550 BCS_RRWheelSpd 0;
+BA_ "Remark" SG_ 550 BCS_RRWheelSpd "";
+BA_ "EventCommandSignal" SG_ 550 BCS_RRWheelSpd 0;
+BA_ "GatewayedSignals" SG_ 550 BCS_RRWheelSpd 0;
+BA_ "GenSigSendType" SG_ 550 BCS_RRWheelSpd 1;
+BA_ "GenSigInactiveValue" SG_ 550 BCS_RRWheelSpd 0;
+BA_ "GenSigInvalidValue" SG_ 550 BCS_RRWheelSpd 0;
+BA_ "GenSigStartValue" SG_ 550 BCS_RRWheelSpd 0;
+BA_ "GenSigTimeoutValue" SG_ 550 BCS_RRWheelSpdVD 0;
+BA_ "Remark" SG_ 550 BCS_RRWheelSpdVD "";
+BA_ "EventCommandSignal" SG_ 550 BCS_RRWheelSpdVD 0;
+BA_ "GatewayedSignals" SG_ 550 BCS_RRWheelSpdVD 0;
+BA_ "GenSigSendType" SG_ 550 BCS_RRWheelSpdVD 1;
+BA_ "GenSigInactiveValue" SG_ 550 BCS_RRWheelSpdVD 0;
+BA_ "GenSigInvalidValue" SG_ 550 BCS_RRWheelSpdVD 0;
+BA_ "GenSigStartValue" SG_ 550 BCS_RRWheelSpdVD 0;
+BA_ "GenSigTimeoutValue" SG_ 550 BCS_RRWheelRotatedDirection 0;
+BA_ "Remark" SG_ 550 BCS_RRWheelRotatedDirection "";
+BA_ "EventCommandSignal" SG_ 550 BCS_RRWheelRotatedDirection 0;
+BA_ "GatewayedSignals" SG_ 550 BCS_RRWheelRotatedDirection 0;
+BA_ "GenSigSendType" SG_ 550 BCS_RRWheelRotatedDirection 1;
+BA_ "GenSigInactiveValue" SG_ 550 BCS_RRWheelRotatedDirection 0;
+BA_ "GenSigInvalidValue" SG_ 550 BCS_RRWheelRotatedDirection 0;
+BA_ "GenSigStartValue" SG_ 550 BCS_RRWheelRotatedDirection 0;
+BA_ "GenSigTimeoutValue" SG_ 550 BCS_RRWheelRotatedDirectionVD 0;
+BA_ "Remark" SG_ 550 BCS_RRWheelRotatedDirectionVD "";
+BA_ "EventCommandSignal" SG_ 550 BCS_RRWheelRotatedDirectionVD 0;
+BA_ "GatewayedSignals" SG_ 550 BCS_RRWheelRotatedDirectionVD 0;
+BA_ "GenSigSendType" SG_ 550 BCS_RRWheelRotatedDirectionVD 1;
+BA_ "GenSigInactiveValue" SG_ 550 BCS_RRWheelRotatedDirectionVD 0;
+BA_ "GenSigInvalidValue" SG_ 550 BCS_RRWheelRotatedDirectionVD 0;
+BA_ "GenSigStartValue" SG_ 550 BCS_RRWheelRotatedDirectionVD 0;
+BA_ "GenSigTimeoutValue" SG_ 550 BCS_RLWheelSpd 0;
+BA_ "Remark" SG_ 550 BCS_RLWheelSpd "";
+BA_ "EventCommandSignal" SG_ 550 BCS_RLWheelSpd 0;
+BA_ "GatewayedSignals" SG_ 550 BCS_RLWheelSpd 0;
+BA_ "GenSigSendType" SG_ 550 BCS_RLWheelSpd 1;
+BA_ "GenSigInactiveValue" SG_ 550 BCS_RLWheelSpd 0;
+BA_ "GenSigInvalidValue" SG_ 550 BCS_RLWheelSpd 0;
+BA_ "GenSigStartValue" SG_ 550 BCS_RLWheelSpd 0;
+BA_ "GenSigTimeoutValue" SG_ 550 BCS_RLWheelRotatedDirectionVD 0;
+BA_ "Remark" SG_ 550 BCS_RLWheelRotatedDirectionVD "";
+BA_ "EventCommandSignal" SG_ 550 BCS_RLWheelRotatedDirectionVD 0;
+BA_ "GatewayedSignals" SG_ 550 BCS_RLWheelRotatedDirectionVD 0;
+BA_ "GenSigSendType" SG_ 550 BCS_RLWheelRotatedDirectionVD 1;
+BA_ "GenSigInactiveValue" SG_ 550 BCS_RLWheelRotatedDirectionVD 0;
+BA_ "GenSigInvalidValue" SG_ 550 BCS_RLWheelRotatedDirectionVD 0;
+BA_ "GenSigStartValue" SG_ 550 BCS_RLWheelRotatedDirectionVD 0;
+BA_ "GenSigTimeoutValue" SG_ 550 BCS_RLWheelRotatedDirection 0;
+BA_ "Remark" SG_ 550 BCS_RLWheelRotatedDirection "";
+BA_ "EventCommandSignal" SG_ 550 BCS_RLWheelRotatedDirection 0;
+BA_ "GatewayedSignals" SG_ 550 BCS_RLWheelRotatedDirection 0;
+BA_ "GenSigSendType" SG_ 550 BCS_RLWheelRotatedDirection 1;
+BA_ "GenSigInactiveValue" SG_ 550 BCS_RLWheelRotatedDirection 0;
+BA_ "GenSigInvalidValue" SG_ 550 BCS_RLWheelRotatedDirection 0;
+BA_ "GenSigStartValue" SG_ 550 BCS_RLWheelRotatedDirection 0;
+BA_ "GenSigTimeoutValue" SG_ 550 BCS_RLWheelSpdVD 0;
+BA_ "Remark" SG_ 550 BCS_RLWheelSpdVD "";
+BA_ "EventCommandSignal" SG_ 550 BCS_RLWheelSpdVD 0;
+BA_ "GatewayedSignals" SG_ 550 BCS_RLWheelSpdVD 0;
+BA_ "GenSigSendType" SG_ 550 BCS_RLWheelSpdVD 1;
+BA_ "GenSigInactiveValue" SG_ 550 BCS_RLWheelSpdVD 0;
+BA_ "GenSigInvalidValue" SG_ 550 BCS_RLWheelSpdVD 0;
+BA_ "GenSigStartValue" SG_ 550 BCS_RLWheelSpdVD 0;
+BA_ "GenSigTimeoutValue" SG_ 549 SCU_6_Checksum 0;
+BA_ "Remark" SG_ 549 SCU_6_Checksum "";
+BA_ "EventCommandSignal" SG_ 549 SCU_6_Checksum 0;
+BA_ "GatewayedSignals" SG_ 549 SCU_6_Checksum 0;
+BA_ "GenSigSendType" SG_ 549 SCU_6_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 549 SCU_6_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 549 SCU_6_Checksum 0;
+BA_ "GenSigStartValue" SG_ 549 SCU_6_Checksum 85;
+BA_ "GenSigTimeoutValue" SG_ 549 SCU_6_MsgCounter 0;
+BA_ "Remark" SG_ 549 SCU_6_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 549 SCU_6_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 549 SCU_6_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 549 SCU_6_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 549 SCU_6_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 549 SCU_6_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 549 SCU_6_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 549 BCS_FRWheelSpd 0;
+BA_ "Remark" SG_ 549 BCS_FRWheelSpd "";
+BA_ "EventCommandSignal" SG_ 549 BCS_FRWheelSpd 0;
+BA_ "GatewayedSignals" SG_ 549 BCS_FRWheelSpd 0;
+BA_ "GenSigSendType" SG_ 549 BCS_FRWheelSpd 1;
+BA_ "GenSigInactiveValue" SG_ 549 BCS_FRWheelSpd 0;
+BA_ "GenSigInvalidValue" SG_ 549 BCS_FRWheelSpd 0;
+BA_ "GenSigStartValue" SG_ 549 BCS_FRWheelSpd 0;
+BA_ "GenSigTimeoutValue" SG_ 549 BCS_FRWheelSpdVD 0;
+BA_ "Remark" SG_ 549 BCS_FRWheelSpdVD "";
+BA_ "EventCommandSignal" SG_ 549 BCS_FRWheelSpdVD 0;
+BA_ "GatewayedSignals" SG_ 549 BCS_FRWheelSpdVD 0;
+BA_ "GenSigSendType" SG_ 549 BCS_FRWheelSpdVD 1;
+BA_ "GenSigInactiveValue" SG_ 549 BCS_FRWheelSpdVD 0;
+BA_ "GenSigInvalidValue" SG_ 549 BCS_FRWheelSpdVD 0;
+BA_ "GenSigStartValue" SG_ 549 BCS_FRWheelSpdVD 0;
+BA_ "GenSigTimeoutValue" SG_ 549 BCS_FRWheelRotatedDirection 0;
+BA_ "Remark" SG_ 549 BCS_FRWheelRotatedDirection "";
+BA_ "EventCommandSignal" SG_ 549 BCS_FRWheelRotatedDirection 0;
+BA_ "GatewayedSignals" SG_ 549 BCS_FRWheelRotatedDirection 0;
+BA_ "GenSigSendType" SG_ 549 BCS_FRWheelRotatedDirection 1;
+BA_ "GenSigInactiveValue" SG_ 549 BCS_FRWheelRotatedDirection 0;
+BA_ "GenSigInvalidValue" SG_ 549 BCS_FRWheelRotatedDirection 0;
+BA_ "GenSigStartValue" SG_ 549 BCS_FRWheelRotatedDirection 0;
+BA_ "GenSigTimeoutValue" SG_ 549 BCS_FRWheelRotatedDirectionVD 0;
+BA_ "Remark" SG_ 549 BCS_FRWheelRotatedDirectionVD "";
+BA_ "EventCommandSignal" SG_ 549 BCS_FRWheelRotatedDirectionVD 0;
+BA_ "GatewayedSignals" SG_ 549 BCS_FRWheelRotatedDirectionVD 0;
+BA_ "GenSigSendType" SG_ 549 BCS_FRWheelRotatedDirectionVD 1;
+BA_ "GenSigInactiveValue" SG_ 549 BCS_FRWheelRotatedDirectionVD 0;
+BA_ "GenSigInvalidValue" SG_ 549 BCS_FRWheelRotatedDirectionVD 0;
+BA_ "GenSigStartValue" SG_ 549 BCS_FRWheelRotatedDirectionVD 0;
+BA_ "GenSigTimeoutValue" SG_ 549 BCS_FLWheelSpd 0;
+BA_ "Remark" SG_ 549 BCS_FLWheelSpd "";
+BA_ "EventCommandSignal" SG_ 549 BCS_FLWheelSpd 0;
+BA_ "GatewayedSignals" SG_ 549 BCS_FLWheelSpd 0;
+BA_ "GenSigSendType" SG_ 549 BCS_FLWheelSpd 1;
+BA_ "GenSigInactiveValue" SG_ 549 BCS_FLWheelSpd 0;
+BA_ "GenSigInvalidValue" SG_ 549 BCS_FLWheelSpd 0;
+BA_ "GenSigStartValue" SG_ 549 BCS_FLWheelSpd 0;
+BA_ "GenSigTimeoutValue" SG_ 549 BCS_FLWheelRotatedDirectionVD 0;
+BA_ "Remark" SG_ 549 BCS_FLWheelRotatedDirectionVD "";
+BA_ "EventCommandSignal" SG_ 549 BCS_FLWheelRotatedDirectionVD 0;
+BA_ "GatewayedSignals" SG_ 549 BCS_FLWheelRotatedDirectionVD 0;
+BA_ "GenSigSendType" SG_ 549 BCS_FLWheelRotatedDirectionVD 1;
+BA_ "GenSigInactiveValue" SG_ 549 BCS_FLWheelRotatedDirectionVD 0;
+BA_ "GenSigInvalidValue" SG_ 549 BCS_FLWheelRotatedDirectionVD 0;
+BA_ "GenSigStartValue" SG_ 549 BCS_FLWheelRotatedDirectionVD 0;
+BA_ "GenSigTimeoutValue" SG_ 549 BCS_FLWheelRotatedDirection 0;
+BA_ "Remark" SG_ 549 BCS_FLWheelRotatedDirection "";
+BA_ "EventCommandSignal" SG_ 549 BCS_FLWheelRotatedDirection 0;
+BA_ "GatewayedSignals" SG_ 549 BCS_FLWheelRotatedDirection 0;
+BA_ "GenSigSendType" SG_ 549 BCS_FLWheelRotatedDirection 1;
+BA_ "GenSigInactiveValue" SG_ 549 BCS_FLWheelRotatedDirection 0;
+BA_ "GenSigInvalidValue" SG_ 549 BCS_FLWheelRotatedDirection 0;
+BA_ "GenSigStartValue" SG_ 549 BCS_FLWheelRotatedDirection 0;
+BA_ "GenSigTimeoutValue" SG_ 549 BCS_FLWheelSpdVD 0;
+BA_ "Remark" SG_ 549 BCS_FLWheelSpdVD "";
+BA_ "EventCommandSignal" SG_ 549 BCS_FLWheelSpdVD 0;
+BA_ "GatewayedSignals" SG_ 549 BCS_FLWheelSpdVD 0;
+BA_ "GenSigSendType" SG_ 549 BCS_FLWheelSpdVD 1;
+BA_ "GenSigInactiveValue" SG_ 549 BCS_FLWheelSpdVD 0;
+BA_ "GenSigInvalidValue" SG_ 549 BCS_FLWheelSpdVD 0;
+BA_ "GenSigStartValue" SG_ 549 BCS_FLWheelSpdVD 0;
+BA_ "GenSigTimeoutValue" SG_ 385 SCU_5_Checksum 0;
+BA_ "Remark" SG_ 385 SCU_5_Checksum "";
+BA_ "EventCommandSignal" SG_ 385 SCU_5_Checksum 0;
+BA_ "GatewayedSignals" SG_ 385 SCU_5_Checksum 0;
+BA_ "GenSigSendType" SG_ 385 SCU_5_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 385 SCU_5_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 385 SCU_5_Checksum 0;
+BA_ "GenSigStartValue" SG_ 385 SCU_5_Checksum 255;
+BA_ "GenSigTimeoutValue" SG_ 385 BCS_CDDFail 0;
+BA_ "Remark" SG_ 385 BCS_CDDFail "";
+BA_ "EventCommandSignal" SG_ 385 BCS_CDDFail 0;
+BA_ "GatewayedSignals" SG_ 385 BCS_CDDFail 0;
+BA_ "GenSigSendType" SG_ 385 BCS_CDDFail 1;
+BA_ "GenSigInactiveValue" SG_ 385 BCS_CDDFail 0;
+BA_ "GenSigInvalidValue" SG_ 385 BCS_CDDFail 0;
+BA_ "GenSigStartValue" SG_ 385 BCS_CDDFail 0;
+BA_ "GenSigTimeoutValue" SG_ 385 BCS_VehicleStandStillSt 0;
+BA_ "Remark" SG_ 385 BCS_VehicleStandStillSt "";
+BA_ "EventCommandSignal" SG_ 385 BCS_VehicleStandStillSt 0;
+BA_ "GatewayedSignals" SG_ 385 BCS_VehicleStandStillSt 0;
+BA_ "GenSigSendType" SG_ 385 BCS_VehicleStandStillSt 1;
+BA_ "GenSigInactiveValue" SG_ 385 BCS_VehicleStandStillSt 0;
+BA_ "GenSigInvalidValue" SG_ 385 BCS_VehicleStandStillSt 0;
+BA_ "GenSigStartValue" SG_ 385 BCS_VehicleStandStillSt 0;
+BA_ "GenSigTimeoutValue" SG_ 385 BCS_CDDAvailable 0;
+BA_ "Remark" SG_ 385 BCS_CDDAvailable "";
+BA_ "EventCommandSignal" SG_ 385 BCS_CDDAvailable 0;
+BA_ "GatewayedSignals" SG_ 385 BCS_CDDAvailable 0;
+BA_ "GenSigSendType" SG_ 385 BCS_CDDAvailable 1;
+BA_ "GenSigInactiveValue" SG_ 385 BCS_CDDAvailable 0;
+BA_ "GenSigInvalidValue" SG_ 385 BCS_CDDAvailable 0;
+BA_ "GenSigStartValue" SG_ 385 BCS_CDDAvailable 0;
+BA_ "GenSigTimeoutValue" SG_ 385 BCS_CDDActive 0;
+BA_ "Remark" SG_ 385 BCS_CDDActive "";
+BA_ "EventCommandSignal" SG_ 385 BCS_CDDActive 0;
+BA_ "GatewayedSignals" SG_ 385 BCS_CDDActive 0;
+BA_ "GenSigSendType" SG_ 385 BCS_CDDActive 1;
+BA_ "GenSigInactiveValue" SG_ 385 BCS_CDDActive 0;
+BA_ "GenSigInvalidValue" SG_ 385 BCS_CDDActive 0;
+BA_ "GenSigStartValue" SG_ 385 BCS_CDDActive 0;
+BA_ "GenSigTimeoutValue" SG_ 385 BCS_AEBAvailable 0;
+BA_ "Remark" SG_ 385 BCS_AEBAvailable "";
+BA_ "EventCommandSignal" SG_ 385 BCS_AEBAvailable 0;
+BA_ "GatewayedSignals" SG_ 385 BCS_AEBAvailable 0;
+BA_ "GenSigSendType" SG_ 385 BCS_AEBAvailable 1;
+BA_ "GenSigInactiveValue" SG_ 385 BCS_AEBAvailable 0;
+BA_ "GenSigInvalidValue" SG_ 385 BCS_AEBAvailable 0;
+BA_ "GenSigStartValue" SG_ 385 BCS_AEBAvailable 0;
+BA_ "GenSigTimeoutValue" SG_ 385 BCS_AEBActive 0;
+BA_ "Remark" SG_ 385 BCS_AEBActive "";
+BA_ "EventCommandSignal" SG_ 385 BCS_AEBActive 0;
+BA_ "GatewayedSignals" SG_ 385 BCS_AEBActive 0;
+BA_ "GenSigSendType" SG_ 385 BCS_AEBActive 1;
+BA_ "GenSigInactiveValue" SG_ 385 BCS_AEBActive 0;
+BA_ "GenSigInvalidValue" SG_ 385 BCS_AEBActive 0;
+BA_ "GenSigStartValue" SG_ 385 BCS_AEBActive 0;
+BA_ "GenSigTimeoutValue" SG_ 385 BCS_MasterCylinderPrOffset 0;
+BA_ "Remark" SG_ 385 BCS_MasterCylinderPrOffset "";
+BA_ "EventCommandSignal" SG_ 385 BCS_MasterCylinderPrOffset 0;
+BA_ "GatewayedSignals" SG_ 385 BCS_MasterCylinderPrOffset 0;
+BA_ "GenSigSendType" SG_ 385 BCS_MasterCylinderPrOffset 1;
+BA_ "GenSigInactiveValue" SG_ 385 BCS_MasterCylinderPrOffset 0;
+BA_ "GenSigInvalidValue" SG_ 385 BCS_MasterCylinderPrOffset 0;
+BA_ "GenSigStartValue" SG_ 385 BCS_MasterCylinderPrOffset 150;
+BA_ "GenSigTimeoutValue" SG_ 385 SCU_5_MsgCounter 0;
+BA_ "Remark" SG_ 385 SCU_5_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 385 SCU_5_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 385 SCU_5_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 385 SCU_5_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 385 SCU_5_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 385 SCU_5_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 385 SCU_5_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 385 BCS_MasterCylinderPr 0;
+BA_ "Remark" SG_ 385 BCS_MasterCylinderPr "";
+BA_ "EventCommandSignal" SG_ 385 BCS_MasterCylinderPr 0;
+BA_ "GatewayedSignals" SG_ 385 BCS_MasterCylinderPr 0;
+BA_ "GenSigSendType" SG_ 385 BCS_MasterCylinderPr 1;
+BA_ "GenSigInactiveValue" SG_ 385 BCS_MasterCylinderPr 0;
+BA_ "GenSigInvalidValue" SG_ 385 BCS_MasterCylinderPr 0;
+BA_ "GenSigStartValue" SG_ 385 BCS_MasterCylinderPr 0;
+BA_ "GenSigTimeoutValue" SG_ 385 BCS_MasterCylinderPrOffsetVD 0;
+BA_ "Remark" SG_ 385 BCS_MasterCylinderPrOffsetVD "";
+BA_ "EventCommandSignal" SG_ 385 BCS_MasterCylinderPrOffsetVD 0;
+BA_ "GatewayedSignals" SG_ 385 BCS_MasterCylinderPrOffsetVD 0;
+BA_ "GenSigSendType" SG_ 385 BCS_MasterCylinderPrOffsetVD 1;
+BA_ "GenSigInactiveValue" SG_ 385 BCS_MasterCylinderPrOffsetVD 0;
+BA_ "GenSigInvalidValue" SG_ 385 BCS_MasterCylinderPrOffsetVD 0;
+BA_ "GenSigStartValue" SG_ 385 BCS_MasterCylinderPrOffsetVD 0;
+BA_ "GenSigTimeoutValue" SG_ 385 BCS_MasterCylinderPrVD 0;
+BA_ "Remark" SG_ 385 BCS_MasterCylinderPrVD "";
+BA_ "EventCommandSignal" SG_ 385 BCS_MasterCylinderPrVD 0;
+BA_ "GatewayedSignals" SG_ 385 BCS_MasterCylinderPrVD 0;
+BA_ "GenSigSendType" SG_ 385 BCS_MasterCylinderPrVD 1;
+BA_ "GenSigInactiveValue" SG_ 385 BCS_MasterCylinderPrVD 0;
+BA_ "GenSigInvalidValue" SG_ 385 BCS_MasterCylinderPrVD 0;
+BA_ "GenSigStartValue" SG_ 385 BCS_MasterCylinderPrVD 0;
+BA_ "GenSigTimeoutValue" SG_ 385 BCS_NoBrakeForce 0;
+BA_ "Remark" SG_ 385 BCS_NoBrakeForce "";
+BA_ "EventCommandSignal" SG_ 385 BCS_NoBrakeForce 0;
+BA_ "GatewayedSignals" SG_ 385 BCS_NoBrakeForce 0;
+BA_ "GenSigSendType" SG_ 385 BCS_NoBrakeForce 1;
+BA_ "GenSigInactiveValue" SG_ 385 BCS_NoBrakeForce 0;
+BA_ "GenSigInvalidValue" SG_ 385 BCS_NoBrakeForce 0;
+BA_ "GenSigStartValue" SG_ 385 BCS_NoBrakeForce 0;
+BA_ "GenSigTimeoutValue" SG_ 548 SCU_4_Checksum 0;
+BA_ "Remark" SG_ 548 SCU_4_Checksum "";
+BA_ "EventCommandSignal" SG_ 548 SCU_4_Checksum 0;
+BA_ "GatewayedSignals" SG_ 548 SCU_4_Checksum 0;
+BA_ "GenSigSendType" SG_ 548 SCU_4_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 548 SCU_4_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 548 SCU_4_Checksum 0;
+BA_ "GenSigStartValue" SG_ 548 SCU_4_Checksum 255;
+BA_ "GenSigTimeoutValue" SG_ 548 SCU_4_MsgCounter 0;
+BA_ "Remark" SG_ 548 SCU_4_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 548 SCU_4_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 548 SCU_4_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 548 SCU_4_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 548 SCU_4_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 548 SCU_4_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 548 SCU_4_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 548 BCS_HDCErrSt 0;
+BA_ "Remark" SG_ 548 BCS_HDCErrSt "";
+BA_ "EventCommandSignal" SG_ 548 BCS_HDCErrSt 0;
+BA_ "GatewayedSignals" SG_ 548 BCS_HDCErrSt 0;
+BA_ "GenSigSendType" SG_ 548 BCS_HDCErrSt 1;
+BA_ "GenSigInactiveValue" SG_ 548 BCS_HDCErrSt 0;
+BA_ "GenSigInvalidValue" SG_ 548 BCS_HDCErrSt 0;
+BA_ "GenSigStartValue" SG_ 548 BCS_HDCErrSt 0;
+BA_ "GenSigTimeoutValue" SG_ 548 BCS_HDCCtrlSt 0;
+BA_ "Remark" SG_ 548 BCS_HDCCtrlSt "";
+BA_ "EventCommandSignal" SG_ 548 BCS_HDCCtrlSt 0;
+BA_ "GatewayedSignals" SG_ 548 BCS_HDCCtrlSt 0;
+BA_ "GenSigSendType" SG_ 548 BCS_HDCCtrlSt 1;
+BA_ "GenSigInactiveValue" SG_ 548 BCS_HDCCtrlSt 0;
+BA_ "GenSigInvalidValue" SG_ 548 BCS_HDCCtrlSt 0;
+BA_ "GenSigStartValue" SG_ 548 BCS_HDCCtrlSt 0;
+BA_ "GenSigTimeoutValue" SG_ 547 SCU_3_Checksum 0;
+BA_ "Remark" SG_ 547 SCU_3_Checksum "";
+BA_ "EventCommandSignal" SG_ 547 SCU_3_Checksum 0;
+BA_ "GatewayedSignals" SG_ 547 SCU_3_Checksum 0;
+BA_ "GenSigSendType" SG_ 547 SCU_3_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 547 SCU_3_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 547 SCU_3_Checksum 0;
+BA_ "GenSigStartValue" SG_ 547 SCU_3_Checksum 240;
+BA_ "GenSigTimeoutValue" SG_ 547 BCS_YawRateOffset 0;
+BA_ "Remark" SG_ 547 BCS_YawRateOffset "";
+BA_ "EventCommandSignal" SG_ 547 BCS_YawRateOffset 0;
+BA_ "GatewayedSignals" SG_ 547 BCS_YawRateOffset 0;
+BA_ "GenSigSendType" SG_ 547 BCS_YawRateOffset 1;
+BA_ "GenSigInactiveValue" SG_ 547 BCS_YawRateOffset 0;
+BA_ "GenSigInvalidValue" SG_ 547 BCS_YawRateOffset 0;
+BA_ "GenSigStartValue" SG_ 547 BCS_YawRateOffset 133;
+BA_ "GenSigTimeoutValue" SG_ 547 SCU_3_MsgCounter 0;
+BA_ "Remark" SG_ 547 SCU_3_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 547 SCU_3_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 547 SCU_3_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 547 SCU_3_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 547 SCU_3_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 547 SCU_3_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 547 SCU_3_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 547 BCS_YawRate 0;
+BA_ "Remark" SG_ 547 BCS_YawRate "";
+BA_ "EventCommandSignal" SG_ 547 BCS_YawRate 0;
+BA_ "GatewayedSignals" SG_ 547 BCS_YawRate 0;
+BA_ "GenSigSendType" SG_ 547 BCS_YawRate 1;
+BA_ "GenSigInactiveValue" SG_ 547 BCS_YawRate 0;
+BA_ "GenSigInvalidValue" SG_ 547 BCS_YawRate 0;
+BA_ "GenSigStartValue" SG_ 547 BCS_YawRate 2144;
+BA_ "GenSigTimeoutValue" SG_ 547 BCS_YawRateSt 0;
+BA_ "Remark" SG_ 547 BCS_YawRateSt "";
+BA_ "EventCommandSignal" SG_ 547 BCS_YawRateSt 0;
+BA_ "GatewayedSignals" SG_ 547 BCS_YawRateSt 0;
+BA_ "GenSigSendType" SG_ 547 BCS_YawRateSt 1;
+BA_ "GenSigInactiveValue" SG_ 547 BCS_YawRateSt 0;
+BA_ "GenSigInvalidValue" SG_ 547 BCS_YawRateSt 0;
+BA_ "GenSigStartValue" SG_ 547 BCS_YawRateSt 0;
+BA_ "GenSigTimeoutValue" SG_ 546 SCU_2_Checksum 0;
+BA_ "Remark" SG_ 546 SCU_2_Checksum "";
+BA_ "EventCommandSignal" SG_ 546 SCU_2_Checksum 0;
+BA_ "GatewayedSignals" SG_ 546 SCU_2_Checksum 0;
+BA_ "GenSigSendType" SG_ 546 SCU_2_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 546 SCU_2_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 546 SCU_2_Checksum 0;
+BA_ "GenSigStartValue" SG_ 546 SCU_2_Checksum 255;
+BA_ "GenSigTimeoutValue" SG_ 546 SCU_2_MsgCounter 0;
+BA_ "Remark" SG_ 546 SCU_2_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 546 SCU_2_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 546 SCU_2_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 546 SCU_2_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 546 SCU_2_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 546 SCU_2_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 546 SCU_2_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 546 BCS_RRWheelSpdEdgesSumVD 0;
+BA_ "Remark" SG_ 546 BCS_RRWheelSpdEdgesSumVD "";
+BA_ "EventCommandSignal" SG_ 546 BCS_RRWheelSpdEdgesSumVD 0;
+BA_ "GatewayedSignals" SG_ 546 BCS_RRWheelSpdEdgesSumVD 0;
+BA_ "GenSigSendType" SG_ 546 BCS_RRWheelSpdEdgesSumVD 1;
+BA_ "GenSigInactiveValue" SG_ 546 BCS_RRWheelSpdEdgesSumVD 0;
+BA_ "GenSigInvalidValue" SG_ 546 BCS_RRWheelSpdEdgesSumVD 0;
+BA_ "GenSigStartValue" SG_ 546 BCS_RRWheelSpdEdgesSumVD 0;
+BA_ "GenSigTimeoutValue" SG_ 546 BCS_RLWheelSpdEdgesSumVD 0;
+BA_ "Remark" SG_ 546 BCS_RLWheelSpdEdgesSumVD "";
+BA_ "EventCommandSignal" SG_ 546 BCS_RLWheelSpdEdgesSumVD 0;
+BA_ "GatewayedSignals" SG_ 546 BCS_RLWheelSpdEdgesSumVD 0;
+BA_ "GenSigSendType" SG_ 546 BCS_RLWheelSpdEdgesSumVD 1;
+BA_ "GenSigInactiveValue" SG_ 546 BCS_RLWheelSpdEdgesSumVD 0;
+BA_ "GenSigInvalidValue" SG_ 546 BCS_RLWheelSpdEdgesSumVD 0;
+BA_ "GenSigStartValue" SG_ 546 BCS_RLWheelSpdEdgesSumVD 0;
+BA_ "GenSigTimeoutValue" SG_ 546 BCS_FRWheelSpdEdgesSumVD 0;
+BA_ "Remark" SG_ 546 BCS_FRWheelSpdEdgesSumVD "";
+BA_ "EventCommandSignal" SG_ 546 BCS_FRWheelSpdEdgesSumVD 0;
+BA_ "GatewayedSignals" SG_ 546 BCS_FRWheelSpdEdgesSumVD 0;
+BA_ "GenSigSendType" SG_ 546 BCS_FRWheelSpdEdgesSumVD 1;
+BA_ "GenSigInactiveValue" SG_ 546 BCS_FRWheelSpdEdgesSumVD 0;
+BA_ "GenSigInvalidValue" SG_ 546 BCS_FRWheelSpdEdgesSumVD 0;
+BA_ "GenSigStartValue" SG_ 546 BCS_FRWheelSpdEdgesSumVD 0;
+BA_ "GenSigTimeoutValue" SG_ 546 BCS_FLWheelSpdEdgesSumVD 0;
+BA_ "Remark" SG_ 546 BCS_FLWheelSpdEdgesSumVD "";
+BA_ "EventCommandSignal" SG_ 546 BCS_FLWheelSpdEdgesSumVD 0;
+BA_ "GatewayedSignals" SG_ 546 BCS_FLWheelSpdEdgesSumVD 0;
+BA_ "GenSigSendType" SG_ 546 BCS_FLWheelSpdEdgesSumVD 1;
+BA_ "GenSigInactiveValue" SG_ 546 BCS_FLWheelSpdEdgesSumVD 0;
+BA_ "GenSigInvalidValue" SG_ 546 BCS_FLWheelSpdEdgesSumVD 0;
+BA_ "GenSigStartValue" SG_ 546 BCS_FLWheelSpdEdgesSumVD 0;
+BA_ "GenSigTimeoutValue" SG_ 546 BCS_RRWheelSpdEdgesSum 0;
+BA_ "Remark" SG_ 546 BCS_RRWheelSpdEdgesSum "";
+BA_ "EventCommandSignal" SG_ 546 BCS_RRWheelSpdEdgesSum 0;
+BA_ "GatewayedSignals" SG_ 546 BCS_RRWheelSpdEdgesSum 0;
+BA_ "GenSigSendType" SG_ 546 BCS_RRWheelSpdEdgesSum 1;
+BA_ "GenSigInactiveValue" SG_ 546 BCS_RRWheelSpdEdgesSum 0;
+BA_ "GenSigInvalidValue" SG_ 546 BCS_RRWheelSpdEdgesSum 0;
+BA_ "GenSigStartValue" SG_ 546 BCS_RRWheelSpdEdgesSum 0;
+BA_ "GenSigTimeoutValue" SG_ 546 BCS_RLWheelSpdEdgesSum 0;
+BA_ "Remark" SG_ 546 BCS_RLWheelSpdEdgesSum "";
+BA_ "EventCommandSignal" SG_ 546 BCS_RLWheelSpdEdgesSum 0;
+BA_ "GatewayedSignals" SG_ 546 BCS_RLWheelSpdEdgesSum 0;
+BA_ "GenSigSendType" SG_ 546 BCS_RLWheelSpdEdgesSum 1;
+BA_ "GenSigInactiveValue" SG_ 546 BCS_RLWheelSpdEdgesSum 0;
+BA_ "GenSigInvalidValue" SG_ 546 BCS_RLWheelSpdEdgesSum 0;
+BA_ "GenSigStartValue" SG_ 546 BCS_RLWheelSpdEdgesSum 0;
+BA_ "GenSigTimeoutValue" SG_ 546 BCS_FRWheelSpdEdgesSum 0;
+BA_ "Remark" SG_ 546 BCS_FRWheelSpdEdgesSum "";
+BA_ "EventCommandSignal" SG_ 546 BCS_FRWheelSpdEdgesSum 0;
+BA_ "GatewayedSignals" SG_ 546 BCS_FRWheelSpdEdgesSum 0;
+BA_ "GenSigSendType" SG_ 546 BCS_FRWheelSpdEdgesSum 1;
+BA_ "GenSigInactiveValue" SG_ 546 BCS_FRWheelSpdEdgesSum 0;
+BA_ "GenSigInvalidValue" SG_ 546 BCS_FRWheelSpdEdgesSum 0;
+BA_ "GenSigStartValue" SG_ 546 BCS_FRWheelSpdEdgesSum 0;
+BA_ "GenSigTimeoutValue" SG_ 546 BCS_FLWheelSpdEdgesSum 0;
+BA_ "Remark" SG_ 546 BCS_FLWheelSpdEdgesSum "";
+BA_ "EventCommandSignal" SG_ 546 BCS_FLWheelSpdEdgesSum 0;
+BA_ "GatewayedSignals" SG_ 546 BCS_FLWheelSpdEdgesSum 0;
+BA_ "GenSigSendType" SG_ 546 BCS_FLWheelSpdEdgesSum 1;
+BA_ "GenSigInactiveValue" SG_ 546 BCS_FLWheelSpdEdgesSum 0;
+BA_ "GenSigInvalidValue" SG_ 546 BCS_FLWheelSpdEdgesSum 0;
+BA_ "GenSigStartValue" SG_ 546 BCS_FLWheelSpdEdgesSum 0;
+BA_ "GenSigTimeoutValue" SG_ 384 SCU_1_Checksum 0;
+BA_ "Remark" SG_ 384 SCU_1_Checksum "";
+BA_ "EventCommandSignal" SG_ 384 SCU_1_Checksum 0;
+BA_ "GatewayedSignals" SG_ 384 SCU_1_Checksum 0;
+BA_ "GenSigSendType" SG_ 384 SCU_1_Checksum 1;
+BA_ "GenSigInactiveValue" SG_ 384 SCU_1_Checksum 0;
+BA_ "GenSigInvalidValue" SG_ 384 SCU_1_Checksum 0;
+BA_ "GenSigStartValue" SG_ 384 SCU_1_Checksum 85;
+BA_ "GenSigTimeoutValue" SG_ 384 BCS_VDCActiveSt 0;
+BA_ "Remark" SG_ 384 BCS_VDCActiveSt "";
+BA_ "EventCommandSignal" SG_ 384 BCS_VDCActiveSt 0;
+BA_ "GatewayedSignals" SG_ 384 BCS_VDCActiveSt 0;
+BA_ "GenSigSendType" SG_ 384 BCS_VDCActiveSt 1;
+BA_ "GenSigInactiveValue" SG_ 384 BCS_VDCActiveSt 0;
+BA_ "GenSigInvalidValue" SG_ 384 BCS_VDCActiveSt 0;
+BA_ "GenSigStartValue" SG_ 384 BCS_VDCActiveSt 0;
+BA_ "GenSigTimeoutValue" SG_ 384 SCU_1_MsgCounter 0;
+BA_ "Remark" SG_ 384 SCU_1_MsgCounter "";
+BA_ "EventCommandSignal" SG_ 384 SCU_1_MsgCounter 0;
+BA_ "GatewayedSignals" SG_ 384 SCU_1_MsgCounter 0;
+BA_ "GenSigSendType" SG_ 384 SCU_1_MsgCounter 1;
+BA_ "GenSigInactiveValue" SG_ 384 SCU_1_MsgCounter 0;
+BA_ "GenSigInvalidValue" SG_ 384 SCU_1_MsgCounter 0;
+BA_ "GenSigStartValue" SG_ 384 SCU_1_MsgCounter 0;
+BA_ "GenSigTimeoutValue" SG_ 384 BCS_VehSpd 0;
+BA_ "Remark" SG_ 384 BCS_VehSpd "";
+BA_ "EventCommandSignal" SG_ 384 BCS_VehSpd 0;
+BA_ "GatewayedSignals" SG_ 384 BCS_VehSpd 0;
+BA_ "GenSigSendType" SG_ 384 BCS_VehSpd 1;
+BA_ "GenSigInactiveValue" SG_ 384 BCS_VehSpd 0;
+BA_ "GenSigInvalidValue" SG_ 384 BCS_VehSpd 0;
+BA_ "GenSigStartValue" SG_ 384 BCS_VehSpd 0;
+BA_ "GenSigTimeoutValue" SG_ 384 BCS_VehSpdVD 0;
+BA_ "Remark" SG_ 384 BCS_VehSpdVD "";
+BA_ "EventCommandSignal" SG_ 384 BCS_VehSpdVD 0;
+BA_ "GatewayedSignals" SG_ 384 BCS_VehSpdVD 0;
+BA_ "GenSigSendType" SG_ 384 BCS_VehSpdVD 1;
+BA_ "GenSigInactiveValue" SG_ 384 BCS_VehSpdVD 0;
+BA_ "GenSigInvalidValue" SG_ 384 BCS_VehSpdVD 0;
+BA_ "GenSigStartValue" SG_ 384 BCS_VehSpdVD 0;
+BA_ "GenSigTimeoutValue" SG_ 384 BCS_VDCFaultSt 0;
+BA_ "Remark" SG_ 384 BCS_VDCFaultSt "";
+BA_ "EventCommandSignal" SG_ 384 BCS_VDCFaultSt 0;
+BA_ "GatewayedSignals" SG_ 384 BCS_VDCFaultSt 0;
+BA_ "GenSigSendType" SG_ 384 BCS_VDCFaultSt 1;
+BA_ "GenSigInactiveValue" SG_ 384 BCS_VDCFaultSt 0;
+BA_ "GenSigInvalidValue" SG_ 384 BCS_VDCFaultSt 0;
+BA_ "GenSigStartValue" SG_ 384 BCS_VDCFaultSt 1;
+BA_ "GenSigTimeoutValue" SG_ 384 BCS_ABSFaultSt 0;
+BA_ "Remark" SG_ 384 BCS_ABSFaultSt "";
+BA_ "EventCommandSignal" SG_ 384 BCS_ABSFaultSt 0;
+BA_ "GatewayedSignals" SG_ 384 BCS_ABSFaultSt 0;
+BA_ "GenSigSendType" SG_ 384 BCS_ABSFaultSt 1;
+BA_ "GenSigInactiveValue" SG_ 384 BCS_ABSFaultSt 0;
+BA_ "GenSigInvalidValue" SG_ 384 BCS_ABSFaultSt 0;
+BA_ "GenSigStartValue" SG_ 384 BCS_ABSFaultSt 1;
+BA_ "GenSigTimeoutValue" SG_ 384 BCS_ABSActiveSt 0;
+BA_ "Remark" SG_ 384 BCS_ABSActiveSt "";
+BA_ "EventCommandSignal" SG_ 384 BCS_ABSActiveSt 0;
+BA_ "GatewayedSignals" SG_ 384 BCS_ABSActiveSt 0;
+BA_ "GenSigSendType" SG_ 384 BCS_ABSActiveSt 1;
+BA_ "GenSigInactiveValue" SG_ 384 BCS_ABSActiveSt 0;
+BA_ "GenSigInvalidValue" SG_ 384 BCS_ABSActiveSt 0;
+BA_ "GenSigStartValue" SG_ 384 BCS_ABSActiveSt 0;
+VAL_ 640 ADCU_BeamReq 3 "Reserved" 2 "High beam request" 1 "Low beam request" 0 "No request" ;
+VAL_ 640 ADCU_HornRingReq 1 "Active" 0 "Not active" ;
+VAL_ 640 ADCU_TurnLightReq 3 "Emergency light" 2 "Turn right light" 1 "Turn left light" 0 "No request" ;
+VAL_ 640 ADCU_BodyCtrlReq 1 "Enable" 0 "Disable" ;
+VAL_ 545 ADCU_LatCtrlReq 1 "Auto" 0 "Manual" ;
+VAL_ 544 ADCU_GearLvlReq 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Drive" 3 "Neutral" 2 "Reversed" 1 "Park" 0 "No request" ;
+VAL_ 544 ADCU_GearLvlReqVD 1 "Request" 0 "No request" ;
+VAL_ 544 ADCU_ParkingReqToEPB 1 "Release brake request" 0 "No request" ;
+VAL_ 544 ADCU_ParkingReqToEPBVD 1 "Valid" 0 "Not valid" ;
+VAL_ 544 ADCU_LngCtrlReq 1 "Auto" 0 "Manual" ;
+VAL_ 559 VCU_GasPedalVirtualPstVD 1 "Valid" 0 "Not valid" ;
+VAL_ 559 VCU_BrkPedalStVD 1 "Valid" 0 "Not valid" ;
+VAL_ 559 VCU_BrkPedalSt 1 "Pressed" 0 "Not pressed" ;
+VAL_ 557 VCU_AccElecECFail 1 "Failure" 0 "No failure" ;
+VAL_ 557 VCU_GasPedalActPstVD 1 "Valid" 0 "Invalid" ;
+VAL_ 556 VCU_LateralAssistBtnInfoVD 1 "Valid" 0 "Invalid" ;
+VAL_ 556 VCU_LateralAssistBtnInfo 1 "Pressed " 0 "Not pressed" ;
+VAL_ 556 VCU_ACCMaxRecpDecelVD 1 "Valid" 0 "Not valid" ;
+VAL_ 555 VCU_CrntGearLvl 7 "Not used" 6 "Not used" 5 "Not used" 4 "'P' Park gear" 3 "'R' Reverse gear" 2 "'N' Neutral gear" 1 "'D' Drive gear" 0 "Invalid" ;
+VAL_ 555 VCU_CrntGearLvlVD 1 "Valid" 0 "Not valid" ;
+VAL_ 555 VCU_ActRecpTorqSt 3 "Reserved" 2 "Faulty" 1 "Normal" 0 "NotIntialized" ;
+VAL_ 706 VCU_VehDrvMod 7 "Reserved" 6 "I-pedal Mode" 5 "SPORT Mode" 4 "Driving Mode" 3 "Normal Mode" 2 "ECO Mode" 1 "ECO+ Mode" 0 "Invalid" ;
+VAL_ 706 VCU_VehRdySt 1 "Ready" 0 "Not ready" ;
+VAL_ 554 SCU_StrngWhlIntv 1 "Driver override" 0 "No override" ;
+VAL_ 554 VCU_GearLeverIntv 1 "With intervention" 0 "Without intervention" ;
+VAL_ 554 SCU_EStopSwStVD 1 "Valid" 0 "Not valid" ;
+VAL_ 554 SCU_EStopSwSt 1 "Pressed" 0 "Not pressed" ;
+VAL_ 554 SCU_LatCtrlMode 3 "Fault" 2 "Auto" 1 "Quit" 0 "Manual" ;
+VAL_ 554 SCU_LngCtrlMode 3 "Fault" 2 "Auto" 1 "Quit" 0 "Manual" ;
+VAL_ 705 SRS_DriverSeatBeltSt 3 "Invalid" 2 "Not used" 1 "Unfastened" 0 "Fastened " ;
+VAL_ 705 SRS_PsngrSeatBeltSt 3 "Invalid" 2 "Not used" 1 "Unfastened" 0 "Fastened " ;
+VAL_ 704 BCM_CtrlAvailable 1 "Available" 0 "Not available" ;
+VAL_ 704 BCM_HornSt 1 "Active" 0 "Not active" ;
+VAL_ 704 BCM_HazardLampSt 1 "Active" 0 "Not active" ;
+VAL_ 704 BCM_RightTurnLampFaultSt 1 "Fault" 0 "Not fault" ;
+VAL_ 704 BCM_RightTurnLampSt 1 "Active" 0 "Not active" ;
+VAL_ 704 BCM_LeftTurnLampFaultSt 1 "Fault" 0 "Not fault" ;
+VAL_ 704 BCM_LeftTurnLampSt 1 "Active" 0 "Not active" ;
+VAL_ 704 BCM_RRDoorAjarSt 1 "Open" 0 "Closed" ;
+VAL_ 704 BCM_RLDoorAjarSt 1 "Open" 0 "Closed" ;
+VAL_ 704 BCM_PsngrDoorAjarSt 1 "Open" 0 "Closed" ;
+VAL_ 704 BCM_DriverDoorAjarSt 1 "Open" 0 "Closed" ;
+VAL_ 704 BCM_RearFogLampSt 1 "Active" 0 "Not active" ;
+VAL_ 704 BCM_FrontFogLampSt 1 "Active" 0 "Not active" ;
+VAL_ 704 BCM_HighBeamSt 1 "Active" 0 "Not active" ;
+VAL_ 704 BCM_LowBeamSt 1 "Active" 0 "Not active" ;
+VAL_ 704 BCM_KeySt 3 "Crank                                " 2 "On" 1 "Acc" 0 "Off" ;
+VAL_ 704 BCM_FrontWiperSt 3 "Continuous fast" 2 "Continuous slow" 1 "Error" 0 "OFF" ;
+VAL_ 553 EPS_SteeringAngleVD 1 "Valid" 0 "Not valid" ;
+VAL_ 553 EPS_ThermalSt 3 "Temperature Impossible" 2 "Temperature Low" 1 "Temperature High" 0 "Temperature Normal" ;
+VAL_ 553 EPS_SteeringAngleSpdVD 1 "Valid" 0 "Not valid" ;
+VAL_ 553 EPS_WarnLamp 1 "Fail present" 0 "Fail not present" ;
+VAL_ 553 EPS_StrngWhlTorqVD 1 "Valid" 0 "Not valid" ;
+VAL_ 552 EPB_FailSt 1 "Error" 0 "No error" ;
+VAL_ 552 EPB_SysSt 7 "Fault(not sure position)" 6 "Not used" 5 "Not used" 4 "Disengaged" 3 "Applying" 2 "Releasing" 1 "Apply (fully applied)" 0 "Release (fully released)" ;
+VAL_ 552 EPB_SwitchStVD 1 "Valid" 0 "Not valid                                                       " ;
+VAL_ 552 EPB_SwitchSt 3 "Not used                                                                                      " 2 " Applied" 1 " Released                                                       " 0 " Not active                                                        " ;
+VAL_ 551 BCS_ActVehLaltrlAccelVD 1 "Valid" 0 "Not valid" ;
+VAL_ 551 BCS_ActVehLongAccelVD 1 "Valid" 0 "Not valid" ;
+VAL_ 550 BCS_RRWheelSpdVD 1 "Valid" 0 "Not valid" ;
+VAL_ 550 BCS_RRWheelRotatedDirection 1 "Backward" 0 "Forward" ;
+VAL_ 550 BCS_RRWheelRotatedDirectionVD 1 "Valid" 0 "Not valid" ;
+VAL_ 550 BCS_RLWheelRotatedDirectionVD 1 "Valid" 0 "Not valid" ;
+VAL_ 550 BCS_RLWheelRotatedDirection 1 "Backward" 0 "Forward" ;
+VAL_ 550 BCS_RLWheelSpdVD 1 "Valid" 0 "Not valid" ;
+VAL_ 549 BCS_FRWheelSpdVD 1 "Valid" 0 "Not valid" ;
+VAL_ 549 BCS_FRWheelRotatedDirection 1 "Backward" 0 "Forward" ;
+VAL_ 549 BCS_FRWheelRotatedDirectionVD 1 "Valid" 0 "Not valid" ;
+VAL_ 549 BCS_FLWheelRotatedDirectionVD 1 "Valid" 0 "Not valid" ;
+VAL_ 549 BCS_FLWheelRotatedDirection 1 "Backward" 0 "Forward" ;
+VAL_ 549 BCS_FLWheelSpdVD 1 "Valid" 0 "Not valid" ;
+VAL_ 385 BCS_CDDFail 1 "Failure" 0 "Not failure" ;
+VAL_ 385 BCS_VehicleStandStillSt 3 "Not used" 2 "Invalid (short unavailability, max 3s)" 1 "standstill" 0 "Not standstill" ;
+VAL_ 385 BCS_CDDAvailable 1 "Available" 0 "Not available" ;
+VAL_ 385 BCS_CDDActive 1 "Active" 0 "Not active" ;
+VAL_ 385 BCS_AEBAvailable 1 "Available" 0 "Not available" ;
+VAL_ 385 BCS_AEBActive 1 "Active" 0 "Not active" ;
+VAL_ 385 BCS_MasterCylinderPrOffsetVD 1 "Valid" 0 "Invalid" ;
+VAL_ 385 BCS_MasterCylinderPrVD 1 "Valid" 0 "Invalid" ;
+VAL_ 385 BCS_NoBrakeForce 1 "No brake force" 0 "Exist brake force" ;
+VAL_ 548 BCS_HDCErrSt 1 "Error" 0 "No error" ;
+VAL_ 548 BCS_HDCCtrlSt 3 "Not used" 2 "On not active braking" 1 "On active braking" 0 "Off" ;
+VAL_ 547 BCS_YawRateSt 1 "Valid" 0 "Not valid" ;
+VAL_ 546 BCS_RRWheelSpdEdgesSumVD 1 "Valid" 0 "Not valid" ;
+VAL_ 546 BCS_RLWheelSpdEdgesSumVD 1 "Valid" 0 "Not valid" ;
+VAL_ 546 BCS_FRWheelSpdEdgesSumVD 1 "Valid" 0 "Not valid" ;
+VAL_ 546 BCS_FLWheelSpdEdgesSumVD 1 "Valid" 0 "Not valid" ;
+VAL_ 384 BCS_VDCActiveSt 1 "Active" 0 "Not active" ;
+VAL_ 384 BCS_VehSpdVD 1 "Valid" 0 "Not Valid" ;
+VAL_ 384 BCS_VDCFaultSt 1 "Fault" 0 "Not Fault" ;
+VAL_ 384 BCS_ABSFaultSt 1 "Fault" 0 "Not Fault" ;
+VAL_ 384 BCS_ABSActiveSt 1 "Active" 0 "Not active" ;
+

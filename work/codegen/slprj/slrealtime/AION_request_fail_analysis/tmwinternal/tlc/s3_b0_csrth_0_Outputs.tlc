@@ -1,0 +1,67 @@
+%implements s3_b0_csrth_0_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+/* {S!d10250}MATLAB Function: '<Root>/Lateral_request_fail_analysis' */
+/* MATLAB Function 'Lateral_request_fail_analysis': '<S1>:1' */
+if ((*rtu_InBus_set_lateral_control_info_set_LatCtrlReq == Auto) && (*rtu_InBus_get_SCU_info_get_LatCtrlMode == ManualStatus)) {
+    /* '<S1>:1:17' */
+    /* '<S1>:1:18' */
+    localDW->request_fail_count_b++;
+} else {
+    /* '<S1>:1:20' */
+    localDW->request_fail_count_b = 0.0;
+}
+/* {E!d10250}End of MATLAB Function: '<Root>/Lateral_request_fail_analysis' */
+
+/* {S!d10252}MATLAB Function: '<Root>/Longitudinal_request_fail_analysis' */
+/* MATLAB Function 'Longitudinal_request_fail_analysis': '<S2>:1' */
+if ((*rtu_InBus_set_longitudinal_control_info_set_LngCtrlReq == Auto) && (*rtu_InBus_get_SCU_info_get_LngCtrlMode == ManualStatus)) {
+    /* '<S2>:1:17' */
+    /* '<S2>:1:18' */
+    localDW->request_fail_count++;
+} else {
+    /* '<S2>:1:20' */
+    localDW->request_fail_count = 0.0;
+}
+/* {E!d10252}End of MATLAB Function: '<Root>/Longitudinal_request_fail_analysis' */
+%closefile cfgTxt
+%<cfgTxt>
+%assign rtmArgSys = ::CompiledModel.System[::CompiledModel.System[::CompiledModel.RTWCGModules.RTWCGModule[0].CGSystemIdx].NonInlinedParentSystemIdx]
+%if SysFcnArgNeeded("Output", rtmArgSys.Interface.RTMArgDef, rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "Output"))
+%<SLibCG_AccessArg(0, 2, 0)>
+%endif
+%if SLibCG_ArgAccessed(0, 2, 0)
+%<SLibAccessArg(rtmArgSys.Interface.RTMArgDef, "Output", rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "Output"))>
+%endif
+%if (IsModelReferenceBaseSys(rtmArgSys) && (IsModelRefScalableBuild() || GenerateClassInterface)) ||...
+(GenerateClassInterface && SLibIsMultiInstanceServer(rtmArgSys))
+%<SLibCG_UndoAccessArg(0, 2, 0)>
+%endif
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
+%function OutputsFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void AION_request_fail_analysis(\
+%assign comma = ""
+%if SLibCG_ArgAccessed(0, 2, 0)
+%<comma>%<::tSimStructType> * const %<::tSimStruct>\
+%assign comma = ", "
+%<SLibUpdateSymbolForFunction("AION_request_fail_analysis", SLibGetFcnDefinitionRTMSymbolName(), TLC_FALSE)>\
+%endif
+%<comma>const Control_request *rtu_InBus_set_lateral_control_info_set_LatCtrlReq\
+%assign comma = ", "
+%<comma>const Control_request *rtu_InBus_set_longitudinal_control_info_set_LngCtrlReq\
+%assign comma = ", "
+%<comma>const Control_status *rtu_InBus_get_SCU_info_get_LatCtrlMode\
+%assign comma = ", "
+%<comma>const Control_status *rtu_InBus_get_SCU_info_get_LngCtrlMode\
+%assign comma = ", "
+%<comma>DW_AION_request_fail_analysis_f_T *localDW\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%endfunction
