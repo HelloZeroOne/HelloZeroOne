@@ -1,0 +1,135 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: IDS GNSS
+
+
+VAL_TABLE_ Vehicle_Lane_Type 5 "Right of Right Lane" 4 "Tread in Right Lane" 3 "between Left Lane and Right Lane" 2 "Tread in Left Lane" 1 "Left of Left Lane" 0 "unknow" ;
+
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ BRAKE_PEDAL_POS : 55|8@0+ (0.392157,0) [0|100] "" Vector__XXX
+
+BO_ 769 VEHICLE_STATUS: 8 IDS
+ SG_ VEHICLE_SPEED : 7|16@0+ (0.1,0) [0|80] "km/h"  GNSS
+ SG_ VEHICLE_GEAR_D : 56|1@0+ (1,0) [0|1] ""  GNSS
+ SG_ VEHICLE_GEAR_R : 57|1@0+ (1,0) [0|1] ""  GNSS
+
+
+
+CM_ " ";
+CM_ BU_ IDS "智能驾驶系统";
+CM_ BU_ GNSS "组合惯导";
+CM_ BO_ 769 "车辆状态";
+CM_ SG_ 769 VEHICLE_SPEED "整车车速";
+CM_ SG_ 769 VEHICLE_GEAR_D "前进档（1有效）";
+CM_ SG_ 769 VEHICLE_GEAR_R "后退档（1有效）";
+BA_DEF_ BO_  "NmMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","Event","Mixed";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 300000;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 300000;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 300000;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 300000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 300000;
+BA_DEF_ BO_  "GenMsgInhibitTime" INT 0 300000;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ SG_  "GenSigGWTimeoutValue" HEX 0 300000;
+BA_DEF_ SG_  "GenSigValidAfterKL15" ENUM  "Y","N","Null";
+BA_DEF_ SG_  "GenSigUpdataPeriod" INT 0 300000;
+BA_DEF_ SG_  "GenSigNote" STRING ;
+BA_DEF_  "NmAsrWaitBusSleepTime" INT 0 65535;
+BA_DEF_  "NmAsrRepeatMessageTime" INT 0 65535;
+BA_DEF_ BU_  "NMAsrNodeIdentifier" HEX 0 255;
+BA_DEF_  "NmAsrMessageCount" INT 1 256;
+BA_DEF_  "NmAsrBaseAddress" HEX 0 2047;
+BA_DEF_ BO_  "NmAsrMessage" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmAsrCanMsgReducedTime" INT 0 65535;
+BA_DEF_  "NmAsrCanMsgCycleTime" INT 1 65535;
+BA_DEF_ BU_  "NmAsrCanMsgCycleOffset" INT 0 65535;
+BA_DEF_  "NmAsrTimeoutTime" INT 1 65535;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTimeActive" INT 0 0;
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "DiagStationAddress" HEX 0 255;
+BA_DEF_ BU_  "NmAsrNode" ENUM  "No","Yes";
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgInhibitTime" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "GenSigGWTimeoutValue" 0;
+BA_DEF_DEF_  "GenSigValidAfterKL15" "Null";
+BA_DEF_DEF_  "GenSigUpdataPeriod" 0;
+BA_DEF_DEF_  "GenSigNote" "";
+BA_DEF_DEF_  "NmAsrWaitBusSleepTime" 1500;
+BA_DEF_DEF_  "NmAsrRepeatMessageTime" 500;
+BA_DEF_DEF_  "NMAsrNodeIdentifier" 0;
+BA_DEF_DEF_  "NmAsrMessageCount" 128;
+BA_DEF_DEF_  "NmAsrBaseAddress" 1536;
+BA_DEF_DEF_  "NmAsrMessage" "No";
+BA_DEF_DEF_  "NmAsrCanMsgReducedTime" 100;
+BA_DEF_DEF_  "NmAsrCanMsgCycleTime" 200;
+BA_DEF_DEF_  "NmAsrCanMsgCycleOffset" 0;
+BA_DEF_DEF_  "NmAsrTimeoutTime" 5000;
+BA_DEF_DEF_  "NodeLayerModules" "CANoeILNLVector.dll";
+BA_DEF_DEF_  "GenMsgCycleTimeActive" 0;
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "DiagStationAddress" 0;
+BA_DEF_DEF_  "NmAsrNode" "No";
+BA_DEF_DEF_  "Manufacturer" "Borgward";
+BA_DEF_DEF_  "NmType" "NmAsr";
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "DBName" "BCAN";
+

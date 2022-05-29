@@ -1,0 +1,253 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU IDS
+
+
+BO_ 1298 steer_status: 5 VCU
+ SG_ STEER_ANGLE_EN_STS : 0|8@1+ (1,0) [0|255] ""  IDS
+ SG_ STEER_ANGLE_STS : 8|16@1- (0.001,0) [-0.524|0.524] "radian"  IDS
+ SG_ STEER_ERR : 24|8@1+ (1,0) [0|255] ""  IDS
+ SG_ SENSOR_ERR : 32|8@1+ (1,0) [0|255] ""  IDS
+
+BO_ 1296 throttle_status: 4 VCU
+ SG_ THROTTLE_PEDAL_EN_STS : 0|8@1+ (1,0) [0|255] ""  IDS
+ SG_ THROTTLE_PEDAL_STS : 8|8@1+ (1,0) [0|100] "%"  IDS
+ SG_ DRIVE_MOTOR_ERR : 16|8@1+ (1,0) [0|255] ""  IDS
+ SG_ BATTERY_BMS_ERR : 24|8@1+ (1,0) [0|255] ""  IDS
+
+BO_ 1297 brake_status: 7 VCU
+ SG_ BRAKE_PEDAL_EN_STS : 0|8@1+ (1,0) [0|255] ""  IDS
+ SG_ BRAKE_PEDAL_STS : 8|8@1+ (1,0) [0|100] "%"  IDS
+ SG_ BRAKE_ERR : 16|8@1+ (1,0) [0|255] ""  IDS
+ SG_ EMERGENCY_BTN_ENV : 24|8@1+ (1,0) [0|255] ""  IDS
+ SG_ FRONT_BUMP_ENV : 32|8@1+ (1,0) [0|255] ""  IDS
+ SG_ BACK_BUMP_ENV : 40|8@1+ (1,0) [0|255] ""  IDS
+ SG_ OVERSPD_ENV : 48|8@1+ (1,0) [0|255] ""  IDS
+
+BO_ 1300 gear_status: 1 VCU
+ SG_ GEAR_STS : 0|8@1+ (1,0) [0|255] ""  IDS
+
+BO_ 1301 ecu_status_1: 8 VCU
+ SG_ SPEED : 0|16@1- (0.01,0) [-2.78|5.56] "m/s"  IDS
+ SG_ ACC_SPEED : 16|16@1- (0.001,0) [-32.768|32.767] "m/s^2"  IDS
+ SG_ CTRL_STS : 32|8@1+ (1,0) [0|255] ""  IDS
+ SG_ CHASSIS_STS : 40|8@1+ (1,0) [0|255] ""  IDS
+ SG_ CHASSIS_ERR : 48|16@1+ (1,0) [0|65535] ""  IDS
+
+BO_ 1302 ecu_status_2: 8 VCU
+ SG_ BATTERY_REMAINING_CAPACITY : 0|16@1+ (1,0) [0|100] "%"  IDS
+ SG_ BATTERY_VOLTAGE : 16|16@1+ (0.1,0) [0|80] "V"  IDS
+ SG_ BATTERY_CURRENT : 32|16@1- (0.1,0) [-60|60] "A"  IDS
+ SG_ BATTERY_TEMPERATURE : 48|16@1- (1,0) [-40|110] ""  IDS
+
+BO_ 1303 ecu_status_3: 8 VCU
+ SG_ ULTRASOUND_DIST_1 : 0|8@1+ (1,0) [0|255] "cm"  IDS
+ SG_ ULTRASOUND_DIST_2 : 8|8@1+ (1,0) [0|255] "cm"  IDS
+ SG_ ULTRASOUND_DIST_3 : 16|8@1+ (1,0) [0|255] "cm"  IDS
+ SG_ ULTRASOUND_DIST_4 : 24|8@1+ (1,0) [0|255] "cm"  IDS
+ SG_ ULTRASOUND_DIST_5 : 32|8@1+ (1,0) [0|255] "cm"  IDS
+ SG_ ULTRASOUND_DIST_6 : 40|8@1+ (1,0) [0|255] "cm"  IDS
+ SG_ ULTRASOUND_DIST_7 : 48|8@1+ (1,0) [0|255] "cm"  IDS
+ SG_ ULTRASOUND_DIST_8 : 56|8@1+ (1,0) [0|255] "cm"  IDS
+
+BO_ 1299 turnsignal_status: 8 VCU
+ SG_ TURN_SIGNAL_STS : 0|8@1+ (1,0) [0|255] ""  IDS
+
+BO_ 274 steer_command: 8 IDS
+ SG_ STEER_ANGLE_EN_CTRL : 0|8@1+ (1,0) [0|255] ""  VCU
+ SG_ STEER_ANGLE_CMD : 8|16@1- (0.001,0) [-0.524|0.524] "radian"  VCU
+
+BO_ 272 throttle_command: 8 IDS
+ SG_ THROTTLE_PEDAL_EN_CTRL : 0|8@1+ (1,0) [0|255] ""  VCU
+ SG_ THROTTLE_PEDAL_CMD : 8|8@1+ (1,0) [0|100] "%"  VCU
+
+BO_ 273 brake_command: 8 IDS
+ SG_ BRAKE_PEDAL_EN_CTRL : 0|8@1+ (1,0) [0|255] ""  VCU
+ SG_ BRAKE_PEDAL_CMD : 8|8@1+ (1,0) [0|100] "%"  VCU
+
+BO_ 276 gear_command: 8 IDS
+ SG_ GEAR_CMD : 0|8@1+ (1,0) [0|255] ""  VCU
+
+BO_ 277 control_command: 8 IDS
+ SG_ CTRL_CMD : 0|8@1+ (1,0) [0|255] ""  VCU
+
+BO_ 275 turnsignal_command: 8 IDS
+ SG_ TURN_SIGNAL_CMD : 0|8@1+ (1,0) [0|255] ""  VCU
+
+
+
+CM_ BO_ 1298 "转向反馈";
+CM_ SG_ 1298 STEER_ANGLE_EN_STS "转向系统的驾驶模式信息。";
+CM_ SG_ 1298 STEER_ANGLE_STS "前轮转角反馈值，（逆时针）左转为正值，（顺时针）右转为负值。";
+CM_ SG_ 1298 STEER_ERR "转向系统的故障信息。";
+CM_ SG_ 1298 SENSOR_ERR "转向系统的故障信息。";
+CM_ BO_ 1296 "驱动反馈";
+CM_ SG_ 1296 THROTTLE_PEDAL_EN_STS "驱动系统的驾驶模式。";
+CM_ SG_ 1296 THROTTLE_PEDAL_STS "当前虚拟驱动踏板的位置。";
+CM_ SG_ 1296 DRIVE_MOTOR_ERR "驱动系统的故障信息。";
+CM_ SG_ 1296 BATTERY_BMS_ERR "驱动系统的故障信息。";
+CM_ BO_ 1297 "制动反馈";
+CM_ SG_ 1297 BRAKE_PEDAL_EN_STS "制动系统的驾驶模式。";
+CM_ SG_ 1297 BRAKE_PEDAL_STS "当前虚拟制动踏板的位置。";
+CM_ SG_ 1297 BRAKE_ERR "制动系统的故障信息。";
+CM_ SG_ 1297 EMERGENCY_BTN_ENV "紧急情况保护。";
+CM_ SG_ 1297 FRONT_BUMP_ENV "碰撞保护。";
+CM_ SG_ 1297 BACK_BUMP_ENV "碰撞保护。";
+CM_ SG_ 1297 OVERSPD_ENV "超速保护。";
+CM_ BO_ 1300 "档位反馈";
+CM_ SG_ 1300 GEAR_STS "实际档位P/R/N/D。";
+CM_ BO_ 1301 "整车控制器反馈1";
+CM_ SG_ 1301 SPEED "整车速度（-10km/h~20km/h）。";
+CM_ SG_ 1301 ACC_SPEED "整车加速度。";
+CM_ SG_ 1301 CTRL_STS "整车控制器控制状态。";
+CM_ SG_ 1301 CHASSIS_STS "底盘生命信号。";
+CM_ SG_ 1301 CHASSIS_ERR "底盘故障代码。";
+CM_ BO_ 1302 "整车控制器反馈2";
+CM_ SG_ 1302 BATTERY_REMAINING_CAPACITY "电池剩余电量百分比。";
+CM_ SG_ 1302 BATTERY_VOLTAGE "当前电池电压";
+CM_ SG_ 1302 BATTERY_CURRENT "当前电池电流";
+CM_ SG_ 1302 BATTERY_TEMPERATURE "当前电池温度";
+CM_ BO_ 1303 "整车控制器反馈3";
+CM_ SG_ 1303 ULTRASOUND_DIST_1 "超声波探测距离1。";
+CM_ SG_ 1303 ULTRASOUND_DIST_2 "超声波探测距离2。";
+CM_ SG_ 1303 ULTRASOUND_DIST_3 "超声波探测距离3。";
+CM_ SG_ 1303 ULTRASOUND_DIST_4 "超声波探测距离4。";
+CM_ SG_ 1303 ULTRASOUND_DIST_5 "超声波探测距离5。";
+CM_ SG_ 1303 ULTRASOUND_DIST_6 "超声波探测距离6。";
+CM_ SG_ 1303 ULTRASOUND_DIST_7 "超声波探测距离7。";
+CM_ SG_ 1303 ULTRASOUND_DIST_8 "超声波探测距离8。";
+CM_ BO_ 1299 "转向灯反馈";
+CM_ SG_ 1299 TURN_SIGNAL_STS "转向灯状态。";
+CM_ BO_ 274 "转向控制 ";
+CM_ SG_ 274 STEER_ANGLE_EN_CTRL "总线控制转向系统从手动驾驶状态切换到自动驾驶状态的标志位。";
+CM_ SG_ 274 STEER_ANGLE_CMD "总线控制转向系统转动的目标角度，（逆时针）左转为正值，（顺时针）右转为负值。";
+CM_ BO_ 272 "驱动控制";
+CM_ SG_ 272 THROTTLE_PEDAL_EN_CTRL "总线控制驱动系统从手动驾驶状态切换到自动驾驶状态的标志位。";
+CM_ SG_ 272 THROTTLE_PEDAL_CMD "虚拟加速踏板目标位置。";
+CM_ BO_ 273 "制动控制";
+CM_ SG_ 273 BRAKE_PEDAL_EN_CTRL "总线控制制动系统从手动驾驶状态切换到自动驾驶状态的标志位。";
+CM_ SG_ 273 BRAKE_PEDAL_CMD "虚拟制动踏板目标位置。";
+CM_ BO_ 276 "档位控制";
+CM_ SG_ 276 GEAR_CMD "目标档位P/R/N/D。";
+CM_ BO_ 277 "整车控制器控制";
+CM_ SG_ 277 CTRL_CMD "整车控制器控制指令。";
+CM_ BO_ 275 "转向灯控制";
+CM_ SG_ 275 TURN_SIGNAL_CMD "转向灯控制指令。";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT -3.4E+038 3.4E+038;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_ "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 1298 20;
+BA_ "GenMsgCycleTime" BO_ 1296 20;
+BA_ "GenMsgCycleTime" BO_ 1297 20;
+BA_ "GenMsgCycleTime" BO_ 1300 20;
+BA_ "GenMsgCycleTime" BO_ 1301 20;
+BA_ "GenMsgCycleTime" BO_ 1302 20;
+BA_ "GenMsgCycleTime" BO_ 1303 20;
+BA_ "GenMsgCycleTime" BO_ 1299 20;
+BA_ "GenMsgCycleTime" BO_ 274 20;
+BA_ "GenMsgCycleTime" BO_ 272 20;
+BA_ "GenMsgCycleTime" BO_ 273 20;
+BA_ "GenMsgCycleTime" BO_ 276 20;
+BA_ "GenMsgCycleTime" BO_ 277 20;
+BA_ "GenMsgCycleTime" BO_ 275 20;
+BA_ "GenSigStartValue" SG_ 1298 STEER_ANGLE_EN_STS 0;
+BA_ "GenSigStartValue" SG_ 1298 STEER_ANGLE_STS 0;
+BA_ "GenSigStartValue" SG_ 1298 STEER_ERR 0;
+BA_ "GenSigStartValue" SG_ 1298 SENSOR_ERR 0;
+BA_ "GenSigStartValue" SG_ 1296 THROTTLE_PEDAL_EN_STS 0;
+BA_ "GenSigStartValue" SG_ 1296 THROTTLE_PEDAL_STS 0;
+BA_ "GenSigStartValue" SG_ 1296 DRIVE_MOTOR_ERR 0;
+BA_ "GenSigStartValue" SG_ 1296 BATTERY_BMS_ERR 0;
+BA_ "GenSigStartValue" SG_ 1297 BRAKE_PEDAL_EN_STS 0;
+BA_ "GenSigStartValue" SG_ 1297 BRAKE_PEDAL_STS 0;
+BA_ "GenSigStartValue" SG_ 1297 BRAKE_ERR 0;
+BA_ "GenSigStartValue" SG_ 1297 EMERGENCY_BTN_ENV 0;
+BA_ "GenSigStartValue" SG_ 1297 FRONT_BUMP_ENV 0;
+BA_ "GenSigStartValue" SG_ 1297 BACK_BUMP_ENV 0;
+BA_ "GenSigStartValue" SG_ 1297 OVERSPD_ENV 0;
+BA_ "GenSigStartValue" SG_ 1300 GEAR_STS 0;
+BA_ "GenSigStartValue" SG_ 1301 SPEED 0;
+BA_ "GenSigStartValue" SG_ 1301 ACC_SPEED 0;
+BA_ "GenSigStartValue" SG_ 1301 CTRL_STS 0;
+BA_ "GenSigStartValue" SG_ 1301 CHASSIS_STS 0;
+BA_ "GenSigStartValue" SG_ 1301 CHASSIS_ERR 0;
+BA_ "GenSigStartValue" SG_ 1302 BATTERY_REMAINING_CAPACITY 0;
+BA_ "GenSigStartValue" SG_ 1302 BATTERY_VOLTAGE 0;
+BA_ "GenSigStartValue" SG_ 1302 BATTERY_CURRENT 0;
+BA_ "GenSigStartValue" SG_ 1302 BATTERY_TEMPERATURE 0;
+BA_ "GenSigStartValue" SG_ 1303 ULTRASOUND_DIST_1 0;
+BA_ "GenSigStartValue" SG_ 1303 ULTRASOUND_DIST_2 0;
+BA_ "GenSigStartValue" SG_ 1303 ULTRASOUND_DIST_3 0;
+BA_ "GenSigStartValue" SG_ 1303 ULTRASOUND_DIST_4 0;
+BA_ "GenSigStartValue" SG_ 1303 ULTRASOUND_DIST_5 0;
+BA_ "GenSigStartValue" SG_ 1303 ULTRASOUND_DIST_6 0;
+BA_ "GenSigStartValue" SG_ 1303 ULTRASOUND_DIST_7 0;
+BA_ "GenSigStartValue" SG_ 1303 ULTRASOUND_DIST_8 0;
+BA_ "GenSigStartValue" SG_ 1299 TURN_SIGNAL_STS 0;
+BA_ "GenSigStartValue" SG_ 274 STEER_ANGLE_EN_CTRL 0;
+BA_ "GenSigStartValue" SG_ 274 STEER_ANGLE_CMD 0;
+BA_ "GenSigStartValue" SG_ 272 THROTTLE_PEDAL_EN_CTRL 0;
+BA_ "GenSigStartValue" SG_ 272 THROTTLE_PEDAL_CMD 0;
+BA_ "GenSigStartValue" SG_ 273 BRAKE_PEDAL_EN_CTRL 0;
+BA_ "GenSigStartValue" SG_ 273 BRAKE_PEDAL_CMD 0;
+BA_ "GenSigStartValue" SG_ 276 GEAR_CMD 0;
+BA_ "GenSigStartValue" SG_ 277 CTRL_CMD 0;
+BA_ "GenSigStartValue" SG_ 275 TURN_SIGNAL_CMD 0;
+VAL_ 1298 STEER_ANGLE_EN_STS 0 "手动驾驶" 1 "自动驾驶" 2 "人工接管" ;
+VAL_ 1298 STEER_ERR 0 "无故障" 1 "转向电机故障" ;
+VAL_ 1298 SENSOR_ERR 0 "无故障" 1 "转向传感器故障" ;
+VAL_ 1296 THROTTLE_PEDAL_EN_STS 0 "手动驾驶" 1 "自动驾驶" 2 "人工接管" ;
+VAL_ 1296 DRIVE_MOTOR_ERR 0 "无故障" 1 "驱动电机故障" ;
+VAL_ 1297 BRAKE_PEDAL_EN_STS 0 "手动驾驶" 1 "自动驾驶" 2 "人工接管" ;
+VAL_ 1297 BRAKE_ERR 0 "无故障" 1 "制动系统故障" ;
+VAL_ 1297 EMERGENCY_BTN_ENV 0 "未触发" 1 "急停开关触发制动" ;
+VAL_ 1297 FRONT_BUMP_ENV 0 "未触发" 1 "前防撞开关触发制动" ;
+VAL_ 1297 BACK_BUMP_ENV 0 "未触发" 1 "后防撞开关触发制动" ;
+VAL_ 1297 OVERSPD_ENV 0 "未触发" 1 "超速触发制动" ;
+VAL_ 1300 GEAR_STS 1 "P档" 2 "R档" 3 "N档" 4 "D档" ;
+VAL_ 1301 CTRL_STS 0 "不控制整车" 1 "控制整车" ;
+VAL_ 1299 TURN_SIGNAL_STS 0 "无转向灯" 1 "左转向灯" 2 "右转向灯" ;
+VAL_ 274 STEER_ANGLE_EN_CTRL 0 "手动驾驶" 1 "自动驾驶" ;
+VAL_ 272 THROTTLE_PEDAL_EN_CTRL 0 "手动驾驶" 1 "自动驾驶" ;
+VAL_ 273 BRAKE_PEDAL_EN_CTRL 0 "手动驾驶" 1 "自动驾驶" ;
+VAL_ 276 GEAR_CMD 1 "P档" 2 "R档" 3 "N档" 4 "D档" ;
+VAL_ 277 CTRL_CMD 0 "不控制整车" 1 "控制整车" ;
+VAL_ 275 TURN_SIGNAL_CMD 0 "无转向灯" 1 "左转向灯" 2 "右转向灯" ;
+

@@ -1,0 +1,415 @@
+<<<<<<< HEAD
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: IEHS IFVS IDS CCU SCS
+
+
+<<<<<<< HEAD
+=======
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ IEHS2_Day : 44|5@0+ (1,0) [0|38] "" Vector__XXX
+
+>>>>>>> 19e873ccfa9de152d1e55c14df49c6cde6ea56a1
+BO_ 2348982434 IEHS2IDS_Data: 8 IEHS
+ SG_ OriginalSteeringWheelAngle : 7|16@0+ (0.1,-1575) [-1575|1575] "deg"  IDS
+ SG_ MotorPowerTorque : 23|16@0+ (0.000152,-5) [-5|4.96132] "N*m"  IDS
+ SG_ SteeringWheelAngleSpeed : 39|8@0+ (10,0) [50|540] "deg/s"  IDS
+ SG_ IEHSLife : 47|8@0+ (1,0) [0|255] ""  IDS
+ SG_ SteeringWheelTorque : 55|8@0+ (0.07,-8.96) [-8.96|8.89] "N*m"  IDS
+ SG_ CurrentIEHSWorkStatus : 59|4@0+ (1,0) [0|15] ""  IDS
+
+BO_ 2348982435 IEHS2IDS_Fault: 8 IEHS
+<<<<<<< HEAD
+
+BO_ 2566865171 IEHS2IDS_Version: 8 IEHS
+
+BO_ 2348983200 CCU2IEHS_Data: 8 CCU
+=======
+ SG_ SensorPowerError : 0|1@0+ (1,0) [0|1] ""  IDS
+
+BO_ 2566865171 IEHS2IDS_Version: 8 IEHS
+ SG_ IEHS2_HardwareSecVersion_Low : 3|4@0+ (1,0) [0|16] ""  IDS
+ SG_ IEHS2_HardwareSecVersion_High : 7|4@0+ (1,0) [0|16] ""  IDS
+ SG_ IEHS2_HardwareMainVersion : 11|4@0+ (1,0) [0|16] ""  IDS
+ SG_ IEHS2_SoftwareSecVersion_Low : 19|4@0+ (1,0) [0|16] ""  IDS
+ SG_ IEHS2_SoftwareSecVersion_High : 23|4@0+ (1,0) [0|16] ""  IDS
+ SG_ IEHS2_VehicleInformation : 27|4@0+ (1,0) [0|16] ""  IDS
+ SG_ IEHS2_SoftwareMainVersion : 31|4@0+ (1,0) [0|16] ""  IDS
+ SG_ IEHS2_Year : 38|7@0+ (1,0) [0|128] ""  IDS
+ SG_ IEHS2_Month : 47|4@0+ (1,0) [0|0] ""  IDS
+ SG_ IEHS2_DeviceAddr : 55|8@0+ (1,0) [0|256] ""  IDS
+
+BO_ 2348983200 CCU2IEHS_Data: 8 CCU
+ SG_ TCSN2IEHSLife_1 : 7|8@0+ (1,0) [0|256] ""  IEHS
+ SG_ OilPumpStatus : 22|1@0+ (1,0) [0|1] ""  IEHS
+>>>>>>> 19e873ccfa9de152d1e55c14df49c6cde6ea56a1
+
+BO_ 260 IFVS2IDS_Data: 8 IFVS
+ SG_ CameraConfidence : 7|1@0+ (1,0) [0|1] ""  IDS
+ SG_ IFVSLife : 15|8@0+ (1,0) [0|255] ""  IDS
+ SG_ OriginalA0 : 23|11@0+ (0.01,-10.24) [-10.24|10.23] "m"  IDS
+ SG_ OriginalA1 : 28|11@0+ (0.001,-1.024) [-1.024|1.023] ""  IDS
+ SG_ OriginalA2 : 33|14@0+ (1e-05,-0.08192) [-0.08192|0.08191] "m^-1"  IDS
+ SG_ OriginalA3 : 51|12@0+ (1e-07,-0.0002048) [-0.0002048|0.0002047] "m^-2"  IDS
+
+BO_ 73 IFVS2IDS_Response: 8 IFVS
+<<<<<<< HEAD
+=======
+ SG_ Response_Contant_High3 : 47|24@0+ (1,0) [0|0] ""  IDS
+ SG_ Response_Contant_Low5 : 7|40@0+ (1,0) [0|0] ""  IDS
+>>>>>>> 19e873ccfa9de152d1e55c14df49c6cde6ea56a1
+
+BO_ 2348982944 IDS2IEHS_Data: 8 IDS
+ SG_ DesiredSteeringWheelAngle : 7|16@0+ (0.1,-1575) [-600|600] "deg"  IEHS
+ SG_ DesiredIEHSWorkMode : 19|4@0+ (1,0) [0|15] ""  IEHS
+ SG_ VCUStatus : 20|1@0+ (1,0) [0|1] ""  IEHS
+ SG_ DesiredSteeringAngleEnable : 21|1@0+ (1,0) [0|1] ""  IEHS
+ SG_ DesiredAdditionalTorque : 31|8@0+ (0.1,-12.8) [-12.8|12.7] "N*m"  IEHS
+ SG_ DesiredSteeringWheelAngleSpeed : 39|8@0+ (10,0) [50|540] "deg/s"  IEHS
+ SG_ IDSLife : 63|8@0+ (1,0) [0|255] ""  IEHS
+<<<<<<< HEAD
+ SG_ OilPumpStatus : 22|1@0+ (1,0) [0|1] ""  IEHS
+ SG_ TramSpeed2IEHS : 47|8@0+ (0.5,0) [0|70] "km/h"  IEHS
+=======
+>>>>>>> 19e873ccfa9de152d1e55c14df49c6cde6ea56a1
+
+BO_ 399 IDS2IFVS_Data: 8 IDS
+ SG_ TramYawRate : 0|16@1- (0.00307,0) [-100.59776|100.59469] "deg/s"  IFVS
+ SG_ SteeringWheelAngle : 16|16@1- (0.1,0) [-1575|1575] "deg"  IFVS
+ SG_ TramSpeed : 32|8@1+ (0.5,0) [0|80] "km/h"  IFVS
+
+BO_ 32 IDS2IFVS_Request: 8 IDS
+<<<<<<< HEAD
+=======
+ SG_ Reauest_Contant_High : 7|32@0+ (1,0) [0|0] ""  IFVS
+ SG_ Request_Contant_Low : 39|32@0+ (1,0) [0|0] ""  IFVS
+>>>>>>> 19e873ccfa9de152d1e55c14df49c6cde6ea56a1
+
+BO_ 1638 IDS2SCS: 8 IDS
+ SG_ Mc1ArticulatedAngle : 32|16@1- (0.1,0) [-3276.8|3276.7] "deg"  SCS
+ SG_ Mc2ArticulatedAngle : 48|16@1- (0.1,0) [-3276.8|3276.7] "deg"  SCS
+
+<<<<<<< HEAD
+=======
+BO_ 2348983456 CCU2IEHS_Data2: 8 CCU
+ SG_ TCSN2IEHSLife_2 : 7|8@0+ (1,0) [0|256] ""  IEHS
+ SG_ TrarmSpeed2IEHS : 15|8@0+ (1,0) [0|70] "km/h"  IEHS
+
+>>>>>>> 19e873ccfa9de152d1e55c14df49c6cde6ea56a1
+
+
+CM_ BU_ IEHS "智能电液转向系统";
+CM_ BU_ IFVS "智能前视系统";
+CM_ BU_ IDS "智能驾驶系统";
+CM_ BU_ CCU "整车网络控制系统中央控制单元";
+CM_ BU_ SCS "周界环视系统";
+<<<<<<< HEAD
+=======
+CM_ SG_ 3221225472 IEHS2_Day "日期";
+>>>>>>> 19e873ccfa9de152d1e55c14df49c6cde6ea56a1
+CM_ BO_ 2348982434 "IEHS发给IDS的数据报文";
+CM_ SG_ 2348982434 OriginalSteeringWheelAngle "原始方向盘转向角度";
+CM_ SG_ 2348982434 MotorPowerTorque "智能电液转向系统电机助力扭矩";
+CM_ SG_ 2348982434 SteeringWheelAngleSpeed "方向盘转向角速度";
+CM_ SG_ 2348982434 IEHSLife "智能电液转向系统生命信号";
+CM_ SG_ 2348982434 SteeringWheelTorque "方向盘转向扭矩";
+CM_ SG_ 2348982434 CurrentIEHSWorkStatus "智能电液转向系统工作状态";
+CM_ BO_ 2348982435 "IEHS发给IDS的故障报文";
+<<<<<<< HEAD
+CM_ BO_ 2566865171 "IEHS发给IDS的版本信息报文";
+CM_ BO_ 2348983200 "CCU发给IEHS的数据报文，主要是油泵状态、车速，不需再经过IDS转发";
+=======
+CM_ SG_ 2348982435 SensorPowerError "传感器电源电压不正常";
+CM_ BO_ 2566865171 "IEHS发给IDS的版本信息报文";
+CM_ SG_ 2566865171 IEHS2_HardwareSecVersion_Low "硬件次版本号低位";
+CM_ SG_ 2566865171 IEHS2_HardwareSecVersion_High "硬件次版本号高位";
+CM_ SG_ 2566865171 IEHS2_HardwareMainVersion "硬件主版本号";
+CM_ SG_ 2566865171 IEHS2_SoftwareSecVersion_Low "软件次版本号低位";
+CM_ SG_ 2566865171 IEHS2_SoftwareSecVersion_High "软件次版本号高位";
+CM_ SG_ 2566865171 IEHS2_VehicleInformation "车辆信息";
+CM_ SG_ 2566865171 IEHS2_SoftwareMainVersion "软件主版本号";
+CM_ SG_ 2566865171 IEHS2_Year "年份";
+CM_ SG_ 2566865171 IEHS2_Month "月份";
+CM_ SG_ 2566865171 IEHS2_DeviceAddr "设备地址";
+CM_ BO_ 2348983200 "CCU发给IEHS的数据报文，主要是油泵状态，不需再经过IDS转发";
+CM_ SG_ 2348983200 TCSN2IEHSLife_1 "TCSN通过0x0C02A3A0端口发送给电液转向的生命信号";
+CM_ SG_ 2348983200 OilPumpStatus "油泵状态";
+>>>>>>> 19e873ccfa9de152d1e55c14df49c6cde6ea56a1
+CM_ BO_ 260 "IFVS发给IDS的数据报文";
+CM_ SG_ 260 CameraConfidence "摄像头识别置信度";
+CM_ SG_ 260 IFVSLife "智能前视系统生命信号";
+CM_ SG_ 260 OriginalA0 "循迹线轨迹偏差A0";
+CM_ SG_ 260 OriginalA1 "循迹线斜率A1";
+CM_ SG_ 260 OriginalA2 "循迹线曲率A2";
+CM_ SG_ 260 OriginalA3 "循迹线曲率变化率A3";
+CM_ BO_ 73 "IFVS发给IDS的设置指令响应报文，拍照、录像、固件更新、软件版本这些";
+<<<<<<< HEAD
+=======
+CM_ SG_ 73 Response_Contant_High3 "报文高3字节";
+CM_ SG_ 73 Response_Contant_Low5 "报文低5字节";
+>>>>>>> 19e873ccfa9de152d1e55c14df49c6cde6ea56a1
+CM_ BO_ 2348982944 "IDS发给IEHS的数据报文";
+CM_ SG_ 2348982944 DesiredSteeringWheelAngle "期望方向盘转向角度";
+CM_ SG_ 2348982944 DesiredIEHSWorkMode "期望智能电液转向系统工作模式";
+CM_ SG_ 2348982944 VCUStatus "VCU状态";
+CM_ SG_ 2348982944 DesiredSteeringAngleEnable "期望转角使能";
+CM_ SG_ 2348982944 DesiredAdditionalTorque "期望电机叠加扭矩";
+CM_ SG_ 2348982944 DesiredSteeringWheelAngleSpeed "期望方向盘角速度";
+CM_ SG_ 2348982944 IDSLife "智能驾驶系统生命信号";
+<<<<<<< HEAD
+CM_ SG_ 2348982944 OilPumpStatus "助力油泵状态";
+CM_ SG_ 2348982944 TramSpeed2IEHS "整车车速";
+=======
+>>>>>>> 19e873ccfa9de152d1e55c14df49c6cde6ea56a1
+CM_ BO_ 399 "IDS发给IFVS的数据报文";
+CM_ SG_ 399 TramYawRate "列车横摆角速度(转发给摄像头)";
+CM_ SG_ 399 SteeringWheelAngle "方向盘转向角度";
+CM_ SG_ 399 TramSpeed "整车车速";
+CM_ BO_ 32 "IDS发给IFVS的请求报文，拍照、录像、固件更新、版本号这些";
+<<<<<<< HEAD
+CM_ BO_ 1638 "IDS发给SCS的车身信息报文";
+CM_ SG_ 1638 Mc1ArticulatedAngle "MC1车铰接角";
+CM_ SG_ 1638 Mc2ArticulatedAngle "MC2车铰接角";
+=======
+CM_ SG_ 32 Reauest_Contant_High "报文高4字节";
+CM_ SG_ 32 Request_Contant_Low "报文低4字节";
+CM_ BO_ 1638 "IDS发给SCS的车身信息报文";
+CM_ SG_ 1638 Mc1ArticulatedAngle "MC1车铰接角";
+CM_ SG_ 1638 Mc2ArticulatedAngle "MC2车铰接角";
+CM_ BO_ 2348983456 "CCU发给IEHS的数据报文，主要是整车车速，不需再经过IDS转发";
+CM_ SG_ 2348983456 TCSN2IEHSLife_2 "生命信号";
+CM_ SG_ 2348983456 TrarmSpeed2IEHS "整车车速";
+>>>>>>> 19e873ccfa9de152d1e55c14df49c6cde6ea56a1
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+VAL_ 2348982434 CurrentIEHSWorkStatus 0 "Standby" 1 "Autopilot" 4 "Manual" 5 "Intervention" 6 "Warning" 7 "Error" 8 "Torque" ;
+VAL_ 260 CameraConfidence 0 "Invalid" 1 "Valid" ;
+<<<<<<< HEAD
+VAL_ 2348982944 DesiredIEHSWorkMode 0 "Standby" 1 "Autopilot" 4 "Manual" 5 "InterventionRecovery" 6 "ClearFault" 7 "Torque" ;
+VAL_ 2348982944 VCUStatus 0 "Invalid" 1 "Valid" ;
+VAL_ 2348982944 DesiredSteeringAngleEnable 0 "Invalid" 1 "Valid" ;
+=======
+VAL_ 73 Response_Contant_High3 9502720 "RESPONSE_TAG_SAVE_PICTURE" 10747904 "RESPONSE_TAG_SAVE_VIDEO" 8388640 "RESPONSE_TAG_REFRESH_MPU" ;
+VAL_ 73 Response_Contant_Low5 0 "Default" ;
+VAL_ 2348982944 DesiredIEHSWorkMode 0 "Standby" 1 "Autopilot" 4 "Manual" 5 "InterventionRecovery" 6 "ClearFault" 7 "Torque" ;
+VAL_ 2348982944 VCUStatus 0 "Invalid" 1 "Valid" ;
+VAL_ 2348982944 DesiredSteeringAngleEnable 0 "Invalid" 1 "Valid" ;
+VAL_ 32 Reauest_Contant_High 16777216 "REQUEST_PICTURE_HIGH" 67108864 "REQUEST_VIDEO_HIGH" 8192 "REQUEST_MPU_REFRESH" 2 "REQUEST_SOFTWARE_VERSION" ;
+VAL_ 32 Request_Contant_Low 0 "Default" ;
+>>>>>>> 19e873ccfa9de152d1e55c14df49c6cde6ea56a1
+
+=======
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: IEHS IFVS IDS CCU SCS
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ IEHS2_Day : 44|5@0+ (1,0) [0|38] "" Vector__XXX
+
+BO_ 2348982434 IEHS2IDS_Data: 8 IEHS
+ SG_ OriginalSteeringWheelAngle : 7|16@0+ (0.1,-1575) [-1575|1575] "deg"  IDS
+ SG_ MotorPowerTorque : 23|16@0+ (0.000152,-5) [-5|4.96132] "N*m"  IDS
+ SG_ SteeringWheelAngleSpeed : 39|8@0+ (10,0) [50|540] "deg/s"  IDS
+ SG_ IEHSLife : 47|8@0+ (1,0) [0|255] ""  IDS
+ SG_ SteeringWheelTorque : 55|8@0+ (0.07,-8.96) [-8.96|8.89] "N*m"  IDS
+ SG_ CurrentIEHSWorkStatus : 59|4@0+ (1,0) [0|15] ""  IDS
+
+BO_ 2348982435 IEHS2IDS_Fault: 8 IEHS
+ SG_ SensorPowerError : 0|1@0+ (1,0) [0|1] ""  IDS
+
+BO_ 2566865171 IEHS2IDS_Version: 8 IEHS
+ SG_ IEHS2_HardwareSecVersion_Low : 3|4@0+ (1,0) [0|16] ""  IDS
+ SG_ IEHS2_HardwareSecVersion_High : 7|4@0+ (1,0) [0|16] ""  IDS
+ SG_ IEHS2_HardwareMainVersion : 11|4@0+ (1,0) [0|16] ""  IDS
+ SG_ IEHS2_SoftwareSecVersion_Low : 19|4@0+ (1,0) [0|16] ""  IDS
+ SG_ IEHS2_SoftwareSecVersion_High : 23|4@0+ (1,0) [0|16] ""  IDS
+ SG_ IEHS2_VehicleInformation : 27|4@0+ (1,0) [0|16] ""  IDS
+ SG_ IEHS2_SoftwareMainVersion : 31|4@0+ (1,0) [0|16] ""  IDS
+ SG_ IEHS2_Year : 38|7@0+ (1,0) [0|128] ""  IDS
+ SG_ IEHS2_Month : 47|4@0+ (1,0) [0|0] ""  IDS
+ SG_ IEHS2_DeviceAddr : 55|8@0+ (1,0) [0|256] ""  IDS
+
+BO_ 2348983200 CCU2IEHS_Data: 8 CCU
+ SG_ TCSN2IEHSLife_1 : 7|8@0+ (1,0) [0|256] ""  IEHS
+ SG_ OilPumpStatus : 22|1@0+ (1,0) [0|1] ""  IEHS
+
+BO_ 260 IFVS2IDS_Data: 8 IFVS
+ SG_ CameraConfidence : 7|1@0+ (1,0) [0|1] ""  IDS
+ SG_ IFVSLife : 15|8@0+ (1,0) [0|255] ""  IDS
+ SG_ OriginalA0 : 23|11@0+ (0.01,-10.24) [-10.24|10.23] "m"  IDS
+ SG_ OriginalA1 : 28|11@0+ (0.001,-1.024) [-1.024|1.023] ""  IDS
+ SG_ OriginalA2 : 33|14@0+ (1e-05,-0.08192) [-0.08192|0.08191] "m^-1"  IDS
+ SG_ OriginalA3 : 51|12@0+ (1e-07,-0.0002048) [-0.0002048|0.0002047] "m^-2"  IDS
+
+BO_ 73 IFVS2IDS_Response: 8 IFVS
+ SG_ Response_Contant_High3 : 47|24@0+ (1,0) [0|0] ""  IDS
+ SG_ Response_Contant_Low5 : 7|40@0+ (1,0) [0|0] ""  IDS
+
+BO_ 2348982944 IDS2IEHS_Data: 8 IDS
+ SG_ DesiredSteeringWheelAngle : 7|16@0+ (0.1,-1575) [-600|600] "deg"  IEHS
+ SG_ DesiredIEHSWorkMode : 19|4@0+ (1,0) [0|15] ""  IEHS
+ SG_ VCUStatus : 20|1@0+ (1,0) [0|1] ""  IEHS
+ SG_ DesiredSteeringAngleEnable : 21|1@0+ (1,0) [0|1] ""  IEHS
+ SG_ DesiredAdditionalTorque : 31|8@0+ (0.1,-12.8) [-12.8|12.7] "N*m"  IEHS
+ SG_ DesiredSteeringWheelAngleSpeed : 39|8@0+ (10,0) [50|540] "deg/s"  IEHS
+ SG_ IDSLife : 63|8@0+ (1,0) [0|255] ""  IEHS
+
+BO_ 399 IDS2IFVS_Data: 8 IDS
+ SG_ TramYawRate : 0|16@1- (0.00307,0) [-100.59776|100.59469] "deg/s"  IFVS
+ SG_ SteeringWheelAngle : 16|16@1- (0.1,0) [-1575|1575] "deg"  IFVS
+ SG_ TramSpeed : 32|8@1+ (0.5,0) [0|80] "km/h"  IFVS
+
+BO_ 32 IDS2IFVS_Request: 8 IDS
+ SG_ Reauest_Contant_High : 7|32@0+ (1,0) [0|0] ""  IFVS
+ SG_ Request_Contant_Low : 39|32@0+ (1,0) [0|0] ""  IFVS
+
+BO_ 1638 IDS2SCS: 8 IDS
+ SG_ Mc1ArticulatedAngle : 32|16@1- (0.1,0) [-3276.8|3276.7] "deg"  SCS
+ SG_ Mc2ArticulatedAngle : 48|16@1- (0.1,0) [-3276.8|3276.7] "deg"  SCS
+
+BO_ 2348983456 CCU2IEHS_Data2: 8 CCU
+ SG_ TCSN2IEHSLife_2 : 7|8@0+ (1,0) [0|256] ""  IEHS
+ SG_ TrarmSpeed2IEHS : 15|8@0+ (1,0) [0|70] "km/h"  IEHS
+
+
+
+CM_ BU_ IEHS "智能电液转向系统";
+CM_ BU_ IFVS "智能前视系统";
+CM_ BU_ IDS "智能驾驶系统";
+CM_ BU_ CCU "整车网络控制系统中央控制单元";
+CM_ BU_ SCS "周界环视系统";
+CM_ SG_ 3221225472 IEHS2_Day "日期";
+CM_ BO_ 2348982434 "IEHS发给IDS的数据报文";
+CM_ SG_ 2348982434 OriginalSteeringWheelAngle "原始方向盘转向角度";
+CM_ SG_ 2348982434 MotorPowerTorque "智能电液转向系统电机助力扭矩";
+CM_ SG_ 2348982434 SteeringWheelAngleSpeed "方向盘转向角速度";
+CM_ SG_ 2348982434 IEHSLife "智能电液转向系统生命信号";
+CM_ SG_ 2348982434 SteeringWheelTorque "方向盘转向扭矩";
+CM_ SG_ 2348982434 CurrentIEHSWorkStatus "智能电液转向系统工作状态";
+CM_ BO_ 2348982435 "IEHS发给IDS的故障报文";
+CM_ SG_ 2348982435 SensorPowerError "传感器电源电压不正常";
+CM_ BO_ 2566865171 "IEHS发给IDS的版本信息报文";
+CM_ SG_ 2566865171 IEHS2_HardwareSecVersion_Low "硬件次版本号低位";
+CM_ SG_ 2566865171 IEHS2_HardwareSecVersion_High "硬件次版本号高位";
+CM_ SG_ 2566865171 IEHS2_HardwareMainVersion "硬件主版本号";
+CM_ SG_ 2566865171 IEHS2_SoftwareSecVersion_Low "软件次版本号低位";
+CM_ SG_ 2566865171 IEHS2_SoftwareSecVersion_High "软件次版本号高位";
+CM_ SG_ 2566865171 IEHS2_VehicleInformation "车辆信息";
+CM_ SG_ 2566865171 IEHS2_SoftwareMainVersion "软件主版本号";
+CM_ SG_ 2566865171 IEHS2_Year "年份";
+CM_ SG_ 2566865171 IEHS2_Month "月份";
+CM_ SG_ 2566865171 IEHS2_DeviceAddr "设备地址";
+CM_ BO_ 2348983200 "CCU发给IEHS的数据报文，主要是油泵状态，不需再经过IDS转发";
+CM_ SG_ 2348983200 TCSN2IEHSLife_1 "TCSN通过0x0C02A3A0端口发送给电液转向的生命信号";
+CM_ SG_ 2348983200 OilPumpStatus "油泵状态";
+CM_ BO_ 260 "IFVS发给IDS的数据报文";
+CM_ SG_ 260 CameraConfidence "摄像头识别置信度";
+CM_ SG_ 260 IFVSLife "智能前视系统生命信号";
+CM_ SG_ 260 OriginalA0 "循迹线轨迹偏差A0";
+CM_ SG_ 260 OriginalA1 "循迹线斜率A1";
+CM_ SG_ 260 OriginalA2 "循迹线曲率A2";
+CM_ SG_ 260 OriginalA3 "循迹线曲率变化率A3";
+CM_ BO_ 73 "IFVS发给IDS的设置指令响应报文，拍照、录像、固件更新、软件版本这些";
+CM_ SG_ 73 Response_Contant_High3 "报文高3字节";
+CM_ SG_ 73 Response_Contant_Low5 "报文低5字节";
+CM_ BO_ 2348982944 "IDS发给IEHS的数据报文";
+CM_ SG_ 2348982944 DesiredSteeringWheelAngle "期望方向盘转向角度";
+CM_ SG_ 2348982944 DesiredIEHSWorkMode "期望智能电液转向系统工作模式";
+CM_ SG_ 2348982944 VCUStatus "VCU状态";
+CM_ SG_ 2348982944 DesiredSteeringAngleEnable "期望转角使能";
+CM_ SG_ 2348982944 DesiredAdditionalTorque "期望电机叠加扭矩";
+CM_ SG_ 2348982944 DesiredSteeringWheelAngleSpeed "期望方向盘角速度";
+CM_ SG_ 2348982944 IDSLife "智能驾驶系统生命信号";
+CM_ BO_ 399 "IDS发给IFVS的数据报文";
+CM_ SG_ 399 TramYawRate "列车横摆角速度(转发给摄像头)";
+CM_ SG_ 399 SteeringWheelAngle "方向盘转向角度";
+CM_ SG_ 399 TramSpeed "整车车速";
+CM_ BO_ 32 "IDS发给IFVS的请求报文，拍照、录像、固件更新、版本号这些";
+CM_ SG_ 32 Reauest_Contant_High "报文高4字节";
+CM_ SG_ 32 Request_Contant_Low "报文低4字节";
+CM_ BO_ 1638 "IDS发给SCS的车身信息报文";
+CM_ SG_ 1638 Mc1ArticulatedAngle "MC1车铰接角";
+CM_ SG_ 1638 Mc2ArticulatedAngle "MC2车铰接角";
+CM_ BO_ 2348983456 "CCU发给IEHS的数据报文，主要是整车车速，不需再经过IDS转发";
+CM_ SG_ 2348983456 TCSN2IEHSLife_2 "生命信号";
+CM_ SG_ 2348983456 TrarmSpeed2IEHS "整车车速";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+VAL_ 2348982434 CurrentIEHSWorkStatus 0 "Standby" 1 "Autopilot" 4 "Manual" 5 "Intervention" 6 "Warning" 7 "Error" 8 "Torque" ;
+VAL_ 260 CameraConfidence 0 "Invalid" 1 "Valid" ;
+VAL_ 73 Response_Contant_High3 9502720 "RESPONSE_TAG_SAVE_PICTURE" 10747904 "RESPONSE_TAG_SAVE_VIDEO" 8388640 "RESPONSE_TAG_REFRESH_MPU" ;
+VAL_ 73 Response_Contant_Low5 0 "Default" ;
+VAL_ 2348982944 DesiredIEHSWorkMode 0 "Standby" 1 "Autopilot" 4 "Manual" 5 "InterventionRecovery" 6 "ClearFault" 7 "Torque" ;
+VAL_ 2348982944 VCUStatus 0 "Invalid" 1 "Valid" ;
+VAL_ 2348982944 DesiredSteeringAngleEnable 0 "Invalid" 1 "Valid" ;
+VAL_ 32 Reauest_Contant_High 16777216 "REQUEST_PICTURE_HIGH" 67108864 "REQUEST_VIDEO_HIGH" 8192 "REQUEST_MPU_REFRESH" 2 "REQUEST_SOFTWARE_VERSION" ;
+VAL_ 32 Request_Contant_Low 0 "Default" ;
+
+>>>>>>> 19e873ccfa9de152d1e55c14df49c6cde6ea56a1

@@ -1,0 +1,250 @@
+VERSION "HIPBNYYYYYYYYYYYYYYYYYYYYYYYYYYYNNNNNNNNNN/4/%%%/4/'%**4NNN///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: IFS2000
+
+
+BO_ 1286 GpsAntAngles: 2 IFS2000
+ SG_ GpsAntHeading : 0|16@1- (0.01,0) [-327.68|327.67] "deg" Vector__XXX
+
+BO_ 1285 AngRateRaw: 6 IFS2000
+ SG_ AngRateRawZ : 32|16@1- (0.01,0) [-327.68|327.67] "deg/s" Vector__XXX
+ SG_ AngRateRawY : 16|16@1- (0.01,0) [-327.68|327.67] "deg/s" Vector__XXX
+ SG_ AngRateRawX : 0|16@1- (0.01,0) [-327.68|327.67] "deg/s" Vector__XXX
+
+BO_ 1284 AccelRaw: 6 IFS2000
+ SG_ AccelRawZ : 32|16@1- (0.01,0) [-327.68|327.67] "m/s/s" Vector__XXX
+ SG_ AccelRawY : 16|16@1- (0.01,0) [-327.68|327.67] "m/s/s" Vector__XXX
+ SG_ AccelRawX : 0|16@1- (0.01,0) [-327.68|327.67] "m/s/s" Vector__XXX
+
+BO_ 1282 GpsLatitudeLongitude: 8 IFS2000
+ SG_ GpsPosLon : 32|32@1- (1E-007,0) [-214.7483648|214.7483647] "deg" Vector__XXX
+ SG_ GpsPosLat : 0|32@1- (1E-007,0) [-214.7483648|214.7483647] "deg" Vector__XXX
+
+BO_ 1283 GpsAltitude: 4 IFS2000
+ SG_ GpsPosAlt : 0|32@1- (0.001,0) [-2147483.648|2147483.647] "m" Vector__XXX
+
+BO_ 1281 PosError: 5 IFS2000
+ SG_ HDOP : 32|8@1+ (0.1,0) [0|25.5] "" Vector__XXX
+ SG_ VertPosErr : 16|16@1+ (0.001,0) [0|65.535] "m" Vector__XXX
+ SG_ HoriPosErr : 0|16@1+ (0.001,0) [0|65.535] "m" Vector__XXX
+
+BO_ 1280 InsStatus: 2 IFS2000
+ SG_ GpsNumSats : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ InsPosMode : 0|8@1+ (1,0) [0|9] "" Vector__XXX
+
+BO_ 1549 PosLocalD: 4 IFS2000
+ SG_ PosLocalDown : 0|32@1- (0.001,0) [-214748.3648|214748.3647] "m" Vector__XXX
+
+BO_ 1536 DateTime: 8 IFS2000
+ SG_ TimeYear : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+ SG_ TimeCentury : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TimeMonth : 16|8@1+ (1,0) [0|12] "" Vector__XXX
+ SG_ TimeDay : 24|8@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ TimeHSecond : 32|8@1+ (0.01,0) [0|1] "s" Vector__XXX
+ SG_ TimeSecond : 40|8@1+ (1,0) [0|60] "s" Vector__XXX
+ SG_ TimeMinute : 48|8@1+ (1,0) [0|60] "min" Vector__XXX
+ SG_ TimeHour : 56|8@1+ (1,0) [0|24] "hr" Vector__XXX
+
+BO_ 1537 LatitudeLongitude: 8 IFS2000
+ SG_ PosLat : 0|32@1- (1E-007,0) [-214.7483648|214.7483647] "deg" Vector__XXX
+ SG_ PosLon : 32|32@1- (1E-007,0) [-214.7483648|214.7483647] "deg" Vector__XXX
+
+BO_ 1538 Altitude: 4 IFS2000
+ SG_ PosAlt : 0|32@1- (0.001,0) [-2147483.648|2147483.647] "m" Vector__XXX
+
+BO_ 1539 Velocity: 8 IFS2000
+ SG_ VelNorth : 0|16@1- (0.01,0) [-327.68|327.67] "m/s" Vector__XXX
+ SG_ VelEast : 16|16@1- (0.01,0) [-327.68|327.67] "m/s" Vector__XXX
+ SG_ VelDown : 32|16@1- (0.01,0) [-327.68|327.67] "m/s" Vector__XXX
+ SG_ Speed2D : 48|16@1+ (0.01,0) [0|655.35] "m/s" Vector__XXX
+
+BO_ 1540 VelocityLevel: 4 IFS2000
+ SG_ VelForward : 0|16@1- (0.01,0) [-327.68|327.67] "m/s" Vector__XXX
+ SG_ VelLateral : 16|16@1- (0.01,0) [-327.68|327.67] "m/s" Vector__XXX
+
+BO_ 1541 AccelVehicle: 6 IFS2000
+ SG_ AccelX : 0|16@1- (0.01,0) [-327.68|327.67] "m/s/s" Vector__XXX
+ SG_ AccelY : 16|16@1- (0.01,0) [-327.68|327.67] "m/s/s" Vector__XXX
+ SG_ AccelZ : 32|16@1- (0.01,0) [-327.68|327.67] "m/s/s" Vector__XXX
+
+BO_ 1542 AccelLevel: 8 IFS2000
+ SG_ AccelForward : 0|16@1- (0.01,0) [-327.68|327.67] "m/s/s" Vector__XXX
+ SG_ AccelLateral : 16|16@1- (0.01,0) [-327.68|327.67] "m/s/s" Vector__XXX
+ SG_ AccelDown : 32|16@1- (0.01,0) [-327.68|327.67] "m/s/s" Vector__XXX
+
+BO_ 1543 HeadingPitchRoll: 6 IFS2000
+ SG_ AngleHeading : 0|16@1+ (0.01,0) [0|360] "deg" Vector__XXX
+ SG_ AnglePitch : 16|16@1- (0.01,0) [-90|90] "deg" Vector__XXX
+ SG_ AngleRoll : 32|16@1- (0.01,0) [-180|180] "deg" Vector__XXX
+
+BO_ 1544 AngRateVehicle: 6 IFS2000
+ SG_ AngRateX : 0|16@1- (0.01,0) [-327.68|327.67] "deg/s" Vector__XXX
+ SG_ AngRateY : 16|16@1- (0.01,0) [-327.68|327.67] "deg/s" Vector__XXX
+ SG_ AngRateZ : 32|16@1- (0.01,0) [-327.68|327.67] "deg/s" Vector__XXX
+
+BO_ 1545 AngRateLevel: 6 IFS2000
+ SG_ AngRateForward : 0|16@1- (0.01,0) [-327.68|327.67] "deg/s" Vector__XXX
+ SG_ AngRateLateral : 16|16@1- (0.01,0) [-327.68|327.67] "deg/s" Vector__XXX
+ SG_ AngRateDown : 32|16@1- (0.01,0) [-327.68|327.67] "deg/s" Vector__XXX
+
+BO_ 1550 TrackSlip: 4 IFS2000
+ SG_ AngleTrack : 0|16@1+ (0.01,0) [0|360] "deg" Vector__XXX
+ SG_ AngleSlip : 16|16@1- (0.01,0) [-327.68|327.67] "deg" Vector__XXX
+
+BO_ 1548 PosLocalNE: 8 IFS2000
+ SG_ PosLocalNorth : 0|32@1- (0.001,0) [-214748.3648|214748.3647] "m" Vector__XXX
+ SG_ PosLocalEast : 32|32@1- (0.001,0) [-214748.3648|214748.3647] "m" Vector__XXX
+
+BO_ 1546 AngAccelVehicle: 6 IFS2000
+ SG_ AngAccelX : 0|16@1- (0.1,0) [-3276.8|3276.7] "deg/s/s" Vector__XXX
+ SG_ AngAccelY : 16|16@1- (0.1,0) [-3276.8|3276.7] "deg/s/s" Vector__XXX
+ SG_ AngAccelZ : 32|16@1- (0.1,0) [-3276.8|3276.7] "deg/s/s" Vector__XXX
+
+BO_ 1547 AngAccelLevel: 6 IFS2000
+ SG_ AngAccelForward : 0|16@1- (0.1,0) [-3276.8|3276.7] "deg/s/s" Vector__XXX
+ SG_ AngAccelLateral : 16|16@1- (0.1,0) [-3276.8|3276.7] "deg/s/s" Vector__XXX
+ SG_ AngAccelDown : 32|16@1- (0.1,0) [-3276.8|3276.7] "deg/s/s" Vector__XXX
+
+
+
+CM_ BO_ 1286 "GPS天线角度";
+CM_ SG_ 1286 GpsAntHeading "GPS双天线航向";
+CM_ BO_ 1285 "IMU角速度原始值";
+CM_ SG_ 1285 AngRateRawZ "IMU原始Z轴角速度";
+CM_ SG_ 1285 AngRateRawY "IMU原始Y轴角速度";
+CM_ SG_ 1285 AngRateRawX "IMU原始X轴角速度";
+CM_ BO_ 1284 "IMU加速度原始值";
+CM_ SG_ 1284 AccelRawZ "IMU原始Z轴加速度";
+CM_ SG_ 1284 AccelRawY "IMU原始Y轴加速度";
+CM_ SG_ 1284 AccelRawX "IMU原始X轴加速度";
+CM_ BO_ 1282 "GPS原始定位经纬度";
+CM_ SG_ 1282 GpsPosLon "位置经度";
+CM_ SG_ 1282 GpsPosLat "位置纬度";
+CM_ BO_ 1283 "GPS原始定位高度";
+CM_ SG_ 1283 GpsPosAlt "位置高度（海拔高度）";
+CM_ BO_ 1281 "定位精度";
+CM_ SG_ 1281 HDOP "水平定位精度因子";
+CM_ SG_ 1281 VertPosErr "垂直定位精度";
+CM_ SG_ 1281 HoriPosErr "水平定位精度";
+CM_ BO_ 1280 "INS定位状态";
+CM_ SG_ 1280 GpsNumSats "卫星数目";
+CM_ SG_ 1280 InsPosMode "组合惯导定位状态";
+CM_ BO_ 1549 "当地相对垂向位置";
+CM_ SG_ 1549 PosLocalDown "当地相对地坐标";
+CM_ BO_ 1536 "日期时间（UTC时间）";
+CM_ SG_ 1536 TimeYear "年";
+CM_ SG_ 1536 TimeCentury "世纪";
+CM_ SG_ 1536 TimeMonth "月";
+CM_ SG_ 1536 TimeDay "日";
+CM_ SG_ 1536 TimeHSecond "0.01秒";
+CM_ SG_ 1536 TimeSecond "秒";
+CM_ SG_ 1536 TimeMinute "分";
+CM_ SG_ 1536 TimeHour "小时";
+CM_ BO_ 1537 "定位经纬度";
+CM_ SG_ 1537 PosLat "位置纬度";
+CM_ SG_ 1537 PosLon "位置经度";
+CM_ BO_ 1538 "定位高度";
+CM_ SG_ 1538 PosAlt "位置高度（海拔高度）";
+CM_ BO_ 1539 "地球坐标系速度";
+CM_ SG_ 1539 VelNorth "北向速度";
+CM_ SG_ 1539 VelEast "东向速度";
+CM_ SG_ 1539 VelDown "垂向速度";
+CM_ SG_ 1539 Speed2D "水平合速度";
+CM_ BO_ 1540 "水平坐标系速度";
+CM_ SG_ 1540 VelForward "纵向速度";
+CM_ SG_ 1540 VelLateral "横向速度";
+CM_ BO_ 1541 "车辆坐标系加速度";
+CM_ SG_ 1541 AccelX "X轴加速度";
+CM_ SG_ 1541 AccelY "Y轴加速度";
+CM_ SG_ 1541 AccelZ "Z轴加速度";
+CM_ BO_ 1542 "水平坐标系加速度";
+CM_ SG_ 1542 AccelForward "纵向加速度";
+CM_ SG_ 1542 AccelLateral "横向加速度";
+CM_ SG_ 1542 AccelDown "垂向加速度";
+CM_ BO_ 1543 "姿态角";
+CM_ SG_ 1543 AngleHeading "航向角";
+CM_ SG_ 1543 AnglePitch "俯仰角";
+CM_ SG_ 1543 AngleRoll "横滚角";
+CM_ BO_ 1544 "车辆坐标系角速度";
+CM_ SG_ 1544 AngRateX "X轴角速度";
+CM_ SG_ 1544 AngRateY "Y轴角速度";
+CM_ SG_ 1544 AngRateZ "Z轴角速度";
+CM_ BO_ 1545 "水平坐标系角速度";
+CM_ SG_ 1545 AngRateForward "纵向角速度";
+CM_ SG_ 1545 AngRateLateral "横向角速度";
+CM_ SG_ 1545 AngRateDown "垂向角速度";
+CM_ BO_ 1550 "航迹角和侧滑角";
+CM_ SG_ 1550 AngleTrack "航迹角";
+CM_ SG_ 1550 AngleSlip "侧滑角";
+CM_ BO_ 1548 "当地相对北东向位置";
+CM_ SG_ 1548 PosLocalNorth "当地相对北坐标";
+CM_ SG_ 1548 PosLocalEast "当地相对东坐标";
+CM_ BO_ 1546 "车辆坐标系角加速度";
+CM_ SG_ 1546 AngAccelX "X轴角加速度";
+CM_ SG_ 1546 AngAccelY "Y轴角加速度";
+CM_ SG_ 1546 AngAccelZ "Z轴角加速度";
+CM_ BO_ 1547 "水平坐标系角加速度";
+CM_ SG_ 1547 AngAccelForward "纵向角加速度";
+CM_ SG_ 1547 AngAccelLateral "横向角加速度";
+CM_ SG_ 1547 AngAccelDown "垂向角加速度";
+BA_DEF_ BO_  "GenMsgCycleTime" FLOAT 0 3000000;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","immediate";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "cyclic";
+BA_ "GenMsgCycleTime" BO_ 1286 10;
+BA_ "GenMsgCycleTime" BO_ 1285 10;
+BA_ "GenMsgCycleTime" BO_ 1284 10;
+BA_ "GenMsgCycleTime" BO_ 1282 10;
+BA_ "GenMsgCycleTime" BO_ 1283 10;
+BA_ "GenMsgCycleTime" BO_ 1281 10;
+BA_ "GenMsgCycleTime" BO_ 1280 10;
+BA_ "GenMsgCycleTime" BO_ 1549 10;
+BA_ "GenMsgCycleTime" BO_ 1536 10;
+BA_ "GenMsgCycleTime" BO_ 1537 10;
+BA_ "GenMsgCycleTime" BO_ 1538 10;
+BA_ "GenMsgCycleTime" BO_ 1539 10;
+BA_ "GenMsgCycleTime" BO_ 1540 10;
+BA_ "GenMsgCycleTime" BO_ 1541 10;
+BA_ "GenMsgCycleTime" BO_ 1542 10;
+BA_ "GenMsgCycleTime" BO_ 1543 10;
+BA_ "GenMsgCycleTime" BO_ 1544 10;
+BA_ "GenMsgCycleTime" BO_ 1545 10;
+BA_ "GenMsgCycleTime" BO_ 1550 10;
+BA_ "GenMsgCycleTime" BO_ 1548 10;
+BA_ "GenMsgCycleTime" BO_ 1546 10;
+BA_ "GenMsgCycleTime" BO_ 1547 10;
+VAL_ 1280 InsPosMode 9 "SBAS Differential" 6 "Dead reckoning" 5 "RTK float" 4 "RTK fixed" 2 "RTCM Differential" 1 "Autonomous position" 0 "Invalid" ;
+
